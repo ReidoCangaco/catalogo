@@ -19,6 +19,9 @@
   const buildWhatsappLink = (message) =>
     `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
+  const buildProductMessage = (productName, flavor) =>
+    `Olá, quero o ${productName} sabor ${flavor}`;
+
   /* --------------------------------------------------------------------
      2. DADOS DOS PRODUTOS
      Basta adicionar um novo objeto neste array para o produto aparecer
@@ -188,7 +191,7 @@
     const whatsapp = document.getElementById("product-page-whatsapp");
     const toggleButton = document.getElementById("product-toggle-flavors");
 
-    if (!image || !badge || !title) return;
+    if (!image || !badge || !title || !flavorPreview || !whatsapp) return;
 
     image.src = product.image;
     image.alt = `${product.name} imagem do produto`;
@@ -199,34 +202,51 @@
     description.textContent = product.description;
     puffs.textContent = product.puffs;
     options.textContent = `${product.optionsCount} sabores disponíveis`;
-    flavorCount.textContent = `${product.optionsCount} opções`;
+    flavorCount.textContent = `${product.optionsCount} sabores`;
     document.getElementById("product-page-price").textContent = currency.format(product.promoPrice);
     document.getElementById("product-page-old-price").textContent = currency.format(product.originalPrice);
-    flavorPreview.innerHTML = product.flavors
-      .slice(0, 4)
-      .map((flavor) => `<span class="flavor-chip">${flavor}</span>`)
-      .join("");
 
-    whatsapp.href = buildWhatsappLink(`Olá, tenho interesse no ${product.name}`);
-    toggleButton.textContent = "Ver todos os sabores ▾";
-    toggleButton.dataset.expanded = "false";
+    let selectedFlavor = product.flavors[0] || "";
+    const updateWhatsappLink = () => {
+      whatsapp.href = buildWhatsappLink(buildProductMessage(product.name, selectedFlavor));
+    };
+
+    const renderFlavorChips = (flavors) =>
+      flavors
+        .map(
+          (flavor) => `<button type="button" class="flavor-chip${flavor === selectedFlavor ? " selected" : ""}" data-flavor="${flavor}">${flavor}</button>`
+        )
+        .join("");
+
+    const setSelectedFlavor = (flavor) => {
+      selectedFlavor = flavor;
+      flavorPreview.querySelectorAll(".flavor-chip").forEach((chip) => {
+        chip.classList.toggle("selected", chip.dataset.flavor === flavor);
+      });
+      updateWhatsappLink();
+    };
+
+    const showPreview = (showAll) => {
+      const flavors = showAll ? product.flavors : product.flavors.slice(0, 8);
+      flavorPreview.innerHTML = renderFlavorChips(flavors);
+      toggleButton.textContent = showAll ? "Mostrar menos" : "Ver todos os sabores ▾";
+      toggleButton.dataset.expanded = String(showAll);
+    };
+
+    showPreview(false);
+    updateWhatsappLink();
+
+    flavorPreview.addEventListener("click", (event) => {
+      const chip = event.target.closest(".flavor-chip");
+      if (!chip) return;
+      const flavor = chip.dataset.flavor;
+      if (!flavor) return;
+      setSelectedFlavor(flavor);
+    });
 
     toggleButton.onclick = () => {
       const expanded = toggleButton.dataset.expanded === "true";
-      if (expanded) {
-        flavorPreview.innerHTML = product.flavors
-          .slice(0, 4)
-          .map((flavor) => `<span class="flavor-chip">${flavor}</span>`)
-          .join("");
-        toggleButton.textContent = "Ver todos os sabores";
-        toggleButton.dataset.expanded = "false";
-      } else {
-        flavorPreview.innerHTML = product.flavors
-          .map((flavor) => `<span class="flavor-chip">${flavor}</span>`)
-          .join("");
-        toggleButton.textContent = "Mostrar menos";
-        toggleButton.dataset.expanded = "true";
-      }
+      showPreview(!expanded);
     };
   }
 
