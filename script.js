@@ -125,7 +125,7 @@
      4. RENDERIZAÇÃO
      -------------------------------------------------------------------- */
   function productCardHTML(product) {
-    const message = `Olá, tenho interesse no ${product.name}`;
+    const productPageLink = `produto.html?id=${encodeURIComponent(product.id)}`;
     const badgeClass = product.featured ? "oferta" : "";
     return `
       <article class="product-card" data-id="${product.id}">
@@ -135,16 +135,15 @@
         </div>
         <div class="card-body">
           <h3 class="card-title">${product.name}</h3>
-          <p class="card-meta">${product.optionsCount} Sabores · ${product.puffs}</p>
-          <div class="card-prices">
-            <span class="price-old">${currency.format(product.originalPrice)}</span>
+          <p class="card-meta">${product.optionsCount} opções</p>
+          <div class="card-price-block">
             <span class="price-new">${currency.format(product.promoPrice)}</span>
+            <span class="price-old">${currency.format(product.originalPrice)}</span>
           </div>
         </div>
         <div class="card-footer">
-          <a class="btn btn-whatsapp" href="${buildWhatsappLink(message)}" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" class="icon-wpp" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.22-1.77 1.27-.45.05-.9.24-3.05-.65-2.6-1.08-4.28-3.7-4.41-3.87-.13-.17-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.22-.25.5-.32.67-.32.17 0 .34.002.49.008.16.006.37-.06.58.44.22.52.73 1.8.8 1.93.06.13.1.28.02.45-.08.17-.13.27-.25.42-.13.15-.27.33-.38.44-.13.13-.26.27-.11.53.15.27.68 1.12 1.46 1.82 1 .9 1.85 1.18 2.11 1.31.27.13.42.11.58-.07.16-.17.68-.79.86-1.06.18-.27.36-.22.6-.13.25.09 1.57.74 1.84.87.27.13.45.2.51.31.07.11.07.63-.15 1.25z"/></svg>
-            Chamar no WhatsApp
+          <a class="btn btn-primary btn-product-options" href="${productPageLink}">
+            Ver opções
           </a>
         </div>
       </article>
@@ -201,13 +200,15 @@
     puffs.textContent = product.puffs;
     options.textContent = `${product.optionsCount} sabores disponíveis`;
     flavorCount.textContent = `${product.optionsCount} opções`;
+    document.getElementById("product-page-price").textContent = currency.format(product.promoPrice);
+    document.getElementById("product-page-old-price").textContent = currency.format(product.originalPrice);
     flavorPreview.innerHTML = product.flavors
       .slice(0, 4)
       .map((flavor) => `<span class="flavor-chip">${flavor}</span>`)
       .join("");
 
     whatsapp.href = buildWhatsappLink(`Olá, tenho interesse no ${product.name}`);
-    toggleButton.textContent = "Ver todos os sabores";
+    toggleButton.textContent = "Ver todos os sabores ▾";
     toggleButton.dataset.expanded = "false";
 
     toggleButton.onclick = () => {
