@@ -17,14 +17,14 @@
   --text-muted: #b9b9b9;
   --text-subtle: #7f7f7f;
   --white: #FFFFFF;
-  --price-highlight: #f8d546;
+  --price-highlight: #a8d8ff;
   --button-primary: #9ad8ff;
   --button-primary-hover: #7cc7ff;
   --accent: #78d93a;
   --accent-strong: #50c022;
   --danger: #ff5a5a;
   --verde: #0E8A6D;
-  --amarelo: #f8d546;
+  --amarelo: #a8d8ff;
   --azul: #2a6c91;
   --laranja: #ff6e31;
   --ink: #0b0b0b;
@@ -62,7 +62,7 @@ a { color: inherit; text-decoration: none; }
 h1, h2, h3 { font-family: var(--font-display); font-weight: 700; margin: 0; line-height: 1.15; color: var(--white); }
 p { margin: 0; }
 button { font-family: inherit; cursor: pointer; }
-:focus-visible { outline: 3px solid rgba(248, 213, 70, 0.8); outline-offset: 3px; }
+:focus-visible { outline: 3px solid rgba(168, 216, 255, 0.8); outline-offset: 3px; }
 
 .container {
   max-width: var(--max-width);
@@ -134,7 +134,7 @@ button { font-family: inherit; cursor: pointer; }
   transition: background .15s ease, color .15s ease;
 }
 .nav-link:hover { color: var(--white); }
-.nav-link.active { background: rgba(248, 213, 70, 0.14); color: var(--price-highlight); }
+.nav-link.active { background: rgba(168, 216, 255, 0.14); color: var(--price-highlight); }
 
 .header-cta { flex-shrink: 0; }
 .nav-toggle { display: none; }
@@ -147,7 +147,7 @@ button { font-family: inherit; cursor: pointer; }
   opacity: 0.3;
   background-image:
     linear-gradient(135deg, var(--verde) 20%, transparent 20%) ,
-    linear-gradient(225deg, var(--amarelo) 20%, transparent 20%),
+    linear-gradient(225deg, var(--price-highlight) 20%, transparent 20%),
     linear-gradient(135deg, var(--azul) 20%, transparent 20%),
     linear-gradient(225deg, var(--laranja) 20%, transparent 20%);
   background-size: 40px 18px;
@@ -159,7 +159,7 @@ button { font-family: inherit; cursor: pointer; }
    HERO
    ========================================================================== */
 .hero-section {
-  background: radial-gradient(circle at top left, rgba(248, 213, 70, 0.12), transparent 35%),
+  background: radial-gradient(circle at top left, rgba(168, 216, 255, 0.12), transparent 35%),
     linear-gradient(180deg, #060606 0%, #0f0f0f 100%);
   color: var(--white);
   padding-top: 72px;
@@ -257,7 +257,7 @@ button { font-family: inherit; cursor: pointer; }
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
 }
-.product-card:hover { transform: translateY(-2px); box-shadow: 0 20px 55px rgba(0, 0, 0, 0.32); border-color: rgba(248, 213, 70, 0.2); }
+  .product-card:hover { transform: translateY(-2px); box-shadow: 0 20px 55px rgba(0, 0, 0, 0.32); border-color: rgba(168, 216, 255, 0.2); }
 
 .card-badge {
   position: absolute;
@@ -304,8 +304,7 @@ button { font-family: inherit; cursor: pointer; }
 .card-footer { display: flex; }
 .card-footer .btn { width: 100%; justify-content: center; }
 .btn-product-options { padding: 12px 18px; }
-.btn-product-options:hover { background: #e8cc53; }
-.btn-small { padding: 10px 18px; font-size: 0.9rem; }
+  .btn-product-options:hover { background: #8fd4ff; }
 
   .detail-badge {
     display: inline-flex;
@@ -349,12 +348,12 @@ button { font-family: inherit; cursor: pointer; }
     transition: background .15s ease, border-color .15s ease, color .15s ease;
   }
   .detail-flavor-preview .flavor-chip:hover {
-    background: rgba(248, 213, 70, 0.12);
+    background: rgba(168, 216, 255, 0.12);
   }
   .detail-flavor-preview .flavor-chip.selected {
     background: var(--price-highlight);
     color: #060606;
-    border-color: rgba(248, 213, 70, 0.35);
+    border-color: rgba(168, 216, 255, 0.35);
   }
   .detail-flavor-full { display: none; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .detail-flavor-full.active { display: grid; }
@@ -486,7 +485,7 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 0.8rem;
   font-weight: 600;
   color: #060606;
-  background: rgba(248, 213, 70, 0.18);
+  background: rgba(168, 216, 255, 0.18);
   padding: 4px 10px;
   border-radius: 999px;
   margin-left: auto;

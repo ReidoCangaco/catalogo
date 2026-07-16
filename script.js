@@ -130,7 +130,7 @@
 
   const ACCENT_HEX = {
     verde: "#0E8A6D",
-    amarelo: "#FFC93C",
+    amarelo: "#a8d8ff",
     azul: "#2955A3",
     laranja: "#FF6E31",
   };
