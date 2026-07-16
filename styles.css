@@ -18,6 +18,8 @@
   --text-subtle: #7f7f7f;
   --white: #FFFFFF;
   --price-highlight: #f8d546;
+  --button-primary: #9ad8ff;
+  --button-primary-hover: #7cc7ff;
   --accent: #78d93a;
   --accent-strong: #50c022;
   --danger: #ff5a5a;
@@ -87,8 +89,8 @@ button { font-family: inherit; cursor: pointer; }
   white-space: nowrap;
 }
 .btn:hover { transform: translateY(-2px); }
-.btn-primary { background: var(--price-highlight); color: #060606; box-shadow: var(--shadow-card); }
-.btn-primary:hover { background: #f6d85d; }
+.btn-primary { background: #b9e6ff; color: #060606; box-shadow: var(--shadow-card); }
+.btn-primary:hover { background: #8fd4ff; }
 .btn-outline { border-color: rgba(255,255,255,0.2); color: var(--white); }
 .btn-outline:hover { border-color: rgba(255,255,255,0.35); }
 .btn-whatsapp { background: #1FAE59; color: var(--white); }
