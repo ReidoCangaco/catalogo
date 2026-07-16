@@ -214,7 +214,7 @@
       originalPrice: 75.0,
       promoPrice: 59.9,
       badge: "Ultimas Unidades",
-      accent: "Laranja",
+      accent: "Amarelo",
       featured: false,
       image: "https://media.discordapp.net/attachments/1276211560993259572/1527376255140237402/BCO.5ddc05d0-99cb-4777-8301-d596be83d768.png?ex=6a5a6f7c&is=6a591dfc&hm=fd7075d0ea1ae6ee863c6e08fe1fc864dedbd768acfeef92a0c78efc7d1350e8&=&format=webp&quality=lossless&width=960&height=960",
       description: "Pequeno, portátil e discreto, ideal para quem quer experimentar sabores diferentes sem gastar muito.",
