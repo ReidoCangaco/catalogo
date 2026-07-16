@@ -238,7 +238,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "",
+      image: "https://media.discordapp.net/attachments/1276211560993259572/1527381400733614100/content.png?ex=6a5a7447&is=6a5922c7&hm=c398e1fa2c7b721d203cf6c9c82df0ea2fcc8f1e40e5e261787adfb32ca3e2dc&=&format=webp&quality=lossless&width=960&height=960",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 /* ==========================================================================
@@ -259,7 +259,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "",
+      image: "https://cdn.discordapp.com/attachments/1276211560993259572/1527381904918315188/content.png?ex=6a5a74bf&is=6a59233f&hm=11576f4587d72feaff83dd15f2674537e02582bf350671bf29bbe67c7ab84db3&",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 /* ==========================================================================
@@ -281,7 +281,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "",
+      image: "https://media.discordapp.net/attachments/1276211560993259572/1527382386663358594/content.png?ex=6a5a7532&is=6a5923b2&hm=283869a863e5121eda5148d03c9959f240956690f3f21f0e93b84e11b86d02ef&=&format=webp&quality=lossless&width=960&height=960",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
     
@@ -308,7 +308,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "",
+      image: "https://media.discordapp.net/attachments/1276211560993259572/1527382844752662568/content.png?ex=6a5a759f&is=6a59241f&hm=e1ffc731448c9bd5c6b506e8f75f69b91c5b7043cee8de912bc7f25e0412539c&=&format=webp&quality=lossless&width=960&height=960",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
       
