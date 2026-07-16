@@ -36,7 +36,7 @@
     {
       id: "elfbar-40k-iceking",
       name: "ELFBAR 40.000 Iceking",
-      puffs: "até 40.000 tragadas",
+      puffs: "40.000 Puffs",
       optionsCount: 11,
       originalPrice: 179.9,
       promoPrice: 159.9,
@@ -49,7 +49,7 @@
     {
       id: "elfbar-15k",
       name: "ELFBAR 15K",
-      puffs: "até 15.000 tragadas",
+      puffs: "15.000 Puffs",
       optionsCount: 16,
       originalPrice: 124.9,
       promoPrice: 115.0,
@@ -135,7 +135,7 @@
         </div>
         <div class="card-body">
           <h3 class="card-title">${product.name}</h3>
-          <p class="card-meta">${product.optionsCount} opções de sabor · ${product.puffs}</p>
+          <p class="card-meta">${product.optionsCount} Sabores · ${product.puffs}</p>
           <div class="card-prices">
             <span class="price-old">${currency.format(product.originalPrice)}</span>
             <span class="price-new">${currency.format(product.promoPrice)}</span>
