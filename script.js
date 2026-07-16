@@ -27,20 +27,20 @@
      Basta adicionar um novo objeto neste array para o produto aparecer
      automaticamente no catálogo, nos destaques e na página de sabores.
      -------------------------------------------------------------------- */
-  const FLAVOR_POOL = [
-    "Strawberry Ice", "Watermelon Ice", "Grape Ice", "Manga Tropical",
-    "Menta Gelada", "Green Apple Ice",
-    "Abacaxi com Hortelã", "Cereja Ice", "Chiclete", "Coco Gelado",
-    "Framboesa Azul", "Limão Siciliano", "Cherry fuse", "Summer splash",
-    "Peach", "Mango Magic",
-  ];
-
   const PRODUCTS = [
     {
       id: "elfbar-40k-iceking",
       name: "ELFBAR 40.000 Iceking",
       puffs: "40.000 Puffs",
-      optionsCount: 7,
+      flavors: [
+        "Mango magic",
+        "Grape ice",
+        "Peach+",
+        "Summer splash",
+        "Watermelon ice",
+        "Strawberry ice",
+        "Cherry fuse",
+      ],
       originalPrice: 179.9,
       promoPrice: 159.9,
       badge: "Edição ICE",
@@ -53,7 +53,24 @@
       id: "elfbar-15k",
       name: "ELFBAR 15K",
       puffs: "15.000 Puffs",
-      optionsCount: 16,
+      flavors: [
+        "Morango com Leite",
+        "Melancia Gelada",
+        "Uva Ice",
+        "Manga Tropical",
+        "Menta Gelada",
+        "Tutti-Frutti",
+        "Energético",
+        "Maçã Verde Ice",
+        "Abacaxi com Hortelã",
+        "Cereja Ice",
+        "Chiclete",
+        "Coco Gelado",
+        "Framboesa Azul",
+        "Limão Siciliano",
+        "Morango com Kiwi",
+        "Banana Ice",
+      ],
       originalPrice: 124.9,
       promoPrice: 115.0,
       badge: "Mais vendido",
@@ -66,7 +83,26 @@
       id: "nikbar-10k",
       name: "NIKBAR 10K",
       puffs: "até 10.000 tragadas",
-      optionsCount: 18,
+      flavors: [
+        "Blueberry Ice",
+        "Menta Gelada",
+        "Uva Ice",
+        "Melancia Gelada",
+        "Tutti-Frutti",
+        "Energético",
+        "Cereja Ice",
+        "Coco Gelado",
+        "Framboesa Azul",
+        "Limão Siciliano",
+        "Morango com Kiwi",
+        "Banana Ice",
+        "Abacaxi com Hortelã",
+        "Manga Tropical",
+        "Cereja Grape",
+        "Melão com Menta",
+        "Framboesa Ice",
+        "Morango com Leite",
+      ],
       originalPrice: 109.9,
       promoPrice: 100.0,
       badge: "Maior variedade",
@@ -79,7 +115,18 @@
       id: "oxbar-15k",
       name: "OXBAR 15K",
       puffs: "até 15.000 tragadas",
-      optionsCount: 10,
+      flavors: [
+        "Menta Gelada",
+        "Lima Citrus",
+        "Melancia Gelada",
+        "Coco Gelado",
+        "Chiclete",
+        "Uva Ice",
+        "Abacaxi com Hortelã",
+        "Cereja Ice",
+        "Banana Ice",
+        "Framboesa Azul",
+      ],
       originalPrice: 124.9,
       promoPrice: 115.0,
       badge: "Últimas unidades",
@@ -88,10 +135,11 @@
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=760&q=80",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
     },
-  ].map((p) => ({
-    ...p,
-    flavors: FLAVOR_POOL.slice(0, p.optionsCount),
-  }));
+  ];
+
+  PRODUCTS.forEach((product) => {
+    product.optionsCount = product.flavors.length;
+  });
 
   /* --------------------------------------------------------------------
      3. HELPERS
