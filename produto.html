@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produto — JRS PUFFS</title>
+  <meta name="description" content="Detalhes do produto JRS PUFFS. Veja mais sobre sabores, preço e peça pelo WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="product">
+  <header class="site-header" id="topo">
+    <div class="header-inner">
+      <a href="index.html#home" class="logo" aria-label="JRS PUFFS — início">
+        <span class="logo-mark">💨</span>
+        <span class="logo-text">JRS<strong>PUFFS</strong></span>
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html#home" class="nav-link" data-nav>Home</a></li>
+          <li><a href="index.html#catalogo" class="nav-link" data-nav>Catálogo</a></li>
+          <li><a href="index.html#sabores" class="nav-link" data-nav>Sabores</a></li>
+          <li><a href="index.html#sobre" class="nav-link" data-nav>Sobre</a></li>
+          <li><a href="index.html#contato" class="nav-link" data-nav>Contato</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-whatsapp header-cta" id="header-whatsapp" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section product-page-section">
+      <div class="container product-page-main" id="product-page-main">
+        <div class="product-page-breadcrumbs">
+          <a href="index.html#catalogo">Catálogo</a>
+          <span> / </span>
+          <span id="product-page-breadcrumb">Produto</span>
+        </div>
+        <div class="product-page-grid">
+          <div class="product-image-card">
+            <img id="product-page-image" src="" alt="Produto" />
+          </div>
+          <div class="product-page-content">
+            <span class="detail-badge" id="product-page-badge"></span>
+            <h1 id="product-page-title">Nome do produto</h1>
+            <p class="detail-description" id="product-page-description"></p>
+            <div class="detail-meta product-page-meta">
+              <span id="product-page-puffs"></span>
+              <span id="product-page-options"></span>
+            </div>
+            <div class="detail-flavors product-page-flavors">
+              <div class="flavors-header">
+                <h3>Sabores disponíveis</h3>
+                <span id="product-page-flavor-count"></span>
+              </div>
+              <div class="detail-flavor-preview" id="product-page-flavor-preview"></div>
+              <button type="button" class="btn btn-outline btn-small" id="product-toggle-flavors">Ver todos os sabores</button>
+            </div>
+            <a class="btn btn-whatsapp btn-large" id="product-page-whatsapp" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html#home" class="logo">
+          <span class="logo-mark">💨</span>
+          <span class="logo-text">JRS<strong>PUFFS</strong></span>
+        </a>
+        <p class="footer-tagline">Catálogo de vapes e pods. Pedido fechado direto no WhatsApp.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <a href="index.html#catalogo">Catálogo</a>
+        <a href="index.html#sabores">Sabores</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+      <p class="footer-note">⚠️ Venda destinada a maiores de 18 anos. Site sem checkout — todo pedido é combinado por WhatsApp.</p>
+    </div>
+    <p class="copyright">© <span id="year"></span> Vapelândia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

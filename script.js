@@ -43,6 +43,8 @@
       badge: "Edição Duke",
       accent: "verde",
       featured: true,
+      image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=760&q=80",
+      description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
     },
     {
       id: "elfbar-15k",
@@ -54,6 +56,8 @@
       badge: "Mais vendido",
       accent: "amarelo",
       featured: true,
+      image: "https://images.unsplash.com/photo-1532634896-26909d0d1f0f?auto=format&fit=crop&w=760&q=80",
+      description: "O equilíbrio perfeito entre preço e variedade, com 16 sabores populares e entrega rápida.",
     },
     {
       id: "nikbar-10k",
@@ -65,6 +69,8 @@
       badge: "Maior variedade",
       accent: "azul",
       featured: true,
+      image: "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=760&q=80",
+      description: "Modelo com ampla seleção de sabores gelados e cítricos, ideal para quem troca de sabor toda hora.",
     },
     {
       id: "oxbar-15k",
@@ -76,6 +82,8 @@
       badge: "Últimas unidades",
       accent: "laranja",
       featured: false,
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=760&q=80",
+      description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
     },
   ].map((p) => ({
     ...p,
@@ -122,7 +130,9 @@
     return `
       <article class="product-card" data-id="${product.id}">
         <span class="card-badge ${badgeClass}">${product.badge}</span>
-        <div class="card-media">${deviceSVG(product.accent)}</div>
+        <div class="card-media">
+          <img src="${product.image}" alt="${product.name}" />
+        </div>
         <div class="card-body">
           <h3 class="card-title">${product.name}</h3>
           <p class="card-meta">${product.optionsCount} opções de sabor · ${product.puffs}</p>
@@ -158,6 +168,77 @@
       list.length === PRODUCTS.length
         ? `Mostrando todos os ${list.length} produtos`
         : `${list.length} produto${list.length === 1 ? "" : "s"} encontrado${list.length === 1 ? "" : "s"}`;
+
+    attachProductCardHandlers();
+  }
+
+  function getQueryParam(name) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(name);
+  }
+
+  function renderProductPage(product) {
+    const image = document.getElementById("product-page-image");
+    const badge = document.getElementById("product-page-badge");
+    const title = document.getElementById("product-page-title");
+    const description = document.getElementById("product-page-description");
+    const puffs = document.getElementById("product-page-puffs");
+    const options = document.getElementById("product-page-options");
+    const flavorCount = document.getElementById("product-page-flavor-count");
+    const flavorPreview = document.getElementById("product-page-flavor-preview");
+    const whatsapp = document.getElementById("product-page-whatsapp");
+    const toggleButton = document.getElementById("product-toggle-flavors");
+
+    if (!image || !badge || !title) return;
+
+    image.src = product.image;
+    image.alt = `${product.name} imagem do produto`;
+    badge.textContent = product.badge;
+    title.textContent = product.name;
+    const breadcrumb = document.getElementById("product-page-breadcrumb");
+    if (breadcrumb) breadcrumb.textContent = product.name;
+    description.textContent = product.description;
+    puffs.textContent = product.puffs;
+    options.textContent = `${product.optionsCount} sabores disponíveis`;
+    flavorCount.textContent = `${product.optionsCount} opções`;
+    flavorPreview.innerHTML = product.flavors
+      .slice(0, 4)
+      .map((flavor) => `<span class="flavor-chip">${flavor}</span>`)
+      .join("");
+
+    whatsapp.href = buildWhatsappLink(`Olá, tenho interesse no ${product.name}`);
+    toggleButton.textContent = "Ver todos os sabores";
+    toggleButton.dataset.expanded = "false";
+
+    toggleButton.onclick = () => {
+      const expanded = toggleButton.dataset.expanded === "true";
+      if (expanded) {
+        flavorPreview.innerHTML = product.flavors
+          .slice(0, 4)
+          .map((flavor) => `<span class="flavor-chip">${flavor}</span>`)
+          .join("");
+        toggleButton.textContent = "Ver todos os sabores";
+        toggleButton.dataset.expanded = "false";
+      } else {
+        flavorPreview.innerHTML = product.flavors
+          .map((flavor) => `<span class="flavor-chip">${flavor}</span>`)
+          .join("");
+        toggleButton.textContent = "Mostrar menos";
+        toggleButton.dataset.expanded = "true";
+      }
+    };
+  }
+
+  function renderNotFound() {
+    const container = document.getElementById("product-page-main");
+    if (!container) return;
+    container.innerHTML = `
+      <div class="product-not-found">
+        <h1>Produto não encontrado</h1>
+        <p>Desculpa, não conseguimos localizar o produto solicitado.</p>
+        <a href="index.html#catalogo" class="btn btn-primary">Voltar ao catálogo</a>
+      </div>
+    `;
   }
 
   function renderFlavors() {
@@ -174,6 +255,17 @@
         </div>
       </details>
     `).join("");
+  }
+
+  function attachProductCardHandlers() {
+    document.querySelectorAll(".product-card").forEach((card) => {
+      card.addEventListener("click", (event) => {
+        const target = event.target.closest(".btn");
+        if (target) return;
+        const id = card.dataset.id;
+        window.location.href = `produto.html?id=${encodeURIComponent(id)}`;
+      });
+    });
   }
 
   /* --------------------------------------------------------------------
@@ -205,8 +297,10 @@
   }
 
   function setupCatalogControls() {
-    document.getElementById("search-input").addEventListener("input", applyCatalogFilters);
-    document.getElementById("sort-select").addEventListener("change", applyCatalogFilters);
+    const searchInput = document.getElementById("search-input");
+    const sortSelect = document.getElementById("sort-select");
+    if (searchInput) searchInput.addEventListener("input", applyCatalogFilters);
+    if (sortSelect) sortSelect.addEventListener("change", applyCatalogFilters);
   }
 
   /* --------------------------------------------------------------------
@@ -268,13 +362,29 @@
     document.getElementById("year").textContent = new Date().getFullYear();
 
     setupWhatsappLinks();
-    setupHeroDevice();
-    renderFeatured();
-    renderCatalog(PRODUCTS);
-    renderFlavors();
-    setupCatalogControls();
+    if (document.getElementById("hero-device")) setupHeroDevice();
     setupMobileNav();
     setupActiveNavOnScroll();
+    setupCatalogControls();
+
+    const isCatalogPage = document.getElementById("catalog-grid") !== null;
+    const isProductPage = document.body.dataset.page === "product";
+
+    if (isCatalogPage) {
+      renderFeatured();
+      renderCatalog(PRODUCTS);
+      renderFlavors();
+    }
+
+    if (isProductPage) {
+      const productId = getQueryParam("id");
+      const product = PRODUCTS.find((item) => item.id === productId);
+      if (product) {
+        renderProductPage(product);
+      } else {
+        renderNotFound();
+      }
+    }
   }
 
   document.addEventListener("DOMContentLoaded", init);
