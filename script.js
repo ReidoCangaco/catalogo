@@ -241,6 +241,124 @@
       image: "",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
+/* ==========================================================================
+       ELFBAR 20.000 Touch
+       ========================================================================== */
+      {
+      id: "elfbar-20000-touch",
+      name: "ELFBAR 20.000 Touch",
+      puffs: "20.000 tragadas",
+      flavors: [
+        "Kiwi passion fruit guava",
+        "Watermelon cherry",
+        "Strawberry Watermelon Bubblegum",
+        "Strawberry grape",
+      ],
+      originalPrice: 145.0,
+      promoPrice: 109.9,
+      badge: "",
+      accent: "",
+      featured: false,
+      image: "",
+      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+    },
+/* ==========================================================================
+       IGNITE FROZEN 20.000
+       ========================================================================== */
+      {
+      id: "ignite-frozen-20000",
+      name: "IGNITE FROZEN 20.000",
+      puffs: "20.000 tragadas",
+      flavors: [
+        "Strawberry kiwi",
+        "Strawberry ice",
+        "Watermelon",
+        "Ice mint",
+        "Menthol",
+      ],
+      originalPrice: 140.0,
+      promoPrice: 129.9,
+      badge: "",
+      accent: "",
+      featured: false,
+      image: "",
+      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+    },
+    
+      /* ==========================================================================
+       ELFBAR DUKE 35.000
+       ========================================================================== */
+      {
+      id: "elfbar-duke-35000",
+      name: "ELFBAR DUKE 35.000",
+      puffs: "35.000 tragadas",
+      flavors: [
+        "Strawberry kiwi",
+        "Watermelon lemon ice",
+        "Watermelon ice",
+        "Fanta grape",
+        "Peach mango watermelon",
+        "Mango magic",
+        "Kiwi passion fruit guava",
+        "Ice mint",
+        "Pineapple ice",
+      ],
+      originalPrice: 145.0,
+      promoPrice: 139.9,
+      badge: "",
+      accent: "",
+      featured: false,
+      image: "",
+      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+    },
+      
+      /* ==========================================================================
+       ELFBAR BC 15.000
+       ========================================================================== */
+      {
+      id: "elfbar-bc-15000",
+      name: "ELFBAR BC 15.000",
+      puffs: "15.000 tragadas",
+      flavors: [
+        "Americano ice",
+        "Strawberry ice",
+        "Sakura grape",
+        "Pineapple ice",
+        "Miami mint",
+        "Bubballo tutti fruti",
+        "Kiwi passion fruit guava",
+      ],
+      originalPrice: 109.9,
+      promoPrice: 0.0,
+      badge: "",
+      accent: "",
+      featured: false,
+      image: "",
+      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+    },
+
+      /* ==========================================================================
+       ELFBAR TE 30.000
+       ========================================================================== */
+      {
+      id: "elfbar-te-30000",
+      name: "ELFBAR TE 30.000",
+      puffs: "30.000 tragadas",
+      flavors: [
+        "		Banana coconut ice",
+        "Strawberry ice",
+        "Peach mango watermelon",
+        "Menthol",
+        "Watermelon ice",
+      ],
+      originalPrice: 134.9,
+      promoPrice: 0.0,
+      badge: "",
+      accent: "",
+      featured: false,
+      image: "",
+      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+    },
 
 
 
