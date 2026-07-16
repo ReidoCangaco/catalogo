@@ -198,8 +198,50 @@
       accent: "Laranja",
       featured: false,
       image: "https://media.discordapp.net/attachments/1276211560993259572/1527373091779514408/BCO.b99a9943-8800-41a8-9c48-b6b4b102ec11.png?ex=6a5a6c8a&is=6a591b0a&hm=3524a1e98c4ed8ab618f0052e674ce0324a3abd7589400c55ad0a0fadb4f85e9&=&format=webp&quality=lossless&width=960&height=960",
-      description: "Ótima opção para quem busca momento, sabor intenso e preço em promoção.",
+      description: "Ótima opção para quem busca design, sabor intenso e preço em promoção.",
     },
+/* ==========================================================================
+       V-NANO 1.000
+       ========================================================================== */
+      {
+      id: "v-nano-1000",
+      name: "V-NANO 1.000",
+      puffs: "1.000 tragadas",
+      flavors: [
+        "Passion fruit sour kiwi",
+        "Grape ice",
+      ],
+      originalPrice: 75.0,
+      promoPrice: 59.9,
+      badge: "Ultimas Unidades",
+      accent: "Laranja",
+      featured: false,
+      image: "https://media.discordapp.net/attachments/1276211560993259572/1527376255140237402/BCO.5ddc05d0-99cb-4777-8301-d596be83d768.png?ex=6a5a6f7c&is=6a591dfc&hm=fd7075d0ea1ae6ee863c6e08fe1fc864dedbd768acfeef92a0c78efc7d1350e8&=&format=webp&quality=lossless&width=960&height=960",
+      description: "Pequeno, portátil e discreto, ideal para quem quer experimentar sabores diferentes sem gastar muito.",
+    },
+/* ==========================================================================
+       LOST VAPE 10.000
+       ========================================================================== */
+      {
+      id: "lost-vape-10000",
+      name: "LOST VAPE 10.000",
+      puffs: "10.000 tragadas",
+      flavors: [
+        "Strawberry chew",
+        "Miami mint",
+        "Kiwi passion fruit guava",
+        "Grape burst",
+        "Peach Mango Watermelon",
+      ],
+      originalPrice: 110.0,
+      promoPrice: 89.9,
+      badge: "",
+      accent: "",
+      featured: false,
+      image: "",
+      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+    },
+
 
 
   ];
