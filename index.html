@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vapelândia — Catálogo de Vapes e Pods</title>
+  <meta name="description" content="Catálogo de vapes e pods descartáveis. Confira os modelos, sabores e preços e chame no WhatsApp para comprar." />
+
+  <!-- Fontes: Fredoka (títulos, clima de festa/parque) + Inter (texto) + Space Mono (preços) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="topo">
+    <div class="header-inner">
+      <a href="#home" class="logo" aria-label="Vapelândia — início">
+        <span class="logo-mark">💨</span>
+        <span class="logo-text">Vape<strong>lândia</strong></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+          <li><a href="#catalogo" class="nav-link" data-nav>Catálogo</a></li>
+          <li><a href="#sabores" class="nav-link" data-nav>Sabores</a></li>
+          <li><a href="#sobre" class="nav-link" data-nav>Sobre</a></li>
+          <li><a href="#contato" class="nav-link" data-nav>Contato</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-whatsapp header-cta" id="header-whatsapp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" class="icon-wpp" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.22-1.77 1.27-.45.05-.9.24-3.05-.65-2.6-1.08-4.28-3.7-4.41-3.87-.13-.17-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.22-.25.5-.32.67-.32.17 0 .34.002.49.008.16.006.37-.06.58.44.22.52.73 1.8.8 1.93.06.13.1.28.02.45-.08.17-.13.27-.25.42-.13.15-.27.33-.38.44-.13.13-.26.27-.11.53.15.27.68 1.12 1.46 1.82 1 .9 1.85 1.18 2.11 1.31.27.13.42.11.58-.07.16-.17.68-.79.86-1.06.18-.27.36-.22.6-.13.25.09 1.57.74 1.84.87.27.13.45.2.51.31.07.11.07.63-.15 1.25z"/></svg>
+        Chamar no WhatsApp
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Faixa de bandeirinhas — elemento de assinatura visual, aparece nas divisórias -->
+  <div class="bunting" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ===================== HOME ===================== -->
+    <section id="home" class="section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">🎉 Clima de Copa + São João na Vapelândia</p>
+          <h1>Seu point de vapor<br> com preço de festa.</h1>
+          <p class="hero-sub">
+            Descartáveis originais, sabores de sobra e entrega combinada direto no WhatsApp.
+            Escolhe o modelo, chama a gente e já garante o seu antes que acabe o estoque da promoção.
+          </p>
+          <div class="hero-actions">
+            <a href="#catalogo" class="btn btn-primary" data-nav>Ver catálogo completo</a>
+            <a class="btn btn-outline" id="hero-whatsapp" target="_blank" rel="noopener">Falar agora no WhatsApp</a>
+          </div>
+          <ul class="hero-trust">
+            <li>✅ Produtos originais</li>
+            <li>✅ Atendimento humano</li>
+            <li>✅ Combina retirada ou entrega</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-badge">até <strong>-10%</strong><span>na promoção</span></div>
+          <div class="glow-orb orb-verde"></div>
+          <div class="glow-orb orb-azul"></div>
+          <div class="glow-orb orb-laranja"></div>
+          <div id="hero-device" class="hero-device"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-heading">
+          <h2>🔥 Destaques da semana</h2>
+          <p>Os modelos mais pedidos, com o preço promocional ativo agora.</p>
+        </div>
+        <div id="featured-grid" class="product-grid featured-grid"><!-- JS injeta os cards --></div>
+      </div>
+    </section>
+
+    <div class="bunting bunting-alt" aria-hidden="true"></div>
+
+    <!-- ===================== CATÁLOGO ===================== -->
+    <section id="catalogo" class="section catalog-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Catálogo</h2>
+          <p>Todos os modelos disponíveis. Use a busca ou os filtros para achar o seu vape rapidinho.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" class="icon-search" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1114 9.5 4.5 4.5 0 019.5 14z"/></svg>
+            <input type="search" id="search-input" placeholder="Buscar por nome, ex: ELFBAR..." aria-label="Buscar produto" />
+          </div>
+
+          <label class="sort-box">
+            <span>Ordenar por</span>
+            <select id="sort-select">
+              <option value="relevancia">Relevância</option>
+              <option value="menor-preco">Menor preço</option>
+              <option value="maior-preco">Maior preço</option>
+              <option value="mais-opcoes">Mais opções de sabor</option>
+            </select>
+          </label>
+        </div>
+
+        <p id="results-count" class="results-count"></p>
+
+        <div id="catalog-grid" class="product-grid"><!-- JS injeta os cards --></div>
+        <p id="empty-state" class="empty-state" hidden>Nenhum produto encontrado. Tenta buscar por outro nome 🔎</p>
+      </div>
+    </section>
+
+    <div class="bunting" aria-hidden="true"></div>
+
+    <!-- ===================== SABORES ===================== -->
+    <section id="sabores" class="section flavors-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Sabores por modelo</h2>
+          <p>Clique em cada modelo para abrir a lista completa de sabores disponíveis.</p>
+        </div>
+        <div id="flavors-list" class="flavors-list"><!-- JS injeta os accordions --></div>
+      </div>
+    </section>
+
+    <div class="bunting bunting-alt" aria-hidden="true"></div>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section id="sobre" class="section about-section">
+      <div class="container about-grid">
+        <div>
+          <div class="section-heading align-left">
+            <h2>Sobre a Vapelândia</h2>
+          </div>
+          <p class="about-text">
+            A Vapelândia nasceu pra ser aquele point sem enrolação: produtos originais, preço justo e um
+            time que responde rápido no WhatsApp. Nada de loja física gigante ou espera — você escolhe o
+            modelo aqui no catálogo, chama a gente e combina tudo pelo chat, do jeito mais prático possível.
+          </p>
+          <p class="about-text">
+            Trabalhamos direto com fornecedores confiáveis, então você recebe produto lacrado, com bateria
+            cheia e sabor de verdade — sem gato por lebre.
+          </p>
+        </div>
+        <ul class="differentials">
+          <li>
+            <span class="diff-icon">🛡️</span>
+            <div><strong>100% original</strong><p>Produtos lacrados, sem retrabalho.</p></div>
+          </li>
+          <li>
+            <span class="diff-icon">⚡</span>
+            <div><strong>Resposta rápida</strong><p>Atendimento direto no WhatsApp, sem robô.</p></div>
+          </li>
+          <li>
+            <span class="diff-icon">🎯</span>
+            <div><strong>Preço de promoção</strong><p>Ofertas atualizadas toda semana.</p></div>
+          </li>
+          <li>
+            <span class="diff-icon">🤝</span>
+            <div><strong>Combinado com você</strong><p>Retirada ou entrega, você decide.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="bunting" aria-hidden="true"></div>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section id="contato" class="section contact-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Contato</h2>
+          <p>Fala com a gente, é rapidinho.</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-main">
+            <h3>Prefere resolver tudo pelo WhatsApp?</h3>
+            <p>Manda um oi que a gente te ajuda a escolher o modelo e fecha o pedido na hora.</p>
+            <a class="btn btn-whatsapp btn-large" id="contact-whatsapp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" class="icon-wpp" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.35 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.22-1.77 1.27-.45.05-.9.24-3.05-.65-2.6-1.08-4.28-3.7-4.41-3.87-.13-.17-1.05-1.4-1.05-2.67 0-1.27.67-1.9.9-2.16.22-.25.5-.32.67-.32.17 0 .34.002.49.008.16.006.37-.06.58.44.22.52.73 1.8.8 1.93.06.13.1.28.02.45-.08.17-.13.27-.25.42-.13.15-.27.33-.38.44-.13.13-.26.27-.11.53.15.27.68 1.12 1.46 1.82 1 .9 1.85 1.18 2.11 1.31.27.13.42.11.58-.07.16-.17.68-.79.86-1.06.18-.27.36-.22.6-.13.25.09 1.57.74 1.84.87.27.13.45.2.51.31.07.11.07.63-.15 1.25z"/></svg>
+              (75) 99814-4383
+            </a>
+          </div>
+
+          <div class="contact-social">
+            <p class="social-label">Ou segue a gente:</p>
+            <div class="social-links">
+              <a href="#" class="social-pill" target="_blank" rel="noopener">📸 Instagram</a>
+              <a href="#" class="social-pill" target="_blank" rel="noopener">👍 Facebook</a>
+            </div>
+            <p class="hours"><strong>Atendimento:</strong> Seg. a Sáb. — 10h às 20h</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <div class="bunting bunting-alt" aria-hidden="true"></div>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo" data-nav>
+          <span class="logo-mark">💨</span>
+          <span class="logo-text">Vape<strong>lândia</strong></span>
+        </a>
+        <p class="footer-tagline">Catálogo de vapes e pods. Pedido fechado direto no WhatsApp.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <a href="#catalogo" data-nav>Catálogo</a>
+        <a href="#sabores" data-nav>Sabores</a>
+        <a href="#sobre" data-nav>Sobre</a>
+        <a href="#contato" data-nav>Contato</a>
+      </nav>
+
+      <p class="footer-note">
+        ⚠️ Venda destinada a maiores de 18 anos. Site sem checkout — todo pedido é combinado por WhatsApp.
+      </p>
+    </div>
+    <p class="copyright">© <span id="year"></span> Vapelândia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
