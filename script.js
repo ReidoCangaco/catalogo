@@ -76,7 +76,7 @@
       badge: "Mais vendido",
       accent: "amarelo",
       featured: true,
-      image: "https://cdn.discordapp.com/attachments/1276211560993259572/1527352711677214932/IGNITE_V155.png?ex=6a5a598f&is=6a59080f&hm=f587784f2c548d34f2386577fb099ea29c14e80543226d3506088ea77a7dd79a&",
+      image: "https://media.discordapp.net/attachments/1276211560993259572/1527364227625517317/BCO.c24c4c13-bbf0-4114-a448-95eb5d3b17a4.png?ex=6a5a6448&is=6a5912c8&hm=121fee297ccf02ac274219dd03e014d5a7241259648dd0d4bac21296867f404e&=&format=webp&quality=lossless&width=960&height=960",
       description: "O equilíbrio perfeito entre preço e variedade, com 9 sabores populares e entrega rápida.",
     },
     /* ==========================================================================
