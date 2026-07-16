@@ -46,7 +46,7 @@
       badge: "Edição ICE",
       accent: "verde",
       featured: true,
-      image: "https://cdn.discordapp.com/attachments/1276211560993259572/1527318697713205378/ELFBAR_40.000_Iceking.png?ex=6a5a39e1&is=6a58e861&hm=ee3c668a7179b1d3e42bb2d7bffb77db4910b0ae9dc8867c7ba699fb9478bcb6&",
+      image: "https://media.discordapp.net/attachments/1276211560993259572/1527359740793983208/BCO.f015a292-49c2-43b6-92f3-268d1f677e5d.png?ex=6a5a601b&is=6a590e9b&hm=523c083812ba8a23723f49fc4435fd1d465ab0ba7c84d8f105053b17a3ec7b53&=&format=webp&quality=lossless&width=960&height=960",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
     },
     {
