@@ -28,6 +28,10 @@
      automaticamente no catálogo, nos destaques e na página de sabores.
      -------------------------------------------------------------------- */
   const PRODUCTS = [
+
+    /* ==========================================================================
+       ELFBAR 40.000 Iceking
+       ========================================================================== */
     {
       id: "elfbar-40k-iceking",
       name: "ELFBAR 40.000 Iceking",
@@ -49,6 +53,9 @@
       image: "https://media.discordapp.net/attachments/1276211560993259572/1527359740793983208/BCO.f015a292-49c2-43b6-92f3-268d1f677e5d.png?ex=6a5a601b&is=6a590e9b&hm=523c083812ba8a23723f49fc4435fd1d465ab0ba7c84d8f105053b17a3ec7b53&=&format=webp&quality=lossless&width=960&height=960",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
     },
+      /* ==========================================================================
+       IGNITE V155
+       ========================================================================== */
     {
       id: "ignite-v155",
       name: "IGNITE V155",
@@ -72,6 +79,9 @@
       image: "https://cdn.discordapp.com/attachments/1276211560993259572/1527352711677214932/IGNITE_V155.png?ex=6a5a598f&is=6a59080f&hm=f587784f2c548d34f2386577fb099ea29c14e80543226d3506088ea77a7dd79a&",
       description: "O equilíbrio perfeito entre preço e variedade, com 9 sabores populares e entrega rápida.",
     },
+    /* ==========================================================================
+       LOST MARY 35.000
+       ========================================================================== */
     {
       id: "lostmary-35k",
       name: "LOST MARY 35.000",
@@ -93,30 +103,56 @@
       image: "https://media.discordapp.net/attachments/1276211560993259572/1527355990331232296/BCO.57239334-4b08-491d-bad1-7d6939e8ca19.png?ex=6a5a5c9c&is=6a590b1c&hm=c333bee42c2e6ca7e90797cb4f3fa4fea25ccd76f301876cf68fb0870d916bc4&=&format=webp&quality=lossless&width=960&height=960",
       description: "Modelo com ampla seleção de sabores gelados e cítricos, ideal para quem troca de sabor toda hora.",
     },
+    /* ==========================================================================
+       IGNITE V55 - 5.500
+       ========================================================================== */
     {
-      id: "oxbar-15k",
-      name: "OXBAR 15K",
-      puffs: "até 15.000 tragadas",
+      id: "ignite-v55",
+      name: "IGNITE V55 - 5.500",
+      puffs: "5.500 tragadas",
       flavors: [
-        "Menta Gelada",
-        "Lima Citrus",
-        "Melancia Gelada",
-        "Coco Gelado",
-        "Chiclete",
-        "Uva Ice",
-        "Abacaxi com Hortelã",
-        "Cereja Ice",
-        "Banana Ice",
-        "Framboesa Azul",
+        "Minty melon",
+        "Menthol",
+        "Strawberry ice",
+        "Ice mint",
+        "Strawberry kiwi",
+        "Watermelon Ice",
+        "Pineapple ice",
+        "Grape ice",
+        "Melon mix",
       ],
-      originalPrice: 124.9,
-      promoPrice: 115.0,
+      originalPrice: 110.0,
+      promoPrice: 99.9,
       badge: "Últimas unidades",
       accent: "laranja",
       featured: false,
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=760&q=80",
+      image: "https://cdn.discordapp.com/attachments/1276211560993259572/1527361408646385674/BCO.8aacd950-b5e1-46ce-9ca3-cb4ad6756e29.png?ex=6a5a61a8&is=6a591028&hm=e87e02d960b40cbff55c50ef73970e7d9a1e776168cee48418a13a840c7f7f3c&",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
     },
+    /* ==========================================================================
+       IGNITE V80 - 8.000
+       ========================================================================== */
+    {
+      id: "ignite-v80",
+      name: "IGNITE V80 - 8.000",
+      puffs: "8.000 tragadas",
+      flavors: [
+        "Cactus",
+        "Grape ice",
+        "Strawberry ice",
+        "Icy mint",
+        "Blueberry ice",
+      ],
+      originalPrice: 120.0,
+      promoPrice: 109.9,
+      badge: "Últimas unidades",
+      accent: "laranja",
+      featured: false,
+      image: "https://media.discordapp.net/attachments/1276211560993259572/1527362580182597663/BCO.9b2e50cb-ec29-4525-8b21-f20d4c20f7dc.png?ex=6a5a62c0&is=6a591140&hm=2d02fdc4969b2fd32754855badd7fffa5605a5f4c328cb7b927484f4551dcc33&=&format=webp&quality=lossless&width=960&height=960",
+      description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
+    },
+
+
   ];
 
   PRODUCTS.forEach((product) => {
