@@ -28,11 +28,11 @@
      automaticamente no catálogo, nos destaques e na página de sabores.
      -------------------------------------------------------------------- */
   const FLAVOR_POOL = [
-    "Morango com Leite", "Melancia Gelada", "Uva Ice", "Manga Tropical",
-    "Menta Gelada", "Tutti-Frutti", "Energético", "Maçã Verde Ice",
+    "Strawberry Ice", "Watermelon Ice", "Grape Ice", "Manga Tropical",
+    "Menta Gelada", "Green Apple Ice",
     "Abacaxi com Hortelã", "Cereja Ice", "Chiclete", "Coco Gelado",
-    "Framboesa Azul", "Limão Siciliano", "Morango com Kiwi", "Banana Ice",
-    "Melão com Menta", "Maracujá Gelado",
+    "Framboesa Azul", "Limão Siciliano", "Cherry fuse", "Summer splash",
+    "Peach", "Mango Magic",
   ];
 
   const PRODUCTS = [
@@ -40,7 +40,7 @@
       id: "elfbar-40k-iceking",
       name: "ELFBAR 40.000 Iceking",
       puffs: "40.000 Puffs",
-      optionsCount: 11,
+      optionsCount: 7,
       originalPrice: 179.9,
       promoPrice: 159.9,
       badge: "Edição ICE",
@@ -153,12 +153,6 @@
     `;
   }
 
-  function renderFeatured() {
-    const grid = document.getElementById("featured-grid");
-    const featured = PRODUCTS.filter((p) => p.featured);
-    grid.innerHTML = featured.map(productCardHTML).join("");
-  }
-
   function renderCatalog(list) {
     const grid = document.getElementById("catalog-grid");
     const emptyState = document.getElementById("empty-state");
@@ -260,22 +254,6 @@
         <a href="index.html#catalogo" class="btn btn-primary">Voltar ao catálogo</a>
       </div>
     `;
-  }
-
-  function renderFlavors() {
-    const container = document.getElementById("flavors-list");
-    container.innerHTML = PRODUCTS.map((product) => `
-      <details class="flavor-item">
-        <summary>
-          <span>${product.name}</span>
-          <span class="count-pill">${product.optionsCount} sabores</span>
-          <span class="chevron">▾</span>
-        </summary>
-        <div class="flavor-chips">
-          ${product.flavors.map((f) => `<span class="flavor-chip">${f}</span>`).join("")}
-        </div>
-      </details>
-    `).join("");
   }
 
   function attachProductCardHandlers() {
@@ -392,9 +370,7 @@
     const isProductPage = document.body.dataset.page === "product";
 
     if (isCatalogPage) {
-      renderFeatured();
       renderCatalog(PRODUCTS);
-      renderFlavors();
     }
 
     if (isProductPage) {

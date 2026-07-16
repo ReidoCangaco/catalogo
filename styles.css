@@ -245,12 +245,12 @@ button { font-family: inherit; cursor: pointer; }
 
 .product-card {
   background: var(--surface-strong);
-  border-radius: 22px;
-  padding: 20px;
+  border-radius: 20px;
+  padding: 16px;
   box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
@@ -271,8 +271,8 @@ button { font-family: inherit; cursor: pointer; }
 .card-badge.oferta { background: var(--accent); color: #060606; }
 
 .card-media {
-  height: 250px;
-  border-radius: 20px;
+  height: 230px;
+  border-radius: 18px;
   overflow: hidden;
   background: linear-gradient(180deg, #1b1b1b 0%, #151515 100%);
   display: flex;
@@ -321,21 +321,29 @@ button { font-family: inherit; cursor: pointer; }
   .flavors-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
   .flavors-header h3 { margin: 0; font-size: 1rem; color: var(--white); }
   .detail-flavor-preview {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     margin-bottom: 14px;
   }
   .detail-flavor-preview .flavor-chip {
-    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    min-width: 0;
+    max-width: none;
     border: 1px solid rgba(255,255,255,0.12);
     background: #181818;
     color: var(--text);
-    padding: 10px 14px;
-    font-size: 0.85rem;
-    font-weight: 600;
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    font-family: var(--font-body);
     border-radius: 999px;
     text-align: center;
+    white-space: nowrap;
+    line-height: 1.1;
     transition: background .15s ease, border-color .15s ease, color .15s ease;
   }
   .detail-flavor-preview .flavor-chip:hover {
