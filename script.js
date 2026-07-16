@@ -1,5 +1,5 @@
 /* ==========================================================================
-   VAPELÂNDIA — script.js
+   JRS PUFFS — script.js
    Estrutura modular:
    1. Configuração (número de WhatsApp)
    2. Dados dos produtos (fácil de editar/expandir)
@@ -98,7 +98,7 @@
       originalPrice: 160.0,
       promoPrice: 139.9,
       badge: "Mais Vendido",
-      accent: "azul",
+      accent: "laranja",
       featured: true,
       image: "https://media.discordapp.net/attachments/1276211560993259572/1527355990331232296/BCO.57239334-4b08-491d-bad1-7d6939e8ca19.png?ex=6a5a5c9c&is=6a590b1c&hm=c333bee42c2e6ca7e90797cb4f3fa4fea25ccd76f301876cf68fb0870d916bc4&=&format=webp&quality=lossless&width=960&height=960",
       description: "Modelo com ampla seleção de sabores gelados e cítricos, ideal para quem troca de sabor toda hora.",
