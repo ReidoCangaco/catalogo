@@ -151,8 +151,26 @@
       image: "https://media.discordapp.net/attachments/1276211560993259572/1527362580182597663/BCO.9b2e50cb-ec29-4525-8b21-f20d4c20f7dc.png?ex=6a5a62c0&is=6a591140&hm=2d02fdc4969b2fd32754855badd7fffa5605a5f4c328cb7b927484f4551dcc33&=&format=webp&quality=lossless&width=960&height=960",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
     },
-
-
+/* ==========================================================================
+       IGNITE V300 Ultra slim
+       ========================================================================== */
+      {
+      id: "ignite-v300",
+      name: "IGNITE V300 Ultra slim",
+      puffs: "30.000 tragadas",
+      flavors: [
+        "Pineapple mango",
+        "Minty melon",
+        "Menthol",
+      ],
+      originalPrice: 150.0,
+      promoPrice: 139.9,
+      badge: "Últimas unidades",
+      accent: "laranja",
+      featured: false,
+      image: "https://media.discordapp.net/attachments/1276211560993259572/1527368073550626816/BCO.701d7b97-99ef-44b1-ab52-884267b5f17c.png?ex=6a5a67dd&is=6a59165d&hm=51fa8d8a8de0ba663775451f9cf2c63cedf389793ded59cccbbc303302f0c85b&=&format=webp&quality=lossless&width=960&height=960",
+      description: "Ótima opção para quem busca design, sabor intenso e preço em promoção.",
+    },
   ];
 
   PRODUCTS.forEach((product) => {
