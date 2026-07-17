@@ -195,7 +195,7 @@
       originalPrice: 115.0,
       promoPrice: 99.9,
       badge: "Mais Opções",
-      accent: "Laranja",
+      accent: "Azul",
       featured: false,
       image: "https://media.discordapp.net/attachments/1276211560993259572/1527373091779514408/BCO.b99a9943-8800-41a8-9c48-b6b4b102ec11.png?ex=6a5a6c8a&is=6a591b0a&hm=3524a1e98c4ed8ab618f0052e674ce0324a3abd7589400c55ad0a0fadb4f85e9&=&format=webp&quality=lossless&width=960&height=960",
       description: "Ótima opção para quem busca design, sabor intenso e preço em promoção.",

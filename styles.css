@@ -620,8 +620,9 @@ button { font-family: inherit; cursor: pointer; }
 @media (max-width: 520px) {
   .header-inner { flex-wrap: wrap; justify-content: space-between; }
   .logo { width: 100%; justify-content: space-between; }
-  .toolbar { flex-direction: column; align-items: stretch; }
-  .sort-box { width: 100%; justify-content: space-between; }
+  .toolbar { flex-direction: column; align-items: stretch; padding: 14px; }
+  .sort-box { width: 100%; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .sort-box select { width: 100%; max-width: 100%; min-width: 0; padding: 10px 14px; font-size: 0.92rem; }
   .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .product-card { gap: 10px; }
   .card-media { height: 160px; }
@@ -640,7 +641,8 @@ button { font-family: inherit; cursor: pointer; }
 @media (max-width: 560px) {
   .section { padding: 52px 0; }
   .toolbar { flex-direction: column; align-items: stretch; }
-  .sort-box { justify-content: space-between; }
+  .sort-box { justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .sort-box select { width: 100%; max-width: 100%; min-width: 0; padding: 10px 14px; font-size: 0.92rem; }
   .product-page-back { font-size: 0.9rem; }
   .product-page-grid { gap: 18px; }
   .product-page-content { gap: 16px; }
