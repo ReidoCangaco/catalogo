@@ -80,27 +80,90 @@
           <p>Todos os modelos disponíveis. Use a busca ou os filtros para achar o seu pod rapidinho.</p>
         </div>
 
-        <div class="toolbar">
-          <div class="search-box">
-            <svg viewBox="0 0 24 24" class="icon-search" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1114 9.5 4.5 4.5 0 019.5 14z"/></svg>
-            <input type="search" id="search-input" placeholder="Buscar por nome, ex: ELFBAR..." aria-label="Buscar produto" />
+        <div class="catalog-layout">
+          <aside class="catalog-filters">
+            <div class="filters-card">
+              <div class="filters-header">
+                <p class="eyebrow">Filtrar</p>
+                <h3>Refine sua busca</h3>
+              </div>
+              <div class="filter-group">
+                <h4>Preço</h4>
+                <label class="filter-item"><input type="radio" name="price" checked> Menor preço</label>
+                <label class="filter-item"><input type="radio" name="price"> Maior preço</label>
+                <label class="filter-item"><input type="radio" name="price"> Promoção</label>
+              </div>
+              <div class="filter-group">
+                <h4>Marca</h4>
+                <label class="filter-item"><input type="checkbox"> ELFBAR</label>
+                <label class="filter-item"><input type="checkbox"> IGNITE</label>
+                <label class="filter-item"><input type="checkbox"> LOST MARY</label>
+              </div>
+              <div class="filter-group">
+                <h4>Quantidade</h4>
+                <label class="filter-item"><input type="checkbox"> 5.500 a 15.000</label>
+                <label class="filter-item"><input type="checkbox"> 20.000 a 35.000</label>
+                <label class="filter-item"><input type="checkbox"> 40.000+</label>
+              </div>
+            </div>
+          </aside>
+
+          <div class="catalog-main">
+            <div class="toolbar">
+              <div class="search-box">
+                <svg viewBox="0 0 24 24" class="icon-search" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1114 9.5 4.5 4.5 0 019.5 14z"/></svg>
+                <input type="search" id="search-input" placeholder="Buscar por nome, ex: ELFBAR..." aria-label="Buscar produto" />
+              </div>
+
+              <label class="sort-box">
+                <span>Ordenar por</span>
+                <select id="sort-select">
+                  <option value="relevancia">Relevância</option>
+                  <option value="menor-preco">Menor preço</option>
+                  <option value="maior-preco">Maior preço</option>
+                  <option value="mais-opcoes">Mais opções de sabor</option>
+                </select>
+              </label>
+            </div>
+
+            <p id="results-count" class="results-count"></p>
+
+            <div id="catalog-grid" class="product-grid"><!-- JS injeta os cards --></div>
+            <p id="empty-state" class="empty-state" hidden>Nenhum produto encontrado. Tenta buscar por outro nome 🔎</p>
           </div>
-
-          <label class="sort-box">
-            <span>Ordenar por</span>
-            <select id="sort-select">
-              <option value="relevancia">Relevância</option>
-              <option value="menor-preco">Menor preço</option>
-              <option value="maior-preco">Maior preço</option>
-              <option value="mais-opcoes">Mais opções de sabor</option>
-            </select>
-          </label>
         </div>
+      </div>
+    </section>
 
-        <p id="results-count" class="results-count"></p>
-
-        <div id="catalog-grid" class="product-grid"><!-- JS injeta os cards --></div>
-        <p id="empty-state" class="empty-state" hidden>Nenhum produto encontrado. Tenta buscar por outro nome 🔎</p>
+    <!-- ===================== CONFIANÇA ===================== -->
+    <section class="section trust-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Por que comprar conosco</h2>
+          <p>Confiança, agilidade e preços justos para você fechar pelo WhatsApp.</p>
+        </div>
+        <div class="trust-grid">
+          <div class="trust-card">
+            <span class="trust-icon">🛡️</span>
+            <strong>Pagamento seguro</strong>
+            <p>Transações discretas e atendimento direto no WhatsApp.</p>
+          </div>
+          <div class="trust-card">
+            <span class="trust-icon">🚚</span>
+            <strong>Entrega rápida</strong>
+            <p>Retirada ou entrega imediata conforme sua escolha.</p>
+          </div>
+          <div class="trust-card">
+            <span class="trust-icon">⭐</span>
+            <strong>Avaliações reais</strong>
+            <p>Clientes satisfeitos com qualidade e rapidez do atendimento.</p>
+          </div>
+          <div class="review-card">
+            <p class="review-stars">⭐⭐⭐⭐⭐</p>
+            <p class="review-text">“Comprei pelo WhatsApp e chegou rápido. Atendimento nota 10.”</p>
+            <p class="review-author">— João, Salvador</p>
+          </div>
+        </div>
       </div>
     </section>
 

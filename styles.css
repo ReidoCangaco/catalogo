@@ -406,6 +406,50 @@ button { font-family: inherit; cursor: pointer; }
 /* ==========================================================================
    CATÁLOGO — toolbar
    ========================================================================== */
+.catalog-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+}
+.catalog-filters {
+  position: sticky;
+  top: 98px;
+  align-self: start;
+}
+.filters-card {
+  background: var(--surface-strong);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.filters-header .eyebrow {
+  margin-bottom: 8px;
+  color: var(--price-highlight);
+}
+.filters-header h3 {
+  margin: 0 0 18px;
+  font-size: 1.35rem;
+  color: var(--white);
+}
+.filter-group {
+  margin-bottom: 18px;
+}
+.filter-group h4 {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+.filter-item {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.filter-item input {
+  margin-right: 10px;
+}
 .toolbar {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -456,6 +500,56 @@ button { font-family: inherit; cursor: pointer; }
 }
 .results-count { margin: 18px 2px 18px; font-size: 0.88rem; color: var(--text-muted); }
 .empty-state { text-align: center; padding: 40px 0; color: var(--text-muted); font-size: 1rem; }
+
+.trust-section {
+  background: rgba(255,255,255,0.03);
+  padding-bottom: 72px;
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+.trust-card,
+.review-card {
+  background: var(--surface-strong);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.trust-icon {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(168,216,255,0.12);
+  margin-bottom: 14px;
+  font-size: 1.25rem;
+}
+.trust-card strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+.trust-card p,
+.review-card p {
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+.review-stars {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+}
+.review-text {
+  margin-bottom: 14px;
+}
+.review-author {
+  font-size: 0.9rem;
+  color: var(--white);
+}
 
 /* ==========================================================================
    SABORES — accordion
@@ -617,13 +711,16 @@ button { font-family: inherit; cursor: pointer; }
   .detail-flavor-preview, .detail-flavor-full { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 520sx) {
+@media (max-width: 520px) {
   .header-inner { flex-wrap: wrap; justify-content: space-between; }
   .logo { width: 100%; justify-content: space-between; }
   .toolbar { flex-direction: column; align-items: stretch; padding: 14px; }
-  .sort-box { width: 100%; flex-direction: column; align-items: stretch; flex-wrap: nowrap; gap: 8px; }
+  .catalog-layout { grid-template-columns: 1fr; }
+  .catalog-filters { position: static; }
+  .filters-card { padding: 18px; }
+  .sort-box { width: 100%; flex-direction: column; align-items: stretch; gap: 8px; }
   .sort-box span { display: block; width: 100%; }
-  .sort-box select { width: 100%; max-width: 100%; min-width: 0; padding: 8px 12px; font-size: 0.9rem; }
+  .sort-box select { width: 100%; max-width: 100%; min-width: 0; padding: 10px 12px; font-size: 0.92rem; }
   .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .product-card { gap: 10px; }
   .card-media { height: 160px; }
