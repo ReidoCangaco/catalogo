@@ -74,7 +74,7 @@
       originalPrice: 130.0,
       promoPrice: 119.9,
       badge: "Mais vendido",
-      accent: "amarelo",
+      accent: "babyBlue",
       featured: true,
       image: "https://media.discordapp.net/attachments/1276211560993259572/1527364227625517317/BCO.c24c4c13-bbf0-4114-a448-95eb5d3b17a4.png?ex=6a5a6448&is=6a5912c8&hm=121fee297ccf02ac274219dd03e014d5a7241259648dd0d4bac21296867f404e&=&format=webp&quality=lossless&width=960&height=960",
       description: "O equilíbrio perfeito entre preço e variedade, com 9 sabores populares e entrega rápida.",
@@ -124,7 +124,7 @@
       originalPrice: 110.0,
       promoPrice: 99.9,
       badge: "Últimas unidades",
-      accent: "laranja",
+      accent: "verde",
       featured: false,
       image: "https://cdn.discordapp.com/attachments/1276211560993259572/1527361408646385674/BCO.8aacd950-b5e1-46ce-9ca3-cb4ad6756e29.png?ex=6a5a61a8&is=6a591028&hm=e87e02d960b40cbff55c50ef73970e7d9a1e776168cee48418a13a840c7f7f3c&",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
@@ -214,7 +214,7 @@
       originalPrice: 75.0,
       promoPrice: 59.9,
       badge: "Ultimas Unidades",
-      accent: "Amarelo",
+      accent: "babyBlue",
       featured: false,
       image: "https://media.discordapp.net/attachments/1276211560993259572/1527376255140237402/BCO.5ddc05d0-99cb-4777-8301-d596be83d768.png?ex=6a5a6f7c&is=6a591dfc&hm=fd7075d0ea1ae6ee863c6e08fe1fc864dedbd768acfeef92a0c78efc7d1350e8&=&format=webp&quality=lossless&width=960&height=960",
       description: "Pequeno, portátil e discreto, ideal para quem quer experimentar sabores diferentes sem gastar muito.",
@@ -375,7 +375,7 @@
 
   const ACCENT_HEX = {
     verde: "#0E8A6D",
-    amarelo: "#a8d8ff",
+    babyBlue: "#a8d8ff",
     azul: "#2955A3",
     laranja: "#FF6E31",
   };
@@ -626,7 +626,7 @@
   }
 
   function setupHeroDevice() {
-    document.getElementById("hero-device").innerHTML = deviceSVG("amarelo", 190);
+    document.getElementById("hero-device").innerHTML = deviceSVG("babyBlue", 190);
   }
 
   /* --------------------------------------------------------------------

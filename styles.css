@@ -1,7 +1,7 @@
 /* ==========================================================================
    VAPELÂNDIA — CATÁLOGO
    Sistema de tokens:
-   - Cor: verde/amarelo/azul/laranja (festa junina + copa) sobre base azul-noite
+   - Cor: verde/baby-blue/azul/laranja (festa junina + copa) sobre base azul-noite
    - Tipo: Fredoka (display, arredondada/festiva) + Inter (texto) + Space Mono (preços)
    - Assinatura visual: faixa de "bandeirinhas" (bunting) repetida como divisor
    ========================================================================== */
@@ -24,7 +24,7 @@
   --accent-strong: #50c022;
   --danger: #ff5a5a;
   --verde: #0E8A6D;
-  --amarelo: #a8d8ff;
+  --baby-blue: #a8d8ff;
   --azul: #2a6c91;
   --laranja: #ff6e31;
   --ink: #0b0b0b;
