@@ -380,6 +380,17 @@
     laranja: "#FF6E31",
   };
 
+  function normalizeAccentKey(accent) {
+    const key = String(accent || "").trim().toLowerCase();
+    if (key === "baby blue" || key === "baby-blue") return "babyBlue";
+    return key;
+  }
+
+  function getAccentColor(accent) {
+    const normalized = normalizeAccentKey(accent);
+    return ACCENT_HEX[normalized] || null;
+  }
+
   // Ícone genérico de dispositivo (pod/descartável), tingido pela cor do produto.
   function deviceSVG(accentKey, size = 90) {
     const color = ACCENT_HEX[accentKey] || ACCENT_HEX.verde;
@@ -405,9 +416,11 @@
   function productCardHTML(product) {
     const productPageLink = `produto.html?id=${encodeURIComponent(product.id)}`;
     const badgeClass = product.featured ? "oferta" : "";
+    const accentColor = getAccentColor(product.accent);
+    const badgeStyle = accentColor ? `style="background: ${accentColor};"` : "";
     return `
       <article class="product-card" data-id="${product.id}">
-        <span class="card-badge ${badgeClass}">${product.badge}</span>
+        <span class="card-badge ${badgeClass}" ${badgeStyle}>${product.badge}</span>
         <div class="card-media">
           <img src="${product.image}" alt="${product.name}" />
         </div>
