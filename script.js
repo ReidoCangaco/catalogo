@@ -76,7 +76,7 @@
       badge: "Mais vendido",
       accent: "babyBlue",
       featured: true,
-      image: "public/img/v155.png",
+      image: "public/img/produto2.png",
       description: "O equilíbrio perfeito entre preço e variedade, com 9 sabores populares e entrega rápida.",
     },
     /* ==========================================================================
