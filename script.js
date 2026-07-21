@@ -50,7 +50,7 @@
       badge: "Edição ICE",
       accent: "verde",
       featured: true,
-      image: "https://media.discordapp.net/attachments/1276211560993259572/1527359740793983208/BCO.f015a292-49c2-43b6-92f3-268d1f677e5d.png?ex=6a5a601b&is=6a590e9b&hm=523c083812ba8a23723f49fc4435fd1d465ab0ba7c84d8f105053b17a3ec7b53&=&format=webp&quality=lossless&width=960&height=960",
+      image: "/img/produto1.svg",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
     },
       /* ==========================================================================
@@ -76,7 +76,7 @@
       badge: "Mais vendido",
       accent: "babyBlue",
       featured: true,
-      image: "https://media.discordapp.net/attachments/1276211560993259572/1527364227625517317/BCO.c24c4c13-bbf0-4114-a448-95eb5d3b17a4.png?ex=6a5a6448&is=6a5912c8&hm=121fee297ccf02ac274219dd03e014d5a7241259648dd0d4bac21296867f404e&=&format=webp&quality=lossless&width=960&height=960",
+      image: "/img/produto2.svg",
       description: "O equilíbrio perfeito entre preço e variedade, com 9 sabores populares e entrega rápida.",
     },
     /* ==========================================================================
@@ -100,7 +100,7 @@
       badge: "Mais Vendido",
       accent: "babyBlue",
       featured: true,
-      image: "https://media.discordapp.net/attachments/1276211560993259572/1527355990331232296/BCO.57239334-4b08-491d-bad1-7d6939e8ca19.png?ex=6a5a5c9c&is=6a590b1c&hm=c333bee42c2e6ca7e90797cb4f3fa4fea25ccd76f301876cf68fb0870d916bc4&=&format=webp&quality=lossless&width=960&height=960",
+      image: "/img/produto3.svg",
       description: "Modelo com ampla seleção de sabores gelados e cítricos, ideal para quem troca de sabor toda hora.",
     },
     /* ==========================================================================
@@ -126,7 +126,7 @@
       badge: "Últimas unidades",
       accent: "laranja",
       featured: false,
-      image: "https://cdn.discordapp.com/attachments/1276211560993259572/1527361408646385674/BCO.8aacd950-b5e1-46ce-9ca3-cb4ad6756e29.png?ex=6a5a61a8&is=6a591028&hm=e87e02d960b40cbff55c50ef73970e7d9a1e776168cee48418a13a840c7f7f3c&",
+      image: "/img/produto4.svg",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
     },
     /* ==========================================================================
@@ -148,7 +148,7 @@
       badge: "Últimas unidades",
       accent: "laranja",
       featured: false,
-      image: "https://media.discordapp.net/attachments/1276211560993259572/1527362580182597663/BCO.9b2e50cb-ec29-4525-8b21-f20d4c20f7dc.png?ex=6a5a62c0&is=6a591140&hm=2d02fdc4969b2fd32754855badd7fffa5605a5f4c328cb7b927484f4551dcc33&=&format=webp&quality=lossless&width=960&height=960",
+      image: "/img/produto5.svg",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
     },
 /* ==========================================================================
@@ -168,7 +168,7 @@
       badge: "Últimas unidades",
       accent: "laranja",
       featured: false,
-      image: "https://media.discordapp.net/attachments/1276211560993259572/1527368073550626816/BCO.701d7b97-99ef-44b1-ab52-884267b5f17c.png?ex=6a5a67dd&is=6a59165d&hm=51fa8d8a8de0ba663775451f9cf2c63cedf389793ded59cccbbc303302f0c85b&=&format=webp&quality=lossless&width=960&height=960",
+      image: "/img/produto6.svg",
       description: "Ótima opção para quem busca design, sabor intenso e preço em promoção.",
     },
     /* ==========================================================================
@@ -197,7 +197,7 @@
       badge: "Mais Opções",
       accent: "Azul",
       featured: false,
-      image: "https://media.discordapp.net/attachments/1276211560993259572/1527373091779514408/BCO.b99a9943-8800-41a8-9c48-b6b4b102ec11.png?ex=6a5a6c8a&is=6a591b0a&hm=3524a1e98c4ed8ab618f0052e674ce0324a3abd7589400c55ad0a0fadb4f85e9&=&format=webp&quality=lossless&width=960&height=960",
+      image: "/img/produto7.svg",
       description: "Ótima opção para quem busca design, sabor intenso e preço em promoção.",
     },
 /* ==========================================================================
@@ -216,7 +216,7 @@
       badge: "Ultimas Unidades",
       accent: "laranja",
       featured: false,
-      image: "https://media.discordapp.net/attachments/1276211560993259572/1527376255140237402/BCO.5ddc05d0-99cb-4777-8301-d596be83d768.png?ex=6a5a6f7c&is=6a591dfc&hm=fd7075d0ea1ae6ee863c6e08fe1fc864dedbd768acfeef92a0c78efc7d1350e8&=&format=webp&quality=lossless&width=960&height=960",
+      image: "/img/produto8.svg",
       description: "Pequeno, portátil e discreto, ideal para quem quer experimentar sabores diferentes sem gastar muito.",
     },
 /* ==========================================================================
@@ -238,7 +238,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "https://media.discordapp.net/attachments/1276211560993259572/1527381400733614100/content.png?ex=6a5a7447&is=6a5922c7&hm=c398e1fa2c7b721d203cf6c9c82df0ea2fcc8f1e40e5e261787adfb32ca3e2dc&=&format=webp&quality=lossless&width=960&height=960",
+      image: "/img/produto9.svg",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 /* ==========================================================================
@@ -259,7 +259,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "https://cdn.discordapp.com/attachments/1276211560993259572/1527381904918315188/content.png?ex=6a5a74bf&is=6a59233f&hm=11576f4587d72feaff83dd15f2674537e02582bf350671bf29bbe67c7ab84db3&",
+      image: "/img/produto10.svg",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 /* ==========================================================================
@@ -281,7 +281,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "https://media.discordapp.net/attachments/1276211560993259572/1527382386663358594/content.png?ex=6a5a7532&is=6a5923b2&hm=283869a863e5121eda5148d03c9959f240956690f3f21f0e93b84e11b86d02ef&=&format=webp&quality=lossless&width=960&height=960",
+      image: "/img/produto11.svg",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
     
@@ -308,7 +308,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "https://media.discordapp.net/attachments/1276211560993259572/1527382844752662568/content.png?ex=6a5a759f&is=6a59241f&hm=e1ffc731448c9bd5c6b506e8f75f69b91c5b7043cee8de912bc7f25e0412539c&=&format=webp&quality=lossless&width=960&height=960",
+      image: "/img/produto12.svg",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
       
@@ -333,7 +333,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "https://cdn.discordapp.com/attachments/1276211560993259572/1527764522633531502/content.png?ex=6a5bd916&is=6a5a8796&hm=4507d43b67534965bd666b85c51a0b6bde6f071d97d693756074a8d28321b15f&",
+      image: "/img/produto13.svg",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 
@@ -356,7 +356,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "https://cdn.discordapp.com/attachments/1276211560993259572/1527822043368784063/content.png?ex=6a5c0ea8&is=6a5abd28&hm=d773c6a73af7696b770003a987b7d72d98e19115dc8f94369a4b4a1a5c24ede0&",
+      image: "/img/produto14.svg",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 
