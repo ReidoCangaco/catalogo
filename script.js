@@ -50,7 +50,7 @@
       badge: "Edição ICE",
       accent: "verde",
       featured: true,
-      image: "/img/produto1.svg",
+      image: "/img/produto1.png",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
     },
       /* ==========================================================================
