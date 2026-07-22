@@ -434,7 +434,7 @@
         </div>
         <div class="card-footer">
           <a class="btn btn-primary btn-product-options" href="${productPageLink}">
-            Ver opções
+            👁 Ver sabores >
           </a>
         </div>
       </article>
