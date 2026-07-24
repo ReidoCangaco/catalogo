@@ -131,7 +131,7 @@
       name: "IGNITE V80 - Ultra slim",
       puffs: "8.000 tragadas",
       flavors: [
-        "Strawberry ice",
+        "Strawberry ice 🍓🧊",
       ],
       originalPrice: 119.9,
       promoPrice: 119.9,
