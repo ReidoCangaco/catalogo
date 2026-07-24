@@ -127,7 +127,7 @@
        IGNITE V80 - Ultra slim
        ========================================================================== */
     {
-      id: "ignite-v80",
+      id: "ignite-v80ultra-slim",
       name: "IGNITE V80 - Ultra slim",
       puffs: "8.000 tragadas",
       flavors: [
