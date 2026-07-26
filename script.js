@@ -47,7 +47,7 @@
       badge: "Edição ICE",
       accent: "verde",
       featured: true,
-      image: "./img/elfbar40k-iceking.png",
+      image: "./img/elfbar40k-iceking.webp",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
     },
       /* ==========================================================================
@@ -72,7 +72,7 @@
       badge: "Mais vendido",
       accent: "babyBlue",
       featured: true,
-      image: "./img/v155.png", 
+      image: "./img/v155.webp", 
       description: "O equilíbrio perfeito entre preço e variedade, com 9 sabores populares e entrega rápida.",
     },
     /* ==========================================================================
@@ -95,7 +95,7 @@
       badge: "Mais Vendido",
       accent: "babyBlue",
       featured: true,
-      image: "./img/lostmary-35k.png",
+      image: "./img/lostmary-35k.webp",
       description: "Modelo com ampla seleção de sabores gelados e cítricos, ideal para quem troca de sabor toda hora.",
     },
     /* ==========================================================================
@@ -138,7 +138,7 @@
       badge: "Últimas unidades",
       accent: "laranja",
       featured: false,
-      image: "./img/ignite-v80ultraslim.png",
+      image: "./img/ignite-v80ultraslim.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
     },
 /* ==========================================================================
@@ -158,7 +158,7 @@
       badge: "Últimas unidades",
       accent: "laranja",
       featured: false,
-      image: "./img/ignite-v300.png",
+      image: "./img/ignite-v300.webp",
       description: "Ótima opção para quem busca design, sabor intenso e preço em promoção.",
     },
     /* ==========================================================================
@@ -183,7 +183,7 @@
       badge: "Mais Opções",
       accent: "Azul",
       featured: false,
-      image: "./img/nikbar-10000.png",
+      image: "./img/nikbar-10000.webp",
       description: "Ótima opção para quem busca design, sabor intenso e preço em promoção.",
     },
 /* ==========================================================================
@@ -201,7 +201,7 @@
       badge: "Ultimas Unidades",
       accent: "laranja",
       featured: false,
-      image: "./img/v-nano-1000.png",
+      image: "./img/v-nano-1000.webp",
       description: "Pequeno, portátil e discreto, ideal para quem quer experimentar sabores diferentes sem gastar muito.",
     },
 /* ==========================================================================
@@ -223,7 +223,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "./img/lost-vape-10000.png",
+      image: "./img/lost-vape-10000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 /* ==========================================================================
@@ -243,7 +243,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "./img/elfbar-20000-touch.png",
+      image: "./img/elfbar-20000-touch.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 /* ==========================================================================
@@ -263,7 +263,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "./img/ignite-frozen-20000.png",
+      image: "./img/ignite-frozen-20000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
     
@@ -290,7 +290,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "./img/elfbar-duke-35000.png",
+      image: "./img/elfbar-duke-35000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
       */
@@ -316,7 +316,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "./img/elfbar-bc-15000.png",
+      image: "./img/elfbar-bc-15000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 
@@ -338,7 +338,7 @@
       badge: "",
       accent: "",
       featured: false,
-      image: "./img/elfbar-te-30000.png",
+      image: "./img/elfbar-te-30000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 
@@ -362,7 +362,7 @@
       badge: "Últimas unidades",
       accent: "laranja",
       featured: false,
-      image: "./img/ignite-v80normal.png",
+      image: "./img/ignite-v80normal.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
     },
 
