@@ -120,7 +120,7 @@
       badge: "Últimas unidades",
       accent: "laranja",
       featured: false,
-      image: "./img/ignite-v55.png",
+      image: "./img/ignite-v55.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
     },
     /* ==========================================================================
