@@ -710,7 +710,7 @@ button { font-family: inherit; cursor: pointer; }
   .card-media { height: 190px; }
   .hero-section { padding-top: 84px; padding-bottom: 40px; }
   .eyebrow { margin-bottom: 14px; padding: 6px 14px; font-size: 0.82rem; }
-  .hero-logo { width: min(96px, 30vw); margin-bottom: 2px; }
+  .hero-logo { width: min(120px, 30vw); margin-bottom: 2px; }
   .hero-sub { margin-top: 12px; font-size: 0.94rem; }
   .hero-actions { margin-top: 18px; }
   .hero-actions .btn {
