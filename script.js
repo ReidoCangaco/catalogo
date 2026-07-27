@@ -38,9 +38,7 @@
       puffs: "40.000 Puffs",
       flavors: [
         "Mango magic",
-        "Grape ice",
         "Peach+",
-        "Cherry fuse",
       ],
       originalPrice: 179.9,
       promoPrice: 159.9,
@@ -189,7 +187,7 @@
 /* ==========================================================================
        V-NANO 1.000
        ========================================================================== */
-      {
+     /* {
       id: "v-nano-1000",
       name: "V-NANO 1.000",
       puffs: "1.000 tragadas",
@@ -203,7 +201,7 @@
       featured: false,
       image: "./img/v-nano-1000.webp",
       description: "Pequeno, portátil e discreto, ideal para quem quer experimentar sabores diferentes sem gastar muito.",
-    },
+  /*  },
 /* ==========================================================================
        LOST VAPE 10.000
        ========================================================================== */
