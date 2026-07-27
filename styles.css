@@ -279,9 +279,9 @@ button { font-family: inherit; cursor: pointer; }
   line-height: 1.05;
 }
 .hero-logo {
-  width: min(220px, 52vw);
+  width: min(150px, 38vw);
   height: auto;
-  margin: 4px auto 4px;
+  margin: 0 auto 6px;
   filter: drop-shadow(0 8px 40px rgba(20, 250, 241, 0.3));
 }
 .hero-sub {
@@ -709,7 +709,21 @@ button { font-family: inherit; cursor: pointer; }
   .product-card { padding: 14px; }
   .card-media { height: 190px; }
   .hero-trust { gap: 8px; }
-  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-section { padding-top: 84px; padding-bottom: 40px; }
+  .eyebrow { margin-bottom: 14px; padding: 6px 14px; font-size: 0.82rem; }
+  .hero-logo { width: min(96px, 30vw); margin-bottom: 2px; }
+  .hero-sub { margin-top: 12px; font-size: 0.96rem; }
+  .hero-actions { margin-top: 18px; gap: 8px; }
+  .hero-actions .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 12px 14px;
+    font-size: 0.82rem;
+    white-space: normal;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .hero-trust { margin-top: 18px; }
 }
 
 @media (max-width: 560px) {
