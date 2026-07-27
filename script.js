@@ -112,8 +112,8 @@
         "Triple berry ice 🍓🫐❄️",
         
       ],
-      originalPrice: 0.0,
-      promoPrice: 0.0,
+      originalPrice: 149.90,
+      promoPrice: 149.90,
       badge: "Retorno",
       accent: "laranja",
       featured: false,
