@@ -306,8 +306,8 @@
         "Peach mango watermelon",
 
       ],
-      originalPrice: 0.0,
-      promoPrice: 0.0,
+      originalPrice: 130.0,
+      promoPrice: 130.0,
       badge: "Novidade!",
       accent: "Amarelo",
       featured: false,
