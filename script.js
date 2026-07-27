@@ -380,10 +380,10 @@
   const currency = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
 
   const ACCENT_HEX = {
-    verde: "#0E8A6D",
-    babyBlue: "#a8d8ff",
-    azul: "#2955A3",
-    laranja: "#FF6E31",
+    verde: "#34D399",
+    babyBlue: "#7DD3FC",
+    azul: "#60A5FA",
+    laranja: "#FB923C",
   };
 
   function normalizeAccentKey(accent) {
@@ -423,12 +423,13 @@
     const productPageLink = `produto.html?id=${encodeURIComponent(product.id)}`;
     const badgeClass = product.featured ? "oferta" : "";
     const accentColor = getAccentColor(product.accent);
-    const badgeStyle = accentColor ? `style="background: ${accentColor};"` : "";
+    // --card-accent alimenta tanto o glow quanto a cor do badge via CSS (herança de custom property)
+    const cardStyle = accentColor ? ` style="--card-accent:${accentColor}"` : "";
     return `
-      <article class="product-card" data-id="${product.id}">
-        <span class="card-badge ${badgeClass}" ${badgeStyle}>${product.badge}</span>
+      <article class="product-card reveal" data-id="${product.id}"${cardStyle}>
+        <span class="card-badge ${badgeClass}">${product.badge}</span>
         <div class="card-media">
-          <img src="${product.image}" alt="${product.name}" />
+          <img src="${product.image}" alt="${product.name}" loading="lazy" decoding="async" />
         </div>
         <div class="card-body">
           <h3 class="card-title">${product.name}</h3>
@@ -460,6 +461,7 @@
         : `${list.length} produto${list.length === 1 ? "" : "s"} encontrado${list.length === 1 ? "" : "s"}`;
 
     attachProductCardHandlers();
+    observeRevealTargets(grid);
   }
 
   function getQueryParam(name) {
@@ -480,6 +482,10 @@
     const toggleButton = document.getElementById("product-toggle-flavors");
 
     if (!image || !badge || !title || !flavorPreview || !whatsapp) return;
+
+    const imageCard = document.querySelector(".product-image-card");
+    const accentColor = getAccentColor(product.accent);
+    if (imageCard && accentColor) imageCard.style.setProperty("--card-accent", accentColor);
 
     image.src = product.image;
     image.alt = `${product.name} imagem do produto`;
@@ -624,6 +630,83 @@
     });
   }
 
+  /* --------------------------------------------------------------------
+     7. INTERAÇÕES — reveal ao rolar + header reativo
+     Só usa transform/opacity (compositor-friendly) e respeita
+     prefers-reduced-motion. Nada de libs externas.
+     -------------------------------------------------------------------- */
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  let revealObserver = null;
+  function getRevealObserver() {
+    if (revealObserver || prefersReducedMotion) return revealObserver;
+    revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+    return revealObserver;
+  }
+
+  // Marca elementos "estáticos" (que não são re-renderizados) com a classe reveal
+  function markStaticRevealTargets() {
+    const selectors = [
+      ".section-heading",
+      ".differentials li",
+      ".contact-card",
+      ".toolbar",
+      ".product-image-card",
+      ".product-page-content",
+    ];
+    document.querySelectorAll(selectors.join(",")).forEach((el, i) => {
+      el.classList.add("reveal");
+      el.style.transitionDelay = `${Math.min(i % 4, 3) * 60}ms`;
+    });
+  }
+
+  // Observa todo elemento .reveal que ainda não foi observado (chamado no init
+  // e de novo depois de cada re-render do catálogo, já que os cards são novos nós)
+  function observeRevealTargets(root = document) {
+    if (prefersReducedMotion) {
+      root.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
+      return;
+    }
+    const observer = getRevealObserver();
+    root.querySelectorAll(".reveal:not(.is-visible)").forEach((el, i) => {
+      if (!el.dataset.revealDelay) {
+        el.style.transitionDelay = `${Math.min(i % 4, 3) * 60}ms`;
+        el.dataset.revealDelay = "1";
+      }
+      observer.observe(el);
+    });
+  }
+
+  // Header encolhe/ganha sombra depois de rolar um pouco a página
+  function setupHeaderScrollState() {
+    const header = document.getElementById("topo");
+    if (!header) return;
+    let ticking = false;
+    const update = () => {
+      header.classList.toggle("scrolled", window.scrollY > 12);
+      ticking = false;
+    };
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(update);
+      },
+      { passive: true }
+    );
+    update();
+  }
+
   function setupActiveNavOnScroll() {
     const sections = document.querySelectorAll("main .section[id]");
     const navLinks = document.querySelectorAll(".nav-link");
@@ -658,7 +741,9 @@
     if (document.getElementById("hero-device")) setupHeroDevice();
     setupMobileNav();
     setupActiveNavOnScroll();
+    setupHeaderScrollState();
     setupCatalogControls();
+    markStaticRevealTargets();
 
     const isCatalogPage = document.getElementById("catalog-grid") !== null;
     const isProductPage = document.body.dataset.page === "product";
@@ -676,6 +761,8 @@
         renderNotFound();
       }
     }
+
+    observeRevealTargets(document);
   }
 
   document.addEventListener("DOMContentLoaded", init);
