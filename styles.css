@@ -674,15 +674,31 @@ button { font-family: inherit; cursor: pointer; }
   .logo-text { font-size: 1.05rem; }
   .main-nav {
     position: fixed;
-    inset: 66px 0 0 0;
+    top: 66px;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: rgba(10, 10, 14, 0.98);
+    -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
-    transform: translateY(-110%);
-    transition: transform .3s var(--ease);
     padding: 24px 20px;
     z-index: 40;
+    /* dupla trava de segurança: transform E opacity/visibility.
+       Se o navegador não suportar bem uma, a outra garante que
+       o menu continua escondido por padrão. */
+    transform: translateY(-16px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform .3s var(--ease), opacity .25s ease, visibility 0s linear .3s;
   }
-  .main-nav.open { transform: translateY(0); }
+  .main-nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: transform .3s var(--ease), opacity .25s ease, visibility 0s linear 0s;
+  }
   .main-nav ul { flex-direction: column; gap: 6px; }
   .nav-link { display: block; padding: 15px 16px; font-size: 1.02rem; }
   .nav-toggle { display: flex; }
