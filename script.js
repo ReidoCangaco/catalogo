@@ -97,6 +97,31 @@
       description: "Modelo com ampla seleção de sabores gelados e cítricos, ideal para quem troca de sabor toda hora.",
     },
     /* ==========================================================================
+       RABBEATS 50K - 50.000
+       ========================================================================== */
+    {
+      id: "rabbeats-50k",
+      name: "RABBEATS - 50.000",
+      puffs: "50.000 tragadas",
+      flavors: [
+        "Miami Mint",
+        "Fanta Strawberry 🍓",
+        "Banana Ice 🍌❄️",
+        "Sour watermelon peach 🍉🍑",
+        "Strawberry ice 🍓❄️",
+        "Triple berry ice 🍓🫐❄️",
+        
+      ],
+      originalPrice: 110.0,
+      promoPrice: 99.9,
+      badge: "Retorno",
+      accent: "laranja",
+      featured: false,
+      image: "./img/rabbeats-50k.webp",
+      description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
+    },
+
+    /* ==========================================================================
        IGNITE V55 - 5.500
        ========================================================================== */
     {
@@ -235,6 +260,7 @@
         "Kiwi passion fruit guava",
         "Watermelon cherry",
         "Strawberry grape",
+        "Cranberry grape ice"
       ],
       originalPrice: 145.0,
       promoPrice: 109.9,
@@ -264,24 +290,48 @@
       image: "./img/ignite-frozen-20000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
+    /* ==========================================================================
+       DINNER LADY 20.000
+       ========================================================================== */
+      {
+      id: "dinnerlady-20k",
+      name: "DINNER LADY 20.000",
+      puffs: "20.000 tragadas",
+      flavors: [
+        "Strawberry kiwi",
+        "Strawberry ice",
+        "Watermelon Ice",
+      ],
+      originalPrice: 140.0,
+      promoPrice: 129.9,
+      badge: "Novidade!",
+      accent: "Amarelo",
+      featured: false,
+      image: "./img/dinnerlady-20k.webp",
+      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+    },
+
+
+
+
+
     
       /* ==========================================================================
        ELFBAR DUKE 35.000
-       ========================================================================== 
+       ========================================================================== */
       {
       id: "elfbar-duke-35000",
       name: "ELFBAR DUKE 35.000",
       puffs: "35.000 tragadas",
       flavors: [
         "Strawberry kiwi",
-        "Watermelon lemon ice",
-        "Watermelon ice",
-        "Fanta grape",
-        "Peach mango watermelon",
-        "Mango magic",
+        "Coconut strawberry ice",
         "Kiwi passion fruit guava",
-        "Ice mint",
         "Pineapple ice",
+        "Watermelon ice",
+        "Ice mint",
+        "Blueberry ice",
+
       ],
       originalPrice: 145.0,
       promoPrice: 139.9,
@@ -291,7 +341,7 @@
       image: "./img/elfbar-duke-35000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
-      */
+      
 
     
       /* ==========================================================================
