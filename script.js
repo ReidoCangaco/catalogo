@@ -37,7 +37,6 @@
       name: "ELFBAR 40.000 Iceking",
       puffs: "40.000 Puffs",
       flavors: [
-        "Mango magic",
         "Peach+",
       ],
       originalPrice: 179.9,
@@ -258,9 +257,6 @@
       puffs: "20.000 tragadas",
       flavors: [
         "Kiwi passion fruit guava",
-        "Watermelon cherry",
-        "Strawberry grape",
-        "Cranberry grape ice"
       ],
       originalPrice: 145.0,
       promoPrice: 109.9,
@@ -315,6 +311,28 @@
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 
+    /* ==========================================================================
+       ELFBAR 40.OOO TRIOOO
+       ========================================================================== */
+      {
+      id: "elfbar40ktrio",
+      name: "ELFBAR 40.000 TRIO",
+      puffs: "40.000 tragadas",
+      flavors: [
+        "Watermelon ice",
+        "La grape ",
+
+      ],
+      originalPrice: 160.0,
+      promoPrice: 149.9,
+      badge: "Retorno",
+      accent: "Laranja",
+      featured: false,
+      image: "./img/elfbar40ktrio.webp",
+      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+    },
+
+
 
 
 
@@ -356,12 +374,9 @@
       name: "ELFBAR BC 15.000",
       puffs: "15.000 tragadas",
       flavors: [
-        "Americano ice",
-        "Pineapple ice",
-        "Kiwi passion fruit guava",
         "Bubballo tutti fruti",
         "Strawberry ice",
-        "Sakura grape",
+  
       ],
       originalPrice: 109.9,
       promoPrice: 109.9,
