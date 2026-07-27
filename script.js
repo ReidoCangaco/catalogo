@@ -29,72 +29,7 @@
      -------------------------------------------------------------------- */
   const PRODUCTS = [
 
-    /* ==========================================================================
-       ELFBAR 40.000 Iceking
-       ========================================================================== */
-    {
-      id: "elfbar-40k-iceking",
-      name: "ELFBAR 40.000 Iceking",
-      puffs: "40.000 Puffs",
-      flavors: [
-        "Peach+",
-      ],
-      originalPrice: 179.9,
-      promoPrice: 159.9,
-      badge: "Edição ICE",
-      accent: "verde",
-      featured: true,
-      image: "./img/elfbar40k-iceking.webp",
-      description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
-    },
-      /* ==========================================================================
-       IGNITE V155
-       ========================================================================== */
-    {
-      id: "ignite-v155",
-      name: "IGNITE V155",
-      puffs: "15.000 Puffs",
-      flavors: [
-        "Pineapple ice 🍍❄️",
-        "Watermelon ice 🍉❄️",
-        "Kiwi passion fruit guava",
-        "Grape ice 🍇❄️",
-        "Menthol ❄️❄️",
-        "Tropical acai",
-        "Ice mint ❄️",
-        "Strawberry Kiwi 🍓🥝",
-      ],
-      originalPrice: 130.0,
-      promoPrice: 119.9,
-      badge: "Mais vendido",
-      accent: "babyBlue",
-      featured: true,
-      image: "./img/v155.webp", 
-      description: "O equilíbrio perfeito entre preço e variedade, com 9 sabores populares e entrega rápida.",
-    },
-    /* ==========================================================================
-       LOST MARY 35.000
-       ========================================================================== */
-    {
-      id: "lostmary-35k",
-      name: "LOST MARY 35.000",
-      puffs: "35.000 Puffs",
-      flavors: [
-        "Grape Ice 🍇❄️",
-        "Strawberry Kiwi 🍓🥝",
-        "Strawberry ice 🍓❄️",
-        "Miami Mint 🌿",
-        "Watermelon ice 🍉❄️",
-        "Strawberry Watermelon 🍓🍉",
-      ],
-      originalPrice: 160.0,
-      promoPrice: 139.9,
-      badge: "Mais Vendido",
-      accent: "babyBlue",
-      featured: true,
-      image: "./img/lostmary-35k.webp",
-      description: "Modelo com ampla seleção de sabores gelados e cítricos, ideal para quem troca de sabor toda hora.",
-    },
+
     /* ==========================================================================
        RABBEATS 50K - 50.000
        ========================================================================== */
@@ -121,49 +56,95 @@
     },
 
     /* ==========================================================================
-       IGNITE V55 - 5.500
+       ELFBAR 40.000 Iceking
        ========================================================================== */
     {
-      id: "ignite-v55",
-      name: "IGNITE V55 - 5.500",
-      puffs: "5.500 tragadas",
+      id: "elfbar-40k-iceking",
+      name: "ELFBAR 40.000 Iceking",
+      puffs: "40.000 Puffs",
       flavors: [
-        "Watermelon Ice 🍉❄️",
-        "Pineapple ice 🍍❄️",
-        "Melon mix",
-        "Strawberry ice 🍓❄️",
-        "Grape ice 🍇❄️",
-        "Minty melon 🍈❄️",
-        "Menthol ❄️",
-        "Miami Mint",
+        "Peach+",
       ],
-      originalPrice: 110.0,
-      promoPrice: 99.9,
-      badge: "Últimas unidades",
-      accent: "laranja",
+      originalPrice: 179.9,
+      promoPrice: 159.9,
+      badge: "Edição ICE",
+      accent: "verde",
+      featured: true,
+      image: "./img/elfbar40k-iceking.webp",
+      description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
+    },
+
+    /* ==========================================================================
+       ELFBAR 40.OOO TRIOOO
+       ========================================================================== */
+      {
+      id: "elfbar40ktrio",
+      name: "ELFBAR 40.000 TRIO",
+      puffs: "40.000 tragadas",
+      flavors: [
+        "Watermelon ice",
+        "La grape ",
+
+      ],
+      originalPrice: 160.0,
+      promoPrice: 149.9,
+      badge: "Retorno",
+      accent: "Laranja",
       featured: false,
-      image: "./img/ignite-v55.webp",
-      description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
+      image: "./img/elfbar40ktrio.webp",
+      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
     /* ==========================================================================
-       IGNITE V80 - Ultra slim
+       LOST MARY 35.000
        ========================================================================== */
     {
-      id: "ignite-v80ultra-slim",
-      name: "IGNITE V80 - Ultra slim",
-      puffs: "8.000 tragadas",
+      id: "lostmary-35k",
+      name: "LOST MARY 35.000",
+      puffs: "35.000 Puffs",
       flavors: [
-        "Strawberry ice 🍓🧊",
+        "Grape Ice 🍇❄️",
+        "Strawberry Kiwi 🍓🥝",
+        "Strawberry ice 🍓❄️",
+        "Miami Mint 🌿",
+        "Watermelon ice 🍉❄️",
+        "Strawberry Watermelon 🍓🍉",
       ],
-      originalPrice: 119.9,
-      promoPrice: 119.9,
-      badge: "Últimas unidades",
-      accent: "laranja",
-      featured: false,
-      image: "./img/ignite-v80ultraslim.webp",
-      description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
+      originalPrice: 160.0,
+      promoPrice: 139.9,
+      badge: "Mais Vendido",
+      accent: "babyBlue",
+      featured: true,
+      image: "./img/lostmary-35k.webp",
+      description: "Modelo com ampla seleção de sabores gelados e cítricos, ideal para quem troca de sabor toda hora.",
     },
-/* ==========================================================================
+
+    /* ==========================================================================
+       ELFBAR DUKE 35.000
+       ========================================================================== */
+      {
+      id: "elfbar-duke-35000",
+      name: "ELFBAR DUKE 35.000",
+      puffs: "35.000 tragadas",
+      flavors: [
+        "Strawberry kiwi",
+        "Coconut strawberry ice",
+        "Kiwi passion fruit guava",
+        "Pineapple ice",
+        "Watermelon ice",
+        "Ice mint",
+        "Blueberry ice",
+
+      ],
+      originalPrice: 145.0,
+      promoPrice: 139.9,
+      badge: "",
+      accent: "",
+      featured: false,
+      image: "./img/elfbar-duke-35000.webp",
+      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+    },
+
+    /* ==========================================================================
        IGNITE V300 Ultra slim
        ========================================================================== */
       {
@@ -173,7 +154,6 @@
       flavors: [
         "Pineapple mango",
         "Minty melon",
-        "Menthol",
       ],
       originalPrice: 150.0,
       promoPrice: 139.9,
@@ -183,72 +163,55 @@
       image: "./img/ignite-v300.webp",
       description: "Ótima opção para quem busca design, sabor intenso e preço em promoção.",
     },
+
     /* ==========================================================================
-       NIKBAR 10.000
+       ELFBAR TE 30.000
        ========================================================================== */
       {
-      id: "nikbar-10000",
-      name: "NIKBAR 10.000",
-      puffs: "10.000 tragadas",
+      id: "elfbar-te-30000",
+      name: "ELFBAR TE 30.000",
+      puffs: "30.000 tragadas",
       flavors: [
-        "Cherry watermelon ice",
-        "Strawberry banana",
-        "Watermelon Bubblegum",
-        "Green apple ice",
-        "Passion Sour Kiwi",
+        "Strawberry ice",
+        "Peach mango watermelon",
         "Menthol",
-        "Grape Strawberry",
-        "Strawberry Kiwi",
+        "Watermelon ice",
       ],
-      originalPrice: 115.0,
-      promoPrice: 99.9,
-      badge: "Mais Opções",
-      accent: "Azul",
-      featured: false,
-      image: "./img/nikbar-10000.webp",
-      description: "Ótima opção para quem busca design, sabor intenso e preço em promoção.",
-    },
-/* ==========================================================================
-       V-NANO 1.000
-       ========================================================================== */
-     /* {
-      id: "v-nano-1000",
-      name: "V-NANO 1.000",
-      puffs: "1.000 tragadas",
-      flavors: [
-        "Grape ice",
-      ],
-      originalPrice: 75.0,
-      promoPrice: 59.9,
-      badge: "Ultimas Unidades",
-      accent: "laranja",
-      featured: false,
-      image: "./img/v-nano-1000.webp",
-      description: "Pequeno, portátil e discreto, ideal para quem quer experimentar sabores diferentes sem gastar muito.",
-  /*  },
-/* ==========================================================================
-       LOST VAPE 10.000
-       ========================================================================== */
-      {
-      id: "lost-vape-10000",
-      name: "LOST VAPE 10.000",
-      puffs: "10.000 tragadas",
-      flavors: [
-        "Peach Mango Watermelon",
-        "Grape burst",
-        "Kiwi passion fruit guava",
-        "Strawberry chew",
-        "Miami mint",
-      ],
-      originalPrice: 110.0,
-      promoPrice: 89.9,
+      originalPrice: 134.9,
+      promoPrice: 134.9,
       badge: "",
       accent: "",
       featured: false,
-      image: "./img/lost-vape-10000.webp",
+      image: "./img/elfbar-te-30000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
-/* ==========================================================================
+
+    /* ==========================================================================
+       DINNER LADY 20.000
+       ========================================================================== */
+      {
+      id: "dinnerlady-20k",
+      name: "DINNER LADY 20.000",
+      puffs: "20.000 tragadas",
+      flavors: [
+        "Strawberry ice",
+        "Pineapple ice",
+        "Kiwi passion fruit guava",
+        "Ice mint",
+        "Apple peach ice",
+        "Peach mango watermelon",
+
+      ],
+      originalPrice: 130.0,
+      promoPrice: 130.0,
+      badge: "Novidade!",
+      accent: "Amarelo",
+      featured: false,
+      image: "./img/dinnerlady-20k.webp",
+      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+    },
+
+    /* ==========================================================================
        ELFBAR 20.000 Touch
        ========================================================================== */
       {
@@ -286,87 +249,34 @@
       image: "./img/ignite-frozen-20000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
-    /* ==========================================================================
-       DINNER LADY 20.000
-       ========================================================================== */
-      {
-      id: "dinnerlady-20k",
-      name: "DINNER LADY 20.000",
-      puffs: "20.000 tragadas",
-      flavors: [
-        "Strawberry ice",
-        "Pineapple ice",
-        "Kiwi passion fruit guava",
-        "Ice mint",
-        "Apple peach ice",
-        "Peach mango watermelon",
 
+      /* ==========================================================================
+       IGNITE V155 - 15.000
+       ========================================================================== */
+    {
+      id: "ignite-v155",
+      name: "IGNITE V155",
+      puffs: "15.000 Puffs",
+      flavors: [
+        "Pineapple ice 🍍❄️",
+        "Watermelon ice 🍉❄️",
+        "Kiwi passion fruit guava",
+        "Grape ice 🍇❄️",
+        "Menthol ❄️❄️",
+        "Tropical acai",
+        "Ice mint ❄️",
+        "Strawberry Kiwi 🍓🥝",
       ],
       originalPrice: 130.0,
-      promoPrice: 130.0,
-      badge: "Novidade!",
-      accent: "Amarelo",
-      featured: false,
-      image: "./img/dinnerlady-20k.webp",
-      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+      promoPrice: 119.9,
+      badge: "Mais vendido",
+      accent: "babyBlue",
+      featured: true,
+      image: "./img/v155.webp", 
+      description: "O equilíbrio perfeito entre preço e variedade, com 9 sabores populares e entrega rápida.",
     },
-
+    
     /* ==========================================================================
-       ELFBAR 40.OOO TRIOOO
-       ========================================================================== */
-      {
-      id: "elfbar40ktrio",
-      name: "ELFBAR 40.000 TRIO",
-      puffs: "40.000 tragadas",
-      flavors: [
-        "Watermelon ice",
-        "La grape ",
-
-      ],
-      originalPrice: 160.0,
-      promoPrice: 149.9,
-      badge: "Retorno",
-      accent: "Laranja",
-      featured: false,
-      image: "./img/elfbar40ktrio.webp",
-      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
-    },
-
-
-
-
-
-
-    
-      /* ==========================================================================
-       ELFBAR DUKE 35.000
-       ========================================================================== */
-      {
-      id: "elfbar-duke-35000",
-      name: "ELFBAR DUKE 35.000",
-      puffs: "35.000 tragadas",
-      flavors: [
-        "Strawberry kiwi",
-        "Coconut strawberry ice",
-        "Kiwi passion fruit guava",
-        "Pineapple ice",
-        "Watermelon ice",
-        "Ice mint",
-        "Blueberry ice",
-
-      ],
-      originalPrice: 145.0,
-      promoPrice: 139.9,
-      badge: "",
-      accent: "",
-      featured: false,
-      image: "./img/elfbar-duke-35000.webp",
-      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
-    },
-      
-
-    
-      /* ==========================================================================
        ELFBAR BC 15.000
        ========================================================================== */
       {
@@ -387,28 +297,73 @@
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 
-      /* ==========================================================================
-       ELFBAR TE 30.000
+    /* ==========================================================================
+       NIKBAR 10.000
        ========================================================================== */
       {
-      id: "elfbar-te-30000",
-      name: "ELFBAR TE 30.000",
-      puffs: "30.000 tragadas",
+      id: "nikbar-10000",
+      name: "NIKBAR 10.000",
+      puffs: "10.000 tragadas",
       flavors: [
-        "Strawberry ice",
-        "Peach mango watermelon",
+        "Cherry watermelon ice",
+        "Strawberry banana",
+        "Watermelon Bubblegum",
+        "Green apple ice",
+        "Passion Sour Kiwi",
         "Menthol",
-        "Watermelon ice",
+        "Grape Strawberry",
+        "Strawberry Kiwi",
       ],
-      originalPrice: 134.9,
-      promoPrice: 134.9,
+      originalPrice: 115.0,
+      promoPrice: 99.9,
+      badge: "Mais Opções",
+      accent: "Azul",
+      featured: false,
+      image: "./img/nikbar-10000.webp",
+      description: "Ótima opção para quem busca design, sabor intenso e preço em promoção.",
+    },
+
+    /* ==========================================================================
+       LOST VAPE 10.000
+       ========================================================================== */
+      {
+      id: "lost-vape-10000",
+      name: "LOST VAPE 10.000",
+      puffs: "10.000 tragadas",
+      flavors: [
+        "Peach Mango Watermelon",
+        "Grape burst",
+        "Kiwi passion fruit guava",
+        "Strawberry chew",
+        "Miami mint",
+      ],
+      originalPrice: 110.0,
+      promoPrice: 89.9,
       badge: "",
       accent: "",
       featured: false,
-      image: "./img/elfbar-te-30000.webp",
+      image: "./img/lost-vape-10000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 
+    /* ==========================================================================
+       IGNITE V80 - Ultra slim 8.000
+       ========================================================================== */
+    {
+      id: "ignite-v80ultra-slim",
+      name: "IGNITE V80 - Ultra slim",
+      puffs: "8.000 tragadas",
+      flavors: [
+        "Strawberry ice 🍓🧊",
+      ],
+      originalPrice: 119.9,
+      promoPrice: 119.9,
+      badge: "Últimas unidades",
+      accent: "laranja",
+      featured: false,
+      image: "./img/ignite-v80ultraslim.webp",
+      description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
+    },
 
     /* ==========================================================================
        IGNITE V80 - Normal 8.000
@@ -432,7 +387,55 @@
       image: "./img/ignite-v80normal.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
     },
+    
 
+    /* ==========================================================================
+       IGNITE V55 - 5.500
+       ========================================================================== */
+    {
+      id: "ignite-v55",
+      name: "IGNITE V55 - 5.500",
+      puffs: "5.500 tragadas",
+      flavors: [
+        "Watermelon Ice 🍉❄️",
+        "Pineapple ice 🍍❄️",
+        "Melon mix",
+        "Strawberry ice 🍓❄️",
+        "Grape ice 🍇❄️",
+        "Minty melon 🍈❄️",
+        "Menthol ❄️",
+        "Miami Mint",
+      ],
+      originalPrice: 110.0,
+      promoPrice: 99.9,
+      badge: "Últimas unidades",
+      accent: "laranja",
+      featured: false,
+      image: "./img/ignite-v55.webp",
+      description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
+    },
+    
+
+    
+
+/* ==========================================================================
+       V-NANO 1.000
+       ========================================================================== 
+      {
+      id: "v-nano-1000",
+      name: "V-NANO 1.000",
+      puffs: "1.000 tragadas",
+      flavors: [
+        "Grape ice",
+      ],
+      originalPrice: 75.0,
+      promoPrice: 59.9,
+      badge: "Ultimas Unidades",
+      accent: "laranja",
+      featured: false,
+      image: "./img/v-nano-1000.webp",
+      description: "Pequeno, portátil e discreto, ideal para quem quer experimentar sabores diferentes sem gastar muito.",
+   },*/
 
 
   ];
