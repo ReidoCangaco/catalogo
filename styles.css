@@ -145,7 +145,7 @@ button { font-family: inherit; cursor: pointer; }
 
 .btn-primary {
   background: var(--brand);
-  color: var(--white);
+  color: var(--brand-ink);
   box-shadow: 0 16px 34px -12px var(--brand-glow);
 }
 .btn-primary:hover { background: var(--brand-soft); box-shadow: 0 20px 44px -10px var(--brand-glow); }
@@ -708,22 +708,30 @@ button { font-family: inherit; cursor: pointer; }
   .section { padding: 64px 0; }
   .product-card { padding: 14px; }
   .card-media { height: 190px; }
-  .hero-trust { gap: 8px; }
   .hero-section { padding-top: 84px; padding-bottom: 40px; }
   .eyebrow { margin-bottom: 14px; padding: 6px 14px; font-size: 0.82rem; }
   .hero-logo { width: min(96px, 30vw); margin-bottom: 2px; }
-  .hero-sub { margin-top: 12px; font-size: 0.96rem; }
-  .hero-actions { margin-top: 18px; gap: 8px; }
+  .hero-sub { margin-top: 12px; font-size: 0.94rem; }
+  .hero-actions { margin-top: 18px; }
   .hero-actions .btn {
-    flex: 1 1 0;
-    min-width: 0;
-    padding: 12px 14px;
-    font-size: 0.82rem;
-    white-space: normal;
-    line-height: 1.2;
-    text-align: center;
+    padding: 13px 22px;
+    font-size: 0.9rem;
   }
-  .hero-trust { margin-top: 18px; }
+  .hero-trust {
+    margin-top: 14px;
+    gap: 6px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 2px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .hero-trust li {
+    font-size: 0.72rem;
+    padding: 6px 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
 }
 
 @media (max-width: 560px) {
