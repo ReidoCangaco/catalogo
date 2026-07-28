@@ -89,7 +89,7 @@
       originalPrice: 160.0,
       promoPrice: 149.9,
       badge: "Retorno",
-      accent: "Laranja",
+      accent: "branco",
       featured: false,
       image: "./img/elfbar40ktrio.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
