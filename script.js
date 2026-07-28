@@ -49,7 +49,7 @@
       originalPrice: 149.90,
       promoPrice: 149.90,
       badge: "Retorno",
-      accent: "laranja",
+      accent: "branco",
       featured: false,
       image: "./img/rabbeats-50k.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
