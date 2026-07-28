@@ -67,8 +67,8 @@
       ],
       originalPrice: 179.9,
       promoPrice: 159.9,
-      badge: "Edição ICE",
-      accent: "verde",
+      badge: "Últimas unidades",
+      accent: "laranja",
       featured: true,
       image: "./img/elfbar40k-iceking.webp",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
@@ -448,7 +448,7 @@
   });
 
   /* --------------------------------------------------------------------
-     3. HELPERS
+     3. HELPERS - Adição de cores aos produtos
      -------------------------------------------------------------------- */
   const currency = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
 
@@ -457,6 +457,7 @@
     babyBlue: "#7DD3FC",
     azul: "#60A5FA",
     laranja: "#FB923C",
+    branco: "#F3F4F6",
   };
 
   function normalizeAccentKey(accent) {
