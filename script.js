@@ -41,9 +41,10 @@
         "Miami Mint",
         "Fanta Strawberry 🍓",
         "Banana Ice 🍌❄️",
-        "Sour watermelon peach 🍉🍑",
         "Strawberry ice 🍓❄️",
         "Triple berry ice 🍓🫐❄️",
+        "Ice mint ❄️",
+        "Watermelon ice 🍉❄️",
         
       ],
       originalPrice: 149.90,
@@ -83,7 +84,6 @@
       puffs: "40.000 tragadas",
       flavors: [
         "Watermelon ice",
-        "La grape ",
 
       ],
       originalPrice: 160.0,
@@ -102,12 +102,8 @@
       name: "LOST MARY 35.000",
       puffs: "35.000 Puffs",
       flavors: [
-        "Grape Ice 🍇❄️",
-        "Strawberry Kiwi 🍓🥝",
         "Strawberry ice 🍓❄️",
-        "Miami Mint 🌿",
         "Watermelon ice 🍉❄️",
-        "Strawberry Watermelon 🍓🍉",
       ],
       originalPrice: 160.0,
       promoPrice: 139.9,
@@ -126,13 +122,8 @@
       name: "ELFBAR DUKE 35.000",
       puffs: "35.000 tragadas",
       flavors: [
-        "Strawberry kiwi",
         "Coconut strawberry ice",
         "Kiwi passion fruit guava",
-        "Pineapple ice",
-        "Watermelon ice",
-        "Ice mint",
-        "Blueberry ice",
 
       ],
       originalPrice: 145.0,
@@ -173,8 +164,6 @@
       puffs: "30.000 tragadas",
       flavors: [
         "Strawberry ice",
-        "Peach mango watermelon",
-        "Menthol",
         "Watermelon ice",
       ],
       originalPrice: 134.9,
@@ -194,7 +183,6 @@
       name: "DINNER LADY 20.000",
       puffs: "20.000 tragadas",
       flavors: [
-        "Strawberry ice",
         "Pineapple ice",
         "Kiwi passion fruit guava",
         "Ice mint",
@@ -259,11 +247,9 @@
       puffs: "15.000 Puffs",
       flavors: [
         "Pineapple ice 🍍❄️",
-        "Watermelon ice 🍉❄️",
         "Kiwi passion fruit guava",
         "Grape ice 🍇❄️",
         "Menthol ❄️❄️",
-        "Tropical acai",
         "Ice mint ❄️",
         "Strawberry Kiwi 🍓🥝",
       ],
@@ -285,7 +271,6 @@
       puffs: "15.000 tragadas",
       flavors: [
         "Bubballo tutti fruti",
-        "Strawberry ice",
   
       ],
       originalPrice: 109.9,
@@ -313,6 +298,7 @@
         "Menthol",
         "Grape Strawberry",
         "Strawberry Kiwi",
+        "Icy mint",
       ],
       originalPrice: 115.0,
       promoPrice: 99.9,
@@ -402,12 +388,8 @@
         "Melon mix",
         "Strawberry ice 🍓❄️",
         "Grape ice 🍇❄️",
-        "Minty melon 🍈❄️",
         "Menthol ❄️",
         "Miami Mint",
-        "Melon mix",
-        "Watermelon ice",
-        "Grape ice",
       ],
       originalPrice: 110.0,
       promoPrice: 99.9,
@@ -423,13 +405,13 @@
 
 /* ==========================================================================
        V-NANO 1.000
-       ========================================================================== 
+       ========================================================================== */
       {
       id: "v-nano-1000",
       name: "V-NANO 1.000",
       puffs: "1.000 tragadas",
       flavors: [
-        "Grape ice",
+        "Passion fruit sour kiwi",
       ],
       originalPrice: 75.0,
       promoPrice: 59.9,
@@ -438,7 +420,7 @@
       featured: false,
       image: "./img/v-nano-1000.webp",
       description: "Pequeno, portátil e discreto, ideal para quem quer experimentar sabores diferentes sem gastar muito.",
-   },*/
+   },
 
 
   ];
