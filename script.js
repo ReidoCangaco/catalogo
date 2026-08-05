@@ -58,7 +58,7 @@
 
     /* ==========================================================================
        ELFBAR 40.000 Iceking
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "elfbar-40k-iceking",
       name: "ELFBAR 40.000 Iceking",
@@ -73,7 +73,7 @@
       featured: true,
       image: "./img/elfbar40k-iceking.webp",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
-    },
+    }, */
 
     /* ==========================================================================
        ELFBAR 40.OOO TRIOOO
