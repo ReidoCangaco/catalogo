@@ -150,8 +150,15 @@ button { font-family: inherit; cursor: pointer; }
 }
 .btn-primary:hover { background: var(--brand-soft); box-shadow: 0 20px 44px -10px var(--brand-glow); }
 
-.btn-outline { border-color: var(--border-strong); color: var(--white); }
-.btn-outline:hover { border-color: var(--brand-soft); color: var(--brand-soft); }
+.btn-outline {
+  background: transparent;
+  border-color: var(--brand-soft);
+  color: var(--text);
+}
+.btn-outline:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
 
 .btn-whatsapp { background: var(--whatsapp); color: var(--white); }
 .btn-whatsapp:hover { background: var(--whatsapp-hover); box-shadow: 0 16px 34px -14px rgba(37, 211, 102, 0.5); }
