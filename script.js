@@ -43,7 +43,6 @@
         "Banana Ice 🍌❄️",
         "Strawberry ice 🍓❄️",
         "Triple berry ice 🍓🫐❄️",
-        "Ice mint ❄️",
         "Watermelon ice 🍉❄️",
         
       ],
@@ -246,12 +245,10 @@
       name: "IGNITE V155",
       puffs: "15.000 Puffs",
       flavors: [
-        "Pineapple ice 🍍❄️",
+        
         "Kiwi passion fruit guava",
         "Grape ice 🍇❄️",
-        "Menthol ❄️❄️",
-        "Ice mint ❄️",
-        "Strawberry Kiwi 🍓🥝",
+        
       ],
       originalPrice: 130.0,
       promoPrice: 119.9,
