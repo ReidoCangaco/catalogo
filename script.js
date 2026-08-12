@@ -117,14 +117,14 @@
 
     /* ==========================================================================
        ELFBAR DUKE 35.000
-       ========================================================================== */
+       ==========================================================================
       {
       id: "elfbar-duke-35000",
       name: "ELFBAR DUKE 35.000",
       puffs: "35.000 tragadas",
       flavors: [
-        "Coconut strawberry ice",
-        "Kiwi passion fruit guava",
+        "",
+        "",
 
       ],
       originalPrice: 145.0,
@@ -135,17 +135,18 @@
       image: "./img/elfbar-duke-35000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
+    */
 
     /* ==========================================================================
        IGNITE V300 Ultra slim
-       ========================================================================== */
+       ========================================================================== 
       {
       id: "ignite-v300",
       name: "IGNITE V300 Ultra slim",
       puffs: "30.000 tragadas",
       flavors: [
-        "Pineapple mango",
-        "Minty melon",
+        "",
+        "",
       ],
       originalPrice: 150.0,
       promoPrice: 139.9,
@@ -155,6 +156,9 @@
       image: "./img/ignite-v300.webp",
       description: "Ótima opção para quem busca design, sabor intenso e preço em promoção.",
     },
+    */
+
+
 
     /* ==========================================================================
        ELFBAR TE 30.000
@@ -202,13 +206,16 @@
 
     /* ==========================================================================
        ELFBAR 20.000 Touch
-       ========================================================================== */
+       ========================================================================== 
       {
       id: "elfbar-20000-touch",
       name: "ELFBAR 20.000 Touch",
       puffs: "20.000 tragadas",
       flavors: [
-        "Kiwi passion fruit guava",
+      
+        "",
+
+
       ],
       originalPrice: 145.0,
       promoPrice: 109.9,
@@ -218,6 +225,11 @@
       image: "./img/elfbar-20000-touch.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
+    */
+
+
+
+
 /* ==========================================================================
        IGNITE FROZEN 20.000
        ========================================================================== */
