@@ -48,8 +48,8 @@
       ],
       originalPrice: 149.90,
       promoPrice: 149.90,
-      badge: "Retorno",
-      accent: "branco",
+      badge: "Mais Vendido",
+      accent: "Laranja",
       featured: false,
       image: "./img/rabbeats-50k.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
@@ -212,7 +212,7 @@
       name: "ELFBAR 20.000 Touch",
       puffs: "20.000 tragadas",
       flavors: [
-      
+
         "",
 
 
