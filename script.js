@@ -39,10 +39,8 @@
       puffs: "50.000 tragadas",
       flavors: [
         "Miami Mint",
-        "Fanta Strawberry 🍓",
         "Banana Ice 🍌❄️",
         "Strawberry ice 🍓❄️",
-        "Triple berry ice 🍓🫐❄️",
         "Watermelon ice 🍉❄️",
         
       ],
@@ -57,13 +55,18 @@
 
     /* ==========================================================================
        ELFBAR 40.000 Iceking
-       ========================================================================== 
+       ========================================================================== */
     {
       id: "elfbar-40k-iceking",
       name: "ELFBAR 40.000 Iceking",
       puffs: "40.000 Puffs",
       flavors: [
-        "Peach+",
+        "Cherry strazz",
+        "Mango magic",
+        "Strawberry ice",
+        "Cherry fuse",
+        "Pech+",
+        "Summer splash",
       ],
       originalPrice: 179.9,
       promoPrice: 159.9,
@@ -72,7 +75,29 @@
       featured: true,
       image: "./img/elfbar40k-iceking.webp",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
-    }, */
+    }, 
+    /* ==========================================================================
+       The black Sheep 40.000
+       ========================================================================== */
+    {
+      id: "the-black-sheep-40k",
+      name: "THE BLACK SHEEP 40.000",
+      puffs: "40.000 Puffs",
+      flavors: [
+        "Kiwi grape starffuit + açaí Straw banana ",
+        "Passion frut + watermelon Strawberry ",
+        "Grape + passion frut ",
+        "Grape + mentol "
+      ],
+      originalPrice: 180.0,
+      promoPrice: 169.9,
+      badge: "Novidade",
+      accent: "branco",
+      featured: true,
+      image: "./img/the-black-sheep-40k.webp",
+      description: "Novidade na JRS.",
+    },
+
 
     /* ==========================================================================
        ELFBAR 40.OOO TRIOOO
@@ -104,7 +129,6 @@
       puffs: "35.000 Puffs",
       flavors: [
         "Strawberry ice 🍓❄️",
-        "Watermelon ice 🍉❄️",
       ],
       originalPrice: 160.0,
       promoPrice: 139.9,
@@ -115,16 +139,49 @@
       description: "Modelo com ampla seleção de sabores gelados e cítricos, ideal para quem troca de sabor toda hora.",
     },
 
+
+    /* ==========================================================================
+       Geek bar z35.000k
+       ========================================================================== */
+    {
+      id: "geekbar-z35k",
+      name: "GEEK BAR z35.000K",
+      puffs: "35.000 Puffs",
+      flavors: [
+        "Extreme mint 🌿",
+        "Frozen watermelon 🍉❄️",
+        "Grape ice 🍇❄️",
+      ],
+      originalPrice: 139.0,
+      promoPrice: 119.9,
+      badge: "Novidade",
+      accent: "branco",
+      featured: true,
+      image: "./img/geekbar-z35k.webp",
+      description: "Novidade na JRS PUFFS, com design elegante, bateria duradoura e sabores irresistíveis.",
+    },
+
+
+
+
+
+
     /* ==========================================================================
        ELFBAR DUKE 35.000
-       ==========================================================================
+       ==========================================================================*/
       {
       id: "elfbar-duke-35000",
       name: "ELFBAR DUKE 35.000",
       puffs: "35.000 tragadas",
       flavors: [
-        "",
-        "",
+        "Watermelon ice",
+        "Mango magic",
+        "Menthol",
+        "Fanta grape",
+        "Strawberry kiwi ice",
+        "Peach mango watermelon",
+        "Grape ice",
+        "Kiwi passion fruit Guava",
 
       ],
       originalPrice: 145.0,
@@ -135,7 +192,7 @@
       image: "./img/elfbar-duke-35000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
-    */
+    
 
     /* ==========================================================================
        IGNITE V300 Ultra slim
@@ -170,6 +227,9 @@
       flavors: [
         "Strawberry ice",
         "Watermelon ice",
+        "Guava passion fruit kiwi",
+        "Miami mint",
+        "Peach mango watermelon",
       ],
       originalPrice: 134.9,
       promoPrice: 134.9,
@@ -191,7 +251,6 @@
         "Pineapple ice",
         "Kiwi passion fruit guava",
         "Ice mint",
-        "Apple peach ice",
         "Peach mango watermelon",
 
       ],
@@ -240,7 +299,6 @@
       flavors: [
         "Strawberry kiwi",
         "Strawberry ice",
-        "Watermelon Ice",
       ],
       originalPrice: 140.0,
       promoPrice: 129.9,
@@ -303,15 +361,12 @@
       name: "NIKBAR 10.000",
       puffs: "10.000 tragadas",
       flavors: [
+        
+        "Watermelon bubble gum",
+        "Passion Sour kiwi",
+        "Strawberry kiwi",
         "Cherry watermelon ice",
-        "Strawberry banana",
-        "Watermelon Bubblegum",
-        "Green apple ice",
-        "Passion Sour Kiwi",
-        "Menthol",
-        "Grape Strawberry",
-        "Strawberry Kiwi",
-        "Icy mint",
+        "Menthol"
       ],
       originalPrice: 115.0,
       promoPrice: 99.9,
@@ -399,10 +454,11 @@
         "Watermelon Ice 🍉❄️",
         "Pineapple ice 🍍❄️",
         "Melon mix",
-        "Strawberry ice 🍓❄️",
-        "Grape ice 🍇❄️",
-        "Menthol ❄️",
-        "Miami Mint",
+        "Menthol",
+        "Minty melon",
+        "Strawberry kiwi",
+        "Grape ice",
+        "Strawberry ice"
       ],
       originalPrice: 110.0,
       promoPrice: 99.9,
