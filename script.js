@@ -70,7 +70,7 @@
       ],
       originalPrice: 179.9,
       promoPrice: 159.9,
-      badge: "Últimas unidades",
+      badge: "Mais Vendido",
       accent: "laranja",
       featured: true,
       image: "./img/elfbar40k-iceking.webp",
