@@ -872,7 +872,11 @@
     const isProductPage = document.body.dataset.page === "product";
 
     if (isCatalogPage) {
-      renderCatalog(PRODUCTS);
+      const sortSelect = document.getElementById("sort-select");
+      if (sortSelect) {
+        sortSelect.value = "maior-preco";
+      }
+      applyCatalogFilters();
     }
 
     if (isProductPage) {
