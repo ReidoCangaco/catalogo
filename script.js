@@ -507,6 +507,7 @@
     azul: "#60A5FA",
     laranja: "#FB923C",
     branco: "#F3F4F6",
+    vermelho: "#F87171",
   };
 
   function normalizeAccentKey(accent) {
