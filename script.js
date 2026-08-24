@@ -40,7 +40,6 @@
       flavors: [
         "Miami Mint",
         "Banana Ice 🍌❄️",
-        "Strawberry ice 🍓❄️",
         "Watermelon ice 🍉❄️",
         
       ],
@@ -85,8 +84,8 @@
       puffs: "40.000 Puffs",
       flavors: [
         "Kiwi grape starffuit + açaí Straw banana ",
-        "Passion frut + watermelon Strawberry ",
-        "Grape + passion frut ",
+        "Passion fruit + watermelon Strawberry ",
+        "Grape + passion fruit ",
         "Grape + mentol "
       ],
       originalPrice: 180.0,
@@ -122,13 +121,13 @@
 
     /* ==========================================================================
        LOST MARY 35.000
-       ========================================================================== 
+       ========================================================================== */
     {
       id: "lostmary-35k",
       name: "LOST MARY 35.000",
       puffs: "35.000 Puffs",
       flavors: [
-        "Strawberry ice 🍓❄️",
+        "Watermelon ice 🍓❄️",
       ],
       originalPrice: 160.0,
       promoPrice: 139.9,
@@ -138,7 +137,7 @@
       image: "./img/lostmary-35k.webp",
       description: "Modelo com ampla seleção de sabores gelados e cítricos, ideal para quem troca de sabor toda hora.",
     },
-    */
+    
 
     /* ==========================================================================
        Geek bar z35.000k
@@ -150,7 +149,6 @@
       flavors: [
         "Extreme mint 🌿",
         "Frozen watermelon 🍉❄️",
-        "Grape ice 🍇❄️",
       ],
       originalPrice: 139.0,
       promoPrice: 119.9,
@@ -245,7 +243,6 @@
       puffs: "20.000 tragadas",
       flavors: [
         "Pineapple ice",
-        "Kiwi passion fruit guava",
         "Ice mint",
         "Peach mango watermelon",
 
@@ -287,7 +284,7 @@
 
 /* ==========================================================================
        IGNITE FROZEN 20.000
-       ========================================================================== */
+       ========================================================================== 
       {
       id: "ignite-frozen-20000",
       name: "IGNITE FROZEN 20.000",
@@ -304,6 +301,7 @@
       image: "./img/ignite-frozen-20000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
+    */
 
       /* ==========================================================================
        IGNITE V155 - 15.000
@@ -362,7 +360,6 @@
         
         "Watermelon bubble gum",
         "Passion Sour kiwi",
-        "Strawberry kiwi",
         "Cherry watermelon ice",
         "Menthol"
       ],
@@ -387,7 +384,6 @@
         "Grape burst",
         "Kiwi passion fruit guava",
         "Strawberry chew",
-        "Miami mint",
       ],
       originalPrice: 110.0,
       promoPrice: 89.9,
@@ -425,7 +421,6 @@
       name: "IGNITE V80 - 8.000",
       puffs: "8.000 tragadas",
       flavors: [
-        "Icy mint",
         "Cactus",
         "Grape ice",
         "Blueberry ice",
@@ -449,14 +444,10 @@
       name: "IGNITE V55 - 5.500",
       puffs: "5.500 tragadas",
       flavors: [
-        "Watermelon Ice 🍉❄️",
-        "Pineapple ice 🍍❄️",
         "Melon mix",
-        "Menthol",
         "Minty melon",
-        "Strawberry kiwi",
+        "Strawberry kiwi", 
         "Grape ice",
-        "Strawberry ice"
       ],
       originalPrice: 110.0,
       promoPrice: 99.9,
@@ -501,6 +492,8 @@
      -------------------------------------------------------------------- */
   const currency = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
 
+
+  /* ------- Adição de Cores e alteração ---------- */
   const ACCENT_HEX = {
     verde: "#34D399",
     babyBlue: "#7DD3FC",
