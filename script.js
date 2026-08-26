@@ -41,7 +41,12 @@
         "Miami Mint",
         "Banana Ice 🍌❄️",
         "Watermelon ice 🍉❄️",
-        
+        "Kiwi passion fruit guava",
+        "Miami mint",
+        "Triple berry",
+        "Menthol",
+        "Ice mint",
+        "Strawberry ice",
       ],
       originalPrice: 149.90,
       promoPrice: 149.90,
@@ -51,6 +56,26 @@
       image: "./img/rabbeats-50k.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
     },
+    /* ==========================================================================
+       IGNITE MIX 40.000
+       ========================================================================== */
+    {
+      id: "ignite-mix-40k",
+      name: "IGNITE MIX 40.000",
+      puffs: "40.000 Puffs",
+      flavors: [
+        "Grape ice + Watermelon ice",
+        "Mighty Melon + Menthol",
+      
+      ],
+      originalPrice: 164.9,
+      promoPrice: 159.9,
+      badge: "Novidade",
+      accent: "Branco",
+      featured: true,
+      image: "./img/ignite-mix-40k.webp",
+      description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
+    }, 
 
     /* ==========================================================================
        ELFBAR 40.000 Iceking
@@ -106,8 +131,7 @@
       name: "ELFBAR 40.000 TRIO",
       puffs: "40.000 tragadas",
       flavors: [
-        "Watermelon ice",
-
+        "Watermelon ice 🍉❄️",
       ],
       originalPrice: 160.0,
       promoPrice: 149.9,
@@ -149,6 +173,7 @@
       flavors: [
         "Extreme mint 🌿",
         "Frozen watermelon 🍉❄️",
+        "Grape ice 🍇❄️",
       ],
       originalPrice: 139.0,
       promoPrice: 119.9,
@@ -168,14 +193,14 @@
       name: "ELFBAR DUKE 35.000",
       puffs: "35.000 tragadas",
       flavors: [
-        "Watermelon ice",
-        "Mango magic",
-        "Menthol",
-        "Fanta grape",
-        "Strawberry kiwi ice",
-        "Peach mango watermelon",
-        "Grape ice",
-        "Kiwi passion fruit Guava",
+        "Watermelon ice 🍉❄️",
+        "Mango magic 🍍",
+        "Menthol 🌿",
+        "Fanta grape 🍇",
+        "Strawberry kiwi ice 🍓🥝❄️",
+        "Peach mango watermelon 🍑🥭🍉",
+        "Grape ice 🍇❄️",
+        "Kiwi passion fruit Guava 🥝🍓",
 
       ],
       originalPrice: 145.0,
@@ -196,8 +221,7 @@
       name: "IGNITE V300 Ultra slim",
       puffs: "30.000 tragadas",
       flavors: [
-        "",
-        "",
+        "Strawberry ice",
       ],
       originalPrice: 150.0,
       promoPrice: 139.9,
@@ -224,6 +248,8 @@
         "Guava passion fruit kiwi",
         "Miami mint",
         "Peach mango watermelon",
+        "Blueberry ice",
+        "Strawmelon peach",
       ],
       originalPrice: 134.9,
       promoPrice: 134.9,
@@ -242,9 +268,15 @@
       name: "DINNER LADY 20.000",
       puffs: "20.000 tragadas",
       flavors: [
-        "Pineapple ice",
-        "Ice mint",
-        "Peach mango watermelon",
+        "Pineapple ice 🍍❄️",
+        "Ice mint 🌿❄️",
+        "Peach mango watermelon 🍑🥭🍉",
+        "Kiwi passion fruit 🥝🍓",
+        "Pineapple ice 🍍❄️",
+        "Ice minty 🌿❄️",
+        "Strawberry ice 🍓❄️",
+        "Grape ice 🍇❄️",
+        "Watermelon ice 🍉❄️",
 
       ],
       originalPrice: 130.0,
@@ -258,16 +290,14 @@
 
     /* ==========================================================================
        ELFBAR 20.000 Touch
-       ========================================================================== 
+       ========================================================================== */
       {
       id: "elfbar-20000-touch",
       name: "ELFBAR 20.000 Touch",
       puffs: "20.000 tragadas",
       flavors: [
-
-        "",
-
-
+        "Kiwi passion fruit guava 🥝🍓",
+        "Strawberry grape ice 🍓🍇❄️",
       ],
       originalPrice: 145.0,
       promoPrice: 109.9,
@@ -277,21 +307,21 @@
       image: "./img/elfbar-20000-touch.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
-    */
 
 
-
-
-/* ==========================================================================
+      /* ==========================================================================
        IGNITE FROZEN 20.000
-       ========================================================================== 
+       ========================================================================== */
       {
       id: "ignite-frozen-20000",
       name: "IGNITE FROZEN 20.000",
       puffs: "20.000 tragadas",
       flavors: [
-        "Strawberry kiwi",
-        "Strawberry ice",
+        "Watermelon ice 🍉❄️",
+        "Strawberry ice 🍓❄️",
+        "Ice mint 🌿❄️",
+        "Grape ice 🍇❄️",
+        "Pineapple ice 🍍❄️",
       ],
       originalPrice: 140.0,
       promoPrice: 129.9,
@@ -301,18 +331,24 @@
       image: "./img/ignite-frozen-20000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
-    */
+    
 
       /* ==========================================================================
        IGNITE V155 - 15.000
-       ========================================================================== 
+       ========================================================================== */
     {
       id: "ignite-v155",
       name: "IGNITE V155",
       puffs: "15.000 Puffs",
       flavors: [
-        
-        "Kiwi passion fruit guava",
+        "Watermelon mix 🍉",
+        "Strawberry watermelon ice 🍓🍉❄️",
+        "Strawberry ice 🍓❄️",
+        "Pineapple ice 🍍❄️",
+        "Strawberry kiwi 🍓🥝",
+        "Mentol 🌿",
+        "Tropical açaí",
+        "Kiwi passion fruit guava 🥝🍓",
         "Grape ice 🍇❄️",
         
       ],
@@ -325,18 +361,25 @@
       description: "O equilíbrio perfeito entre preço e variedade, com 9 sabores populares e entrega rápida.",
     },
 
-    */
+    
     
     /* ==========================================================================
        ELFBAR BC 15.000
-       ========================================================================== 
+       ========================================================================== */
       {
       id: "elfbar-bc-15000",
       name: "ELFBAR BC 15.000",
       puffs: "15.000 tragadas",
       flavors: [
-        "Bubballo tutti fruti",
-  
+        "Americano ice",
+        "Sakura grape",
+        "Kiwi passion fruit guava",
+        "Mango magic",
+        "Miami mint",
+        "Passion fruit orange guava",
+        "Strawberry kiwi",
+        "Peach mango watermelon",
+        "Watermelon ice"
       ],
       originalPrice: 109.9,
       promoPrice: 109.9,
@@ -347,7 +390,7 @@
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
 
-    */
+    
 
     /* ==========================================================================
        NIKBAR 10.000
@@ -361,7 +404,8 @@
         "Watermelon bubble gum",
         "Passion Sour kiwi",
         "Cherry watermelon ice",
-        "Menthol"
+        "Menthol",
+        "Grape ice",
       ],
       originalPrice: 115.0,
       promoPrice: 99.9,
@@ -448,6 +492,7 @@
         "Minty melon",
         "Strawberry kiwi", 
         "Grape ice",
+        "Strawberry watermelon",
       ],
       originalPrice: 110.0,
       promoPrice: 99.9,
