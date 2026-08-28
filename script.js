@@ -145,13 +145,13 @@
 
     /* ==========================================================================
        LOST MARY 35.000
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "lostmary-35k",
       name: "LOST MARY 35.000",
       puffs: "35.000 Puffs",
       flavors: [
-        "Watermelon ice 🍓❄️",
+        
       ],
       originalPrice: 160.0,
       promoPrice: 139.9,
@@ -160,7 +160,7 @@
       featured: true,
       image: "./img/lostmary-35k.webp",
       description: "Modelo com ampla seleção de sabores gelados e cítricos, ideal para quem troca de sabor toda hora.",
-    },
+    },*/
     
 
     /* ==========================================================================
@@ -173,7 +173,6 @@
       flavors: [
         "Extreme mint 🌿",
         "Frozen watermelon 🍉❄️",
-        "Grape ice 🍇❄️",
       ],
       originalPrice: 139.0,
       promoPrice: 119.9,
@@ -196,10 +195,8 @@
         "Watermelon ice 🍉❄️",
         "Mango magic 🍍",
         "Menthol 🌿",
-        "Fanta grape 🍇",
         "Strawberry kiwi ice 🍓🥝❄️",
         "Peach mango watermelon 🍑🥭🍉",
-        "Grape ice 🍇❄️",
         "Kiwi passion fruit Guava 🥝🍓",
 
       ],
