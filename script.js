@@ -297,7 +297,7 @@
         "Strawberry grape ice 🍓🍇❄️",
       ],
       originalPrice: 145.0,
-      promoPrice: 109.9,
+      promoPrice: 119.9,
       badge: "Últimas unidades",
       accent: "Laranja",
       featured: false,
