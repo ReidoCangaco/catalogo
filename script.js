@@ -343,7 +343,6 @@
         "Strawberry ice 🍓❄️",
         "Pineapple ice 🍍❄️",
         "Strawberry kiwi 🍓🥝",
-        "Mentol 🌿",
         "Tropical açaí",
         "Kiwi passion fruit guava 🥝🍓",
         "Grape ice 🍇❄️",
