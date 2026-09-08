@@ -165,7 +165,7 @@
 
     /* ==========================================================================
        Geek bar z35.000k
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "geekbar-z35k",
       name: "GEEK BAR z35.000K",
@@ -181,12 +181,12 @@
       featured: true,
       image: "./img/geekbar-z35k.webp",
       description: "Novidade na JRS PUFFS, com design elegante, bateria duradoura e sabores irresistíveis.",
-    },
+    },*/
 
 
     /* ==========================================================================
        ELFBAR DUKE 35.000
-       ==========================================================================*/
+       ==========================================================================
       {
       id: "elfbar-duke-35000",
       name: "ELFBAR DUKE 35.000",
@@ -194,10 +194,6 @@
       flavors: [
         "Watermelon ice 🍉❄️",
         "Mango magic 🍍",
-        "Menthol 🌿",
-        "Strawberry kiwi ice 🍓🥝❄️",
-        "Peach mango watermelon 🍑🥭🍉",
-        "Kiwi passion fruit Guava 🥝🍓",
 
       ],
       originalPrice: 145.0,
@@ -207,7 +203,7 @@
       featured: false,
       image: "./img/elfbar-duke-35000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
-    },
+    },*/
     
 
     /* ==========================================================================
@@ -357,7 +353,6 @@
       description: "O equilíbrio perfeito entre preço e variedade, com 9 sabores populares e entrega rápida.",
     },
 
-    
     
     /* ==========================================================================
        ELFBAR BC 15.000
