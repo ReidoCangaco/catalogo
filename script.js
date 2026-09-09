@@ -132,7 +132,7 @@
        ========================================================================== */
     {
       id: "ignite-shisha-40k",
-      name: "IGNITE Shisha 40K - 40.000",
+      name: "IGNITE Shisha - 40.000",
       puffs: "40.000 tragadas",
       flavors: [
         "Triple Melon ice",
@@ -281,7 +281,7 @@
        ========================================================================== */
       {
       id: "hqd-glaze-plus",
-      name: "Hqd Glaze Plus 30k - 30.000",
+      name: "Hqd Glaze Plus - 30.000",
       puffs: "30.000 tragadas",
       flavors: [
         "Grape Ice",
