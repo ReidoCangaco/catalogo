@@ -607,6 +607,27 @@
      -------------------------------------------------------------------- */
   const currency = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
 
+  function getProductPrice(product) {
+    const originalPrice = Number(product.originalPrice);
+    const promoPrice = Number(product.promoPrice);
+    const isPromotion = Number.isFinite(promoPrice) && promoPrice > 0 && promoPrice < originalPrice;
+
+    return {
+      currentPrice: isPromotion ? promoPrice : originalPrice,
+      originalPrice,
+      isPromotion,
+    };
+  }
+
+  function priceHTML(product) {
+    const { currentPrice, originalPrice, isPromotion } = getProductPrice(product);
+    const oldPrice = isPromotion
+      ? `<span class="price-old">${currency.format(originalPrice)}</span>`
+      : "";
+
+    return `<span class="price-new">${currency.format(currentPrice)}</span>${oldPrice}`;
+  }
+
 
   /* ------- Adição de Cores e alteração ---------- */
   const ACCENT_HEX = {
@@ -667,8 +688,7 @@
           <h3 class="card-title">${product.name}</h3>
           <p class="card-meta">${product.optionsCount} opções</p>
           <div class="card-price-block">
-            <span class="price-new">${currency.format(product.promoPrice)}</span>
-            <span class="price-old">${currency.format(product.originalPrice)}</span>
+            ${priceHTML(product)}
           </div>
         </div>
         <div class="card-footer">
@@ -729,8 +749,11 @@
     puffs.textContent = product.puffs;
     options.textContent = `${product.optionsCount} sabores disponíveis`;
     flavorCount.textContent = `${product.optionsCount} sabores`;
-    document.getElementById("product-page-price").textContent = currency.format(product.promoPrice);
-    document.getElementById("product-page-old-price").textContent = currency.format(product.originalPrice);
+    const { currentPrice, originalPrice, isPromotion } = getProductPrice(product);
+    document.getElementById("product-page-price").textContent = currency.format(currentPrice);
+    const oldPrice = document.getElementById("product-page-old-price");
+    oldPrice.textContent = isPromotion ? currency.format(originalPrice) : "";
+    oldPrice.hidden = !isPromotion;
 
     let selectedFlavor = product.flavors[0] || "";
     const updateWhatsappLink = () => {
@@ -810,10 +833,10 @@
 
     switch (sortBy) {
       case "menor-preco":
-        list = list.sort((a, b) => a.promoPrice - b.promoPrice);
+        list = list.sort((a, b) => getProductPrice(a).currentPrice - getProductPrice(b).currentPrice);
         break;
       case "maior-preco":
-        list = list.sort((a, b) => b.promoPrice - a.promoPrice);
+        list = list.sort((a, b) => getProductPrice(b).currentPrice - getProductPrice(a).currentPrice);
         break;
       case "mais-opcoes":
         list = list.sort((a, b) => b.optionsCount - a.optionsCount);
