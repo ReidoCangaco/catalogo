@@ -367,7 +367,7 @@
       originalPrice: 145.0,
       promoPrice: 119.9,
       badge: "Últimas unidades",
-      accent: "Laranja",
+      accent: "Vermelho",
       featured: false,
       image: "./img/elfbar-20000-touch.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
