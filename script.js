@@ -44,7 +44,7 @@
         
       ],
       originalPrice: 189.9,
-      
+      promoPrice: 189.9,
       badge: "Novidade",
       accent: "Branco",
       featured: false,
