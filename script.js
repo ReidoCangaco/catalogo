@@ -29,6 +29,31 @@
      -------------------------------------------------------------------- */
   const PRODUCTS = [
 
+    /* ==========================================================================
+       IGNITE V500 - 50.000
+       ========================================================================== */
+    {
+      id: "ignite-v500-50k",
+      name: "IGNITE V500 - 50.000",
+      puffs: "50.000 tragadas",
+      flavors: [
+        "Peach grape",
+        "Pineapple mango",
+        "Strawberry kiwi",
+        "Menthol",
+        
+      ],
+      originalPrice: 189.9,
+      promoPrice: 189.9,
+      badge: "Novidade",
+      accent: "Branco",
+      featured: false,
+      image: "./img/ignite-v500.webp",
+      description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
+    },
+
+
+
 
     /* ==========================================================================
        RABBEATS 50K - 50.000
@@ -47,6 +72,7 @@
         "Menthol",
         "Ice mint",
         "Strawberry ice",
+        "Fanta Strawberry"
       ],
       originalPrice: 149.90,
       promoPrice: 149.90,
@@ -70,8 +96,8 @@
       ],
       originalPrice: 164.9,
       promoPrice: 159.9,
-      badge: "Novidade",
-      accent: "Branco",
+      badge: "",
+      accent: "",
       featured: true,
       image: "./img/ignite-mix-40k.webp",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
@@ -100,6 +126,29 @@
       image: "./img/elfbar40k-iceking.webp",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
     }, 
+
+     /* ==========================================================================
+       IGNITE Shisha 40K - 40.000
+       ========================================================================== */
+    {
+      id: "ignite-shisha-40k",
+      name: "IGNITE Shisha 40K - 40.000",
+      puffs: "40.000 tragadas",
+      flavors: [
+        "Triple Melon ice",
+        "White Grape ice",
+        "Double Apple",
+        
+      ],
+      originalPrice: 179.99,
+      promoPrice: 179.99,
+      badge: "Novidade",
+      accent: "Branco",
+      featured: false,
+      image: "./img/ignite-shisha-40k.webp",
+      description: "O Pod Ignite Shisha 40K reúne recursos pensados para tornar a utilização mais prática e versátil. A possibilidade de alternar entre MTL, Mouth to Lung, e DTL, Direct to Lung, permite variar a experiência de vaporização de acordo com a preferência do usuário.",
+    },
+
     /* ==========================================================================
        The black Sheep 40.000
        ========================================================================== */
@@ -115,8 +164,8 @@
       ],
       originalPrice: 180.0,
       promoPrice: 169.9,
-      badge: "Novidade",
-      accent: "verde",
+      badge: "",
+      accent: "",
       featured: true,
       image: "./img/the-black-sheep-40k.webp",
       description: "Novidade na JRS.",
@@ -135,8 +184,8 @@
       ],
       originalPrice: 160.0,
       promoPrice: 149.9,
-      badge: "Retorno",
-      accent: "branco",
+      badge: "",
+      accent: "",
       featured: false,
       image: "./img/elfbar40ktrio.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
@@ -227,6 +276,29 @@
     */
 
 
+   /* ==========================================================================
+       HQD glaze plus 30k - 30.000
+       ========================================================================== */
+      {
+      id: "hqd-glaze-plus",
+      name: "Hqd Glaze Plus 30k - 30.000",
+      puffs: "30.000 tragadas",
+      flavors: [
+        "Grape Ice",
+        "Watermelon ice",
+        "Strawberry kiwi",
+        "Menthol"
+      ],
+      originalPrice: 129.90,
+      promoPrice: 129.9,
+      badge: "Novidade",
+      accent: "Branco",
+      featured: false,
+      image: "./img/hqd-glaze-plus.webp",
+      description: "Pequeno, portátil e discreto, ideal para quem quer experimentar sabores diferentes sem gastar muito.",
+   },
+
+
 
     /* ==========================================================================
        ELFBAR TE 30.000
@@ -315,6 +387,7 @@
         "Ice mint 🌿❄️",
         "Grape ice 🍇❄️",
         "Pineapple ice 🍍❄️",
+        "Blueberry 🫐",
       ],
       originalPrice: 140.0,
       promoPrice: 129.9,
@@ -484,6 +557,7 @@
         "Strawberry kiwi", 
         "Grape ice",
         "Strawberry watermelon",
+        "Watermelon ice 🍉❄️"
       ],
       originalPrice: 110.0,
       promoPrice: 99.9,
@@ -514,8 +588,13 @@
       featured: false,
       image: "./img/v-nano-1000.webp",
       description: "Pequeno, portátil e discreto, ideal para quem quer experimentar sabores diferentes sem gastar muito.",
-   },
-    */
+   },*/
+
+    
+
+
+
+    
 
   ];
 
