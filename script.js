@@ -482,7 +482,7 @@
 
     /* ==========================================================================
        LOST VAPE 10.000
-       ========================================================================== */
+       ========================================================================== 
       {
       id: "lost-vape-10000",
       name: "LOST VAPE 10.000",
@@ -490,8 +490,7 @@
       flavors: [
         "Peach Mango Watermelon",
         "Grape burst",
-        "Kiwi passion fruit guava",
-        "Strawberry chew",
+        
       ],
       originalPrice: 110.0,
       promoPrice: 89.9,
@@ -500,7 +499,7 @@
       featured: false,
       image: "./img/lost-vape-10000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
-    },
+    },*/
 
     /* ==========================================================================
        IGNITE V80 - Ultra slim 8.000
