@@ -113,10 +113,11 @@
       flavors: [
         "Cherry strazz",
         "Mango magic",
-        "Strawberry ice",
         "Cherry fuse",
         "Pech+",
         "Summer splash",
+        "Grape ice 🍇❄️",
+        "Strawberry ice 🍓❄️",
       ],
       originalPrice: 179.9,
       promoPrice: 159.9,
@@ -160,12 +161,15 @@
         "Kiwi grape starffuit + açaí Straw banana ",
         "Passion fruit + watermelon Strawberry ",
         "Grape + passion fruit ",
-        "Grape + mentol "
+        "Grape + mentol 🍇🧊",
+        "Strawberry kiwi + Cola lime",
+        "Passion Fruit + Watermelon strawberry",
+        "Grape Mango + fresh Mint",
       ],
       originalPrice: 180.0,
       promoPrice: 169.9,
-      badge: "",
-      accent: "",
+      badge: "Novos Sabores",
+      accent: "Verde",
       featured: true,
       image: "./img/the-black-sheep-40k.webp",
       description: "Novidade na JRS.",
@@ -235,24 +239,29 @@
 
     /* ==========================================================================
        ELFBAR DUKE 35.000
-       ==========================================================================
+       ==========================================================================*/
       {
       id: "elfbar-duke-35000",
       name: "ELFBAR DUKE 35.000",
       puffs: "35.000 tragadas",
       flavors: [
+        "Icy mint 🌿❄️",
+        "Strawberry Kiwi ice 🍓🥝❄️",
+        "Grape ice 🍇❄️",
         "Watermelon ice 🍉❄️",
+        "Coconut Strawberry ice 🥥🍓❄️",
+        "Blueberry ice 🫐❄️",
         "Mango magic 🍍",
 
       ],
       originalPrice: 145.0,
       promoPrice: 139.9,
-      badge: "",
-      accent: "",
+      badge: "Retorno",
+      accent: "Branco",
       featured: false,
       image: "./img/elfbar-duke-35000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
-    },*/
+    },
     
 
     /* ==========================================================================
