@@ -419,7 +419,6 @@
         "Watermelon mix 🍉",
         "Strawberry watermelon ice 🍓🍉❄️",
         "Strawberry ice 🍓❄️",
-        "Pineapple ice 🍍❄️",
         "Strawberry kiwi 🍓🥝",
         "Tropical açaí",
         "Kiwi passion fruit guava 🥝🍓",
@@ -467,7 +466,7 @@
 
     /* ==========================================================================
        NIKBAR 10.000
-       ========================================================================== */
+       ========================================================================== 
       {
       id: "nikbar-10000",
       name: "NIKBAR 10.000",
@@ -487,7 +486,7 @@
       featured: false,
       image: "./img/nikbar-10000.webp",
       description: "Ótima opção para quem busca design, sabor intenso e preço em promoção.",
-    },
+    },*/
 
     /* ==========================================================================
        LOST VAPE 10.000
