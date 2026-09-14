@@ -353,8 +353,8 @@
         "Watermelon ice 🍉❄️",
 
       ],
-      originalPrice: 130.0,
-      promoPrice: 130.0,
+      originalPrice: 129.9,
+      promoPrice: 129.9,
       badge: "",
       accent: "",
       featured: false,
