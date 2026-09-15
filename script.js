@@ -703,7 +703,7 @@
           <div class="card-price-block">
             ${priceHTML(product)}
           </div>
-          <p class="campaign-price-note"><span aria-hidden="true">✦</span> ${CAMPAIGN.label} <span class="campaign-price-note-detail">· </span></p>
+          <p class="campaign-price-note"><span aria-hidden="true">✦</span> ${CAMPAIGN.label} <span class="campaign-price-note-detail">· Desconto Aplicado, aproveite. </span></p>
         </div>
         <div class="card-footer">
           <a class="btn btn-primary btn-product-options" href="${productPageLink}">
