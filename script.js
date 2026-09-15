@@ -649,6 +649,7 @@
     laranja: "#FB923C",
     branco: "#F3F4F6",
     vermelho: "#F87171",
+    amarelo: "#FACC15",
   };
 
   function normalizeAccentKey(accent) {
