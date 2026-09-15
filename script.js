@@ -616,7 +616,7 @@
 
   const CAMPAIGN = {
     label: "Semana do Cliente",
-    message: "Condição especial por tempo limitado. Chame no WhatsApp e consulte a disponibilidade.",
+    message: "Condição especial por tempo limitado.",
   };
 
   function getProductPrice(product) {
