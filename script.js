@@ -614,6 +614,11 @@
      -------------------------------------------------------------------- */
   const currency = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
 
+  const CAMPAIGN = {
+    label: "Semana do Cliente",
+    message: "Condição especial por tempo limitado. Chame no WhatsApp e consulte a disponibilidade.",
+  };
+
   function getProductPrice(product) {
     const originalPrice = Number(product.originalPrice);
     const promoPrice = Number(product.promoPrice);
@@ -697,6 +702,7 @@
           <div class="card-price-block">
             ${priceHTML(product)}
           </div>
+          <p class="campaign-price-note"><span aria-hidden="true">✦</span> ${CAMPAIGN.label} <span class="campaign-price-note-detail">· consulte a condição</span></p>
         </div>
         <div class="card-footer">
           <a class="btn btn-primary btn-product-options" href="${productPageLink}">
