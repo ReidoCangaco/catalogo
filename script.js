@@ -44,7 +44,7 @@
         
       ],
       originalPrice: 189.9,
-      promoPrice: 174.9,
+      promoPrice: 189.9,
       badge: "Novidade",
       accent: "Branco",
       featured: false,
@@ -75,7 +75,7 @@
         "Fanta Strawberry"
       ],
       originalPrice: 149.9,
-      promoPrice: 134.9,
+      promoPrice: 149.9,
       badge: "Mais Vendido",
       accent: "Verde",
       featured: false,
@@ -95,7 +95,7 @@
       
       ],
       originalPrice: 159.9,
-      promoPrice: 144.9,
+      promoPrice: 159.9,
       badge: "Últimas unidades",
       accent: "Vermelho",
       featured: true,
@@ -120,7 +120,7 @@
         "Strawberry ice 🍓❄️",
       ],
       originalPrice: 159.9,
-      promoPrice: 144.9,
+      promoPrice: 159.9,
       badge: "Mais Vendido",
       accent: "Verde",
       featured: true,
@@ -142,7 +142,7 @@
         
       ],
       originalPrice: 179.9,
-      promoPrice: 164.9,
+      promoPrice: 179.9,
       badge: "Novidade",
       accent: "Branco",
       featured: false,
@@ -167,7 +167,7 @@
         "Grape Mango + fresh Mint",
       ],
       originalPrice: 169.9,
-      promoPrice: 154.9,
+      promoPrice: 169.9,
       badge: "Novos Sabores",
       accent: "Verde",
       featured: true,
@@ -227,8 +227,8 @@
         "Extreme mint 🌿",
         "Frozen watermelon 🍉❄️",
       ],
-      originalPrice: 139.0,
-      promoPrice: 119.9,
+      originalPrice: 139.9,
+      promoPrice: 139.9,
       badge: "Novidade",
       accent: "verde",
       featured: true,
@@ -255,7 +255,7 @@
 
       ],
       originalPrice: 139.9,
-      promoPrice: 129.9,
+      promoPrice: 139.9,
       badge: "Retorno",
       accent: "Branco",
       featured: false,
@@ -299,7 +299,7 @@
         "Menthol"
       ],
       originalPrice: 129.9,
-      promoPrice: 119.9,
+      promoPrice: 129.9,
       badge: "Novidade",
       accent: "Branco",
       featured: false,
@@ -326,7 +326,7 @@
         "Strawmelon peach",
       ],
       originalPrice: 134.9,
-      promoPrice: 124.9,
+      promoPrice: 134.9,
       badge: "",
       accent: "",
       featured: false,
@@ -354,7 +354,7 @@
 
       ],
       originalPrice: 129.9,
-      promoPrice: 119.9,
+      promoPrice: 129.9,
       badge: "",
       accent: "",
       featured: false,
@@ -374,7 +374,7 @@
         "Strawberry grape ice 🍓🍇❄️",
       ],
       originalPrice: 119.9,
-      promoPrice: 109.9,
+      promoPrice: 119.9,
       badge: "Últimas unidades",
       accent: "Vermelho",
       featured: false,
@@ -391,15 +391,13 @@
       name: "IGNITE FROZEN 20.000",
       puffs: "20.000 tragadas",
       flavors: [
-        "Watermelon ice 🍉❄️",
         "Strawberry ice 🍓❄️",
-        "Ice mint 🌿❄️",
         "Grape ice 🍇❄️",
         "Pineapple ice 🍍❄️",
         "Blueberry 🫐",
       ],
       originalPrice: 129.9,
-      promoPrice: 119.9,
+      promoPrice: 129.9,
       badge: "",
       accent: "",
       featured: false,
@@ -426,7 +424,7 @@
         
       ],
       originalPrice: 119.9,
-      promoPrice: 109.9,
+      promoPrice: 119.9,
       badge: "Mais vendido",
       accent: "Verde",
       featured: true,
@@ -454,7 +452,7 @@
         "Watermelon ice"
       ],
       originalPrice: 109.9,
-      promoPrice: 99.9,
+      promoPrice: 109.9,
       badge: "",
       accent: "",
       featured: false,
@@ -520,7 +518,7 @@
         "Strawberry ice 🍓🧊",
       ],
       originalPrice: 119.9,
-      promoPrice: 109.9,
+      promoPrice: 119.9,
       badge: "Últimas unidades",
       accent: "vermelho",
       featured: false,
@@ -542,7 +540,7 @@
         "Strawberry ice",
       ],
       originalPrice: 109.9,
-      promoPrice: 99.9,
+      promoPrice: 109.9,
       badge: "",
       accent: "",
       featured: false,
@@ -567,7 +565,7 @@
         "Watermelon ice 🍉❄️"
       ],
       originalPrice: 99.9,
-      promoPrice: 89.9,
+      promoPrice: 99.9,
       badge: "",
       accent: "",
       featured: false,
@@ -615,8 +613,8 @@
   const currency = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
 
   const CAMPAIGN = {
-    label: "Semana do Cliente",
-    message: "Condição especial por tempo limitado.",
+    label: "Final de Semana Pede Pods",
+    message: "Sejam Bem Vindos.",
   };
 
   function getProductPrice(product) {
