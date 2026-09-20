@@ -40,14 +40,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="styles.css?v=7" />
 </head>
 <body data-page="product">
   <header class="site-header" id="topo">
     <div class="header-inner">
       <a href="index.html#home" class="logo" aria-label="JRS PUFFS — início">
         <span class="logo-mark">💨</span>
-        <span class="logo-text">JRS<strong>PUFFS</strong></span>
+        <span class="logo-text">JRS PUFFS</span>
       </a>
       <nav class="main-nav" id="main-nav">
         <ul>
@@ -68,17 +68,22 @@
     <section class="section product-page-section">
       <div class="container product-page-main" id="product-page-main">
         <a href="index.html#catalogo" class="product-page-back">← Voltar ao catálogo</a>
-        <div class="product-page-breadcrumbs">
+        <div class="product-page-breadcrumbs" aria-label="Navegação estrutural">
           <a href="index.html#catalogo">Catálogo</a>
-          <span> / </span>
+          <span aria-hidden="true">/</span>
           <span id="product-page-breadcrumb">Produto</span>
         </div>
         <div class="product-page-grid">
           <div class="product-image-card">
+            <span class="product-image-kicker">JRS PUFFS</span>
             <img id="product-page-image" src="" alt="Produto" />
+            <p class="product-image-caption">Produto original e lacrado</p>
           </div>
           <div class="product-page-content">
-            <span class="detail-badge" id="product-page-badge"></span>
+            <div class="product-page-heading">
+              <span class="detail-badge" id="product-page-badge"></span>
+              <span class="product-page-label">Disponível para pedido</span>
+            </div>
             <h1 id="product-page-title">Nome do produto</h1>
             <div class="product-page-price">
               <span class="price-new" id="product-page-price"></span>
@@ -91,13 +96,23 @@
             </div>
             <div class="detail-flavors product-page-flavors">
               <div class="flavors-header">
-                <h3>Sabores disponíveis</h3>
+                <div>
+                  <p class="detail-section-label">Escolha seu sabor</p>
+                  <h3>Sabores disponíveis</h3>
+                </div>
                 <span id="product-page-flavor-count"></span>
               </div>
               <div class="detail-flavor-preview" id="product-page-flavor-preview"></div>
               <button type="button" class="btn btn-outline btn-small" id="product-toggle-flavors">Ver todos os sabores ▾</button>
             </div>
-            <a class="btn btn-whatsapp btn-large" id="product-page-whatsapp" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+            <div class="product-page-actions">
+              <a class="btn btn-whatsapp btn-large" id="product-page-whatsapp" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+              <p class="product-order-note">Você escolhe o sabor e combina a entrega direto com a JRS.</p>
+            </div>
+            <div class="product-trust-strip" aria-label="Garantias da JRS PUFFS">
+              <span><strong>01</strong> Produto lacrado</span>
+              <span><strong>02</strong> Resposta rápida</span>
+            </div>
           </div>
         </div>
       </div>
@@ -109,7 +124,7 @@
       <div>
         <a href="index.html#home" class="logo">
           <span class="logo-mark">💨</span>
-          <span class="logo-text">JRS<strong>PUFFS</strong></span>
+          <span class="logo-text">JRS PUFFS</span>
         </a>
         <p class="footer-tagline">Catálogo de vapes e pods. Pedido fechado direto no WhatsApp.</p>
       </div>
