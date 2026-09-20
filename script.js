@@ -358,7 +358,7 @@
       originalPrice: 129.9,
       promoPrice: 129.9,
       badge: "Novos Sabores 20/09",
-      accent: "Verde",
+      accent: "Amarelo",
       featured: false,
       image: "./img/dinnerlady-20k.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
