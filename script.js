@@ -93,7 +93,6 @@
       puffs: "40.000 Puffs",
       flavors: [
         "Grape ice + Watermelon ice",
-        "Mighty Melon + Menthol",
       
       ],
       originalPrice: 159.9,
@@ -156,13 +155,11 @@
       name: "THE BLACK SHEEP 40.000",
       puffs: "40.000 Puffs",
       flavors: [
-        "Kiwi grape starffuit + açaí Straw banana ",
+       
         "Passion fruit + watermelon Strawberry ",
         "Grape + passion fruit ",
         "Grape + mentol 🍇🧊",
-        "Strawberry kiwi + Cola lime",
         "Passion Fruit + Watermelon strawberry",
-        "Grape Mango + fresh Mint",
       ],
       originalPrice: 169.9,
       promoPrice: 169.9,
@@ -316,10 +313,7 @@
       puffs: "30.000 tragadas",
       flavors: [
         "Strawberry ice",
-        "Watermelon ice",
         "Guava passion fruit kiwi",
-        "Miami mint",
-        "Peach mango watermelon",
         "Blueberry ice",
         "Strawmelon peach",
       ],
@@ -391,7 +385,6 @@
       flavors: [
         "Strawberry ice 🍓❄️",
         "Grape ice 🍇❄️",
-        "Pineapple ice 🍍❄️",
         "Blueberry 🫐",
         "Strawberry kiwi 🍓🥝",
         "Menthol 🌿",
@@ -415,11 +408,8 @@
       name: "IGNITE V155",
       puffs: "15.000 Puffs",
       flavors: [
-        "Watermelon mix 🍉",
+   
         "Strawberry watermelon ice 🍓🍉❄️",
-        "Strawberry ice 🍓❄️",
-        "Strawberry kiwi 🍓🥝",
-        "Tropical açaí",
         "Kiwi passion fruit guava 🥝🍓",
         "Grape ice 🍇❄️",
         
