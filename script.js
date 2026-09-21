@@ -563,10 +563,6 @@
       flavors: [
         "Melon mix",
         "Minty melon",
-        "Strawberry kiwi", 
-        "Grape ice",
-        "Strawberry watermelon",
-        "Watermelon ice 🍉❄️"
       ],
       originalPrice: 99.9,
       promoPrice: 99.9,
