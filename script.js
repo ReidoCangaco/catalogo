@@ -114,12 +114,8 @@
       puffs: "40.000 Puffs",
       flavors: [
         "Cherry strazz",
-        "Mango magic",
         "Cherry fuse",
-        "Pech+",
         "Summer splash",
-        "Grape ice 🍇❄️",
-        "Strawberry ice 🍓❄️",
       ],
       originalPrice: 159.9,
       promoPrice: 159.9,
