@@ -344,7 +344,6 @@
         "Ice mint 🌿❄️",
         "Peach mango watermelon 🍑🥭🍉",
         "Kiwi passion fruit 🥝🍓",
-        "Ice minty 🌿❄️",
         "Strawberry ice 🍓❄️",
         "Grape ice 🍇❄️",
         "Watermelon ice 🍉❄️",
