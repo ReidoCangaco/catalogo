@@ -621,7 +621,7 @@
   const currency = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
 
   const CAMPAIGN = {
-    label: "Final de Semana Pede JRS",
+    label: "A Semana pede JRS",
     message: "Sejam Bem Vindos.",
   };
 
