@@ -312,7 +312,6 @@
       name: "ELFBAR TE 30.000",
       puffs: "30.000 tragadas",
       flavors: [
-        "Strawberry ice",
         "Guava passion fruit kiwi",
         "Blueberry ice",
         "Strawmelon peach",
@@ -323,7 +322,7 @@
       accent: "",
       featured: false,
       image: "./img/elfbar-te-30000.webp",
-      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+      description: "",
     },
 
     /* ==========================================================================
