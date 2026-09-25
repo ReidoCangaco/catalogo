@@ -664,9 +664,11 @@
   /* --------------------------------------------------------------------
      4. RENDERIZAÇÃO
      -------------------------------------------------------------------- */
+  const isFeatured = (product) => product.featured === true || product.badge === "Promoção";
+
   function productCardHTML(product) {
     const productPageLink = `produto.html?id=${encodeURIComponent(product.id)}`;
-    const badgeClass = product.featured ? "oferta" : "";
+    const badgeClass = isFeatured(product) ? "oferta" : "";
     const accentColor = getAccentColor(product.accent);
     // --card-accent alimenta tanto o glow quanto a cor do badge via CSS (herança de custom property)
     const cardStyle = accentColor ? ` style="--card-accent:${accentColor}"` : "";
@@ -825,21 +827,22 @@
 
     let list = PRODUCTS.filter((p) => p.name.toLowerCase().includes(query));
 
-    switch (sortBy) {
-      case "menor-preco":
-        list = list.sort((a, b) => getProductPrice(a).currentPrice - getProductPrice(b).currentPrice);
-        break;
-      case "maior-preco":
-        list = list.sort((a, b) => getProductPrice(b).currentPrice - getProductPrice(a).currentPrice);
-        break;
-      case "mais-opcoes":
-        list = list.sort((a, b) => b.optionsCount - a.optionsCount);
-        break;
-      case "relevancia":
-      default:
-        list = list.sort((a, b) => Number(b.featured) - Number(a.featured));
-        break;
-    }
+    list = list.sort((a, b) => {
+      const featuredPriority = Number(isFeatured(b)) - Number(isFeatured(a));
+      if (featuredPriority !== 0) return featuredPriority;
+
+      switch (sortBy) {
+        case "menor-preco":
+          return getProductPrice(a).currentPrice - getProductPrice(b).currentPrice;
+        case "maior-preco":
+          return getProductPrice(b).currentPrice - getProductPrice(a).currentPrice;
+        case "mais-opcoes":
+          return b.optionsCount - a.optionsCount;
+        case "relevancia":
+        default:
+          return 0;
+      }
+    });
 
     renderCatalog(list);
   }
