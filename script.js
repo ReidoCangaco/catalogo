@@ -76,10 +76,10 @@
         "Strawberry ice",
         "Fanta Strawberry"
       ],
-      originalPrice: 149.9,
-      promoPrice: 149.9,
-      badge: "Reposição",
-      accent: "Amarelo",
+      originalPrice: 150.0,
+      promoPrice: 139.9,
+      badge: "Promoção",
+      accent: "Verde",
       featured: false,
       image: "./img/rabbeats-50k.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
@@ -112,9 +112,8 @@
       name: "ELFBAR 40.000 Iceking",
       puffs: "40.000 Puffs",
       flavors: [
-        "Cherry strazz",
         "Cherry fuse",
-        "Summer splash",
+        "Strawberry ice",
       ],
       originalPrice: 159.9,
       promoPrice: 159.9,
@@ -240,7 +239,6 @@
       name: "ELFBAR DUKE 35.000",
       puffs: "35.000 tragadas",
       flavors: [
-        "Icy mint 🌿❄️",
         "Strawberry Kiwi ice 🍓🥝❄️",
         "Grape ice 🍇❄️",
         "Watermelon ice 🍉❄️",
@@ -344,10 +342,10 @@
         "Menthol 🌿",
 
       ],
-      originalPrice: 129.9,
-      promoPrice: 129.9,
-      badge: "Reposição",
-      accent: "Amarelo",
+      originalPrice: 130.0,
+      promoPrice: 119.9,
+      badge: "Promoção",
+      accent: "Verde",
       featured: false,
       image: "./img/dinnerlady-20k.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
@@ -397,7 +395,7 @@
 
       /* ==========================================================================
        IGNITE V155 - 15.000
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "ignite-v155",
       name: "IGNITE V155",
@@ -406,7 +404,7 @@
    
         "Strawberry watermelon ice 🍓🍉❄️",
         "Kiwi passion fruit guava 🥝🍓",
-        "Grape ice 🍇❄️",
+        
         
       ],
       originalPrice: 119.9,
@@ -416,7 +414,7 @@
       featured: true,
       image: "./img/v155.webp", 
       description: "O equilíbrio perfeito entre preço e variedade, com 9 sabores populares e entrega rápida.",
-    },
+    },*/
 
     
     /* ==========================================================================
@@ -527,7 +525,7 @@
         "Strawberry ice",
       ],
       originalPrice: 109.9,
-      promoPrice: 109.9,
+      promoPrice: 99.9,
       badge: "",
       accent: "",
       featured: false,
