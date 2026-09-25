@@ -80,7 +80,7 @@
       promoPrice: 139.9,
       badge: "Promoção",
       accent: "Verde",
-      featured: false,
+      featured: true,
       image: "./img/rabbeats-50k.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
     },
