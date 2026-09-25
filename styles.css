@@ -791,19 +791,6 @@ button { font-family: inherit; cursor: pointer; }
 .contact-main h3 { font-size: 1.55rem; margin-bottom: 10px; }
 .contact-main p { color: var(--text-muted); margin-bottom: 24px; max-width: 42ch; line-height: 1.6; }
 .contact-social { border-left: 1px solid var(--border); padding-left: 36px; }
-.social-label { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px; }
-.social-links { display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px; }
-.social-pill {
-  background: var(--surface-hover);
-  border: 1px solid var(--border);
-  padding: 11px 16px;
-  border-radius: var(--radius-full);
-  font-size: 0.9rem;
-  font-weight: 600;
-  width: fit-content;
-  transition: border-color .2s ease, transform .2s ease;
-}
-.social-pill:hover { border-color: var(--brand-soft); transform: translateY(-2px); }
 .hours { font-size: 0.85rem; color: var(--text-muted); }
 
 /* ==========================================================================
@@ -935,5 +922,5 @@ button { font-family: inherit; cursor: pointer; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .btn:hover, .product-card:hover, .differentials li:hover, .social-pill:hover { transform: none; }
+  .btn:hover, .product-card:hover, .differentials li:hover { transform: none; }
 }

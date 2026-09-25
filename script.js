@@ -777,6 +777,7 @@
       toggleButton.dataset.expanded = String(showAll);
     };
 
+    toggleButton.hidden = product.flavors.length <= 8;
     showPreview(false);
     updateWhatsappLink();
 
@@ -1010,6 +1011,8 @@
       const productId = getQueryParam("id");
       const product = PRODUCTS.find((item) => item.id === productId);
       if (product) {
+        const canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) canonical.href = `https://jrspuffs.shop/produto.html?id=${encodeURIComponent(product.id)}`;
         renderProductPage(product);
       } else {
         renderNotFound();
