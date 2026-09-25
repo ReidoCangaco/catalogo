@@ -615,8 +615,13 @@
     const oldPrice = isPromotion
       ? `<span class="price-old">${currency.format(originalPrice)}</span>`
       : "";
+    const discountPercent =
+      product.badge === "Promoção" && originalPrice > 0 && currentPrice < originalPrice
+        ? Math.round(((originalPrice - currentPrice) / originalPrice) * 100)
+        : 0;
+    const discount = discountPercent > 0 ? `<span class="discount-percent">${discountPercent}% OFF</span>` : "";
 
-    return `<span class="price-new">${currency.format(currentPrice)}</span>${oldPrice}`;
+    return `<span class="price-new">${currency.format(currentPrice)}</span>${oldPrice}${discount}`;
   }
 
 
@@ -669,12 +674,14 @@
   function productCardHTML(product) {
     const productPageLink = `produto.html?id=${encodeURIComponent(product.id)}`;
     const badgeClass = isFeatured(product) ? "oferta" : "";
+    const promotionClass = product.badge === "Promoção" ? " promocao" : "";
+    const badgeText = product.badge === "Promoção" ? "🔥 PROMOÇÃO" : product.badge;
     const accentColor = getAccentColor(product.accent);
     // --card-accent alimenta tanto o glow quanto a cor do badge via CSS (herança de custom property)
     const cardStyle = accentColor ? ` style="--card-accent:${accentColor}"` : "";
     return `
-      <article class="product-card reveal" data-id="${product.id}"${cardStyle}>
-        <span class="card-badge ${badgeClass}">${product.badge}</span>
+      <article class="product-card${promotionClass} reveal" data-id="${product.id}"${cardStyle}>
+        <span class="card-badge ${badgeClass}${promotionClass}">${badgeText}</span>
         <div class="card-media">
           <img src="${product.image}" alt="${product.name}" loading="lazy" decoding="async" />
         </div>

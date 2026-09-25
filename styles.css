@@ -477,6 +477,7 @@ button { font-family: inherit; cursor: pointer; }
   box-shadow: var(--shadow-pop), 0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 .product-card:hover::before { opacity: 1; }
+.product-card.promocao { border-color: rgba(255, 107, 74, 0.34); box-shadow: var(--shadow-card), 0 0 24px -18px rgba(255, 107, 74, 0.8); }
 
 .card-badge {
   position: absolute;
@@ -493,6 +494,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .card-badge:empty { display: none; }
 .card-badge.oferta { box-shadow: 0 8px 20px -6px var(--card-accent); }
+.card-badge.promocao { background: var(--warm); color: var(--white); box-shadow: 0 8px 18px -8px var(--warm); }
 
 .card-media {
   position: relative;
@@ -532,6 +534,7 @@ button { font-family: inherit; cursor: pointer; }
 
 .card-price-block { display: flex; align-items: baseline; gap: 10px; margin-top: 6px; flex-wrap: wrap; }
 .price-old { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-faint); text-decoration: line-through; }
+.discount-percent { color: var(--warm-soft); font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; white-space: nowrap; }
 .price-new {
   font-family: var(--font-mono);
   font-size: 1.5rem;
