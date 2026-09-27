@@ -992,8 +992,12 @@
 
   function setupHeroScrollAnimation() {
     const hero = document.getElementById("home");
-    if (!hero || typeof window.requestAnimationFrame !== "function") return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const catalog = document.getElementById("catalogo");
+    const catalogGrid = document.getElementById("catalog-grid");
+    const catalogTitle = catalog && catalog.querySelector(".section-heading h2");
+    const catalogCopy = catalog && catalog.querySelector(".section-heading p");
+    if (!hero || !catalog || !catalogGrid || !catalogTitle || typeof window.requestAnimationFrame !== "function") return;
+    if (typeof window.matchMedia === "function" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const transition = hero.nextElementSibling;
     let frame = 0;
@@ -1005,39 +1009,56 @@
     const update = () => {
       frame = 0;
       const heroTop = window.scrollY + hero.getBoundingClientRect().top;
-      const distance = Math.max(hero.offsetHeight * 0.78, 1);
+      const gridTop = window.scrollY + catalogGrid.getBoundingClientRect().top;
+      const distance = Math.max(gridTop - heroTop - window.innerHeight * 0.78, hero.offsetHeight * 0.72, 1);
       const progress = clamp((window.scrollY - heroTop) / distance, 0, 1);
-      const scale = progress < 0.32
-        ? 1 + (progress / 0.32) * 0.08
-        : 1.08 - ((progress - 0.32) / 0.68) * 0.3;
-      const exit = easeBetween(0.58, 1, progress);
-      const supportExit = easeBetween(0.4, 0.94, progress);
-      const smokeFront = Math.sin(progress * Math.PI);
+      const logoScale = progress < 0.38
+        ? 1 + (progress / 0.38) * 0.075
+        : 1.075 - ((progress - 0.38) / 0.62) * 0.22;
+      const logoExit = easeBetween(0.68, 0.98, progress);
+      const supportExit = easeBetween(0.58, 0.94, progress);
+      const intro = easeBetween(0.36, 0.76, progress);
+      const transitionLine = easeBetween(0.18, 0.88, progress);
+      const smokeFront = Math.sin(easeBetween(0.2, 0.92, progress) * Math.PI);
 
-      hero.style.setProperty("--hero-scroll-y", `${-progress * hero.offsetHeight * 0.3}px`);
-      hero.style.setProperty("--hero-scroll-scale", scale.toFixed(3));
-      hero.style.setProperty("--hero-scroll-opacity", (1 - exit).toFixed(3));
-      hero.style.setProperty("--hero-eyebrow-y", `${-progress * 18}px`);
-      hero.style.setProperty("--hero-eyebrow-opacity", (1 - progress * 0.82).toFixed(3));
-      hero.style.setProperty("--hero-support-y", `${-progress * 28}px`);
+      hero.style.setProperty("--hero-scroll-y", `${-progress * hero.offsetHeight * 0.22}px`);
+      hero.style.setProperty("--hero-scroll-scale", logoScale.toFixed(3));
+      hero.style.setProperty("--hero-scroll-opacity", (1 - logoExit).toFixed(3));
+      hero.style.setProperty("--hero-eyebrow-y", `${-progress * 22}px`);
+      hero.style.setProperty("--hero-eyebrow-opacity", (1 - easeBetween(0.22, 0.68, progress)).toFixed(3));
+      hero.style.setProperty("--hero-support-y", `${-progress * 24}px`);
       hero.style.setProperty("--hero-support-opacity", (1 - supportExit).toFixed(3));
-      hero.style.setProperty("--hero-smoke-y", `${-progress * hero.offsetHeight * 0.12}px`);
-      hero.style.setProperty("--hero-smoke-x", `${-progress * 14}px`);
-      hero.style.setProperty("--hero-smoke-back-opacity", (0.34 - progress * 0.18).toFixed(3));
-      hero.style.setProperty("--hero-smoke-front-opacity", (0.025 + smokeFront * 0.12).toFixed(3));
-      hero.style.setProperty("--hero-overlay-opacity", (0.4 - progress * 0.22).toFixed(3));
-      hero.style.setProperty("--hero-haze-opacity", (0.72 - progress * 0.4).toFixed(3));
+      hero.style.setProperty("--hero-smoke-back-y", `${-progress * hero.offsetHeight * 0.09}px`);
+      hero.style.setProperty("--hero-smoke-back-x", `${progress * 12}px`);
+      hero.style.setProperty("--hero-smoke-front-y", `${progress * hero.offsetHeight * 0.055}px`);
+      hero.style.setProperty("--hero-smoke-front-x", `${-progress * 20}px`);
+      hero.style.setProperty("--hero-smoke-back-opacity", (0.3 - progress * 0.2).toFixed(3));
+      hero.style.setProperty("--hero-smoke-front-opacity", (0.025 + smokeFront * 0.105).toFixed(3));
+      hero.style.setProperty("--hero-overlay-opacity", (0.38 - progress * 0.22).toFixed(3));
+      hero.style.setProperty("--hero-haze-opacity", (0.68 - progress * 0.42).toFixed(3));
+      hero.style.setProperty("--hero-bg-y", `${-progress * 8}px`);
+      hero.style.setProperty("--hero-bg-scale", (1 + progress * 0.025).toFixed(3));
       hero.style.setProperty("--hero-cue-opacity", (1 - Math.min(progress * 5, 1)).toFixed(3));
+      catalogTitle.style.setProperty("--catalog-title-y", `${(1 - intro) * 42}px`);
+      catalogTitle.style.setProperty("--catalog-title-scale", (0.78 + intro * 0.22).toFixed(3));
+      catalogTitle.style.setProperty("--catalog-title-opacity", intro.toFixed(3));
+      catalogTitle.style.setProperty("--catalog-title-clip", `${(1 - intro) * 100}%`);
+      catalogTitle.style.setProperty("--catalog-rule-scale", (0.12 + intro * 0.88).toFixed(3));
+      if (catalogCopy) {
+        const copyIntro = easeBetween(0.48, 0.84, progress);
+        catalogCopy.style.setProperty("--catalog-copy-y", `${(1 - copyIntro) * 24}px`);
+        catalogCopy.style.setProperty("--catalog-copy-opacity", copyIntro.toFixed(3));
+      }
       if (transition && transition.classList.contains("bunting")) {
-        transition.style.setProperty("--home-transition-progress", progress.toFixed(3));
-        transition.style.setProperty("--home-transition-opacity", (Math.min(progress * 2, 0.85)).toFixed(3));
+        transition.style.setProperty("--home-transition-progress", transitionLine.toFixed(3));
+        transition.style.setProperty("--home-transition-opacity", (transitionLine * (1 - easeBetween(0.9, 1, progress) * 0.3)).toFixed(3));
       }
     };
     const scheduleUpdate = () => {
       if (frame) return;
       frame = window.requestAnimationFrame(update);
     };
-
+    document.body.classList.add("hero-scroll-story-ready");
     hero.classList.add("hero-scroll-animation-ready");
     window.addEventListener("scroll", scheduleUpdate, { passive: true });
     window.addEventListener("resize", scheduleUpdate, { passive: true });

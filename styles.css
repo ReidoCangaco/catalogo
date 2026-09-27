@@ -325,6 +325,7 @@ button { font-family: inherit; cursor: pointer; }
     radial-gradient(44% 32% at 50% 38%, rgba(168, 179, 184, 0.1), transparent 74%),
     radial-gradient(34% 26% at 12% 78%, rgba(20, 250, 241, 0.055), transparent 76%);
   opacity: var(--hero-haze-opacity, 0.72);
+  transform: translate3d(0, var(--hero-bg-y, 0px), 0) scale(var(--hero-bg-scale, 1));
 }
 .hero-section.hero-scroll-animation-ready::after {
   content: "";
@@ -408,6 +409,7 @@ button { font-family: inherit; cursor: pointer; }
   z-index: 0;
 }
 .hero-section.hero-scroll-animation-ready .hero-scroll-animation { will-change: transform, opacity; }
+.hero-section.hero-scroll-animation-ready::before { will-change: transform, opacity; }
 .hero-logo {
   display: block;
   width: 100%;
@@ -431,6 +433,8 @@ button { font-family: inherit; cursor: pointer; }
     radial-gradient(ellipse at 54% 32%, rgba(215, 220, 222, 0.12), transparent 44%);
   transform: translate3d(calc(-50% + var(--hero-smoke-x, 0px)), calc(-50% + var(--hero-smoke-y, 0px)), 0) scale(1.08);
 }
+.hero-smoke-back { transform: translate3d(calc(-50% + var(--hero-smoke-back-x, 0px)), calc(-50% + var(--hero-smoke-back-y, 0px)), 0) scale(1.08); }
+.hero-smoke-front { transform: translate3d(calc(-50% + var(--hero-smoke-front-x, 0px)), calc(-50% + var(--hero-smoke-front-y, 0px)), 0) scale(1.08); }
 .hero-section.hero-scroll-animation-ready .hero-smoke-back {
   opacity: var(--hero-smoke-back-opacity, 0.75);
   z-index: -1;
@@ -521,7 +525,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .hero-trust li:nth-child(2) { transform: rotate(1.5deg); }
 
-.hero-section + .bunting { position: relative; }
+.hero-section + .bunting { position: relative; animation: none; }
 .hero-section + .bunting::after {
   content: "";
   position: absolute;
@@ -537,20 +541,28 @@ button { font-family: inherit; cursor: pointer; }
   opacity: var(--home-transition-opacity, 0);
 }
 
-.catalog-section .section-heading.reveal h2 {
-  transition: clip-path .62s var(--ease), transform .62s var(--ease);
-  clip-path: inset(0);
+body.hero-scroll-story-ready .catalog-section .section-heading h2 {
+  --catalog-title-y: 42px;
+  --catalog-title-scale: 0.78;
+  --catalog-title-opacity: 0;
+  --catalog-title-clip: 100%;
+  --catalog-rule-scale: 0.12;
+  transform: translate3d(0, var(--catalog-title-y, 0px), 0) scale(var(--catalog-title-scale, 1));
+  transform-origin: center center;
+  opacity: var(--catalog-title-opacity, 1);
+  clip-path: inset(var(--catalog-title-clip, 0%) 0 0);
+  will-change: transform, opacity, clip-path;
 }
-.catalog-section .section-heading.reveal:not(.is-visible) h2 {
-  clip-path: inset(100% 0 0);
-  transform: translateY(0.14em) scale(0.97);
-}
-.catalog-section .section-heading.reveal h2::after {
+body.hero-scroll-story-ready .catalog-section .section-heading h2::after {
   transform: scaleX(var(--catalog-rule-scale, 1));
   transform-origin: left center;
-  transition: transform .72s var(--ease);
 }
-.catalog-section .section-heading.reveal:not(.is-visible) h2::after { --catalog-rule-scale: 0.12; }
+body.hero-scroll-story-ready .catalog-section .section-heading p {
+  --catalog-copy-y: 24px;
+  --catalog-copy-opacity: 0;
+  transform: translate3d(0, var(--catalog-copy-y, 0px), 0);
+  opacity: var(--catalog-copy-opacity, 1);
+}
 
 .hero-visual { display: none; }
 .glow-orb { display: none; }
@@ -1078,6 +1090,8 @@ button { font-family: inherit; cursor: pointer; }
   .hero-section.hero-scroll-animation-ready .hero-actions,
   .hero-section.hero-scroll-animation-ready .hero-trust { will-change: auto; }
   .hero-section + .bunting::after { display: none; }
-  .catalog-section .section-heading.reveal h2 { clip-path: none; transform: none; transition: none; }
-  .catalog-section .section-heading.reveal h2::after { transform: none; transition: none; }
+  body.hero-scroll-story-ready .catalog-section .section-heading h2 { clip-path: none; transform: none; opacity: 1; will-change: auto; }
+  body.hero-scroll-story-ready .catalog-section .section-heading h2::after { transform: none; }
+  body.hero-scroll-story-ready .catalog-section .section-heading p { transform: none; opacity: 1; }
+  .hero-section::before { transform: none; will-change: auto; }
 }
