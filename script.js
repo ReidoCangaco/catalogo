@@ -990,6 +990,91 @@
     document.getElementById("hero-device").innerHTML = deviceSVG("babyBlue", 190);
   }
 
+  function setupHeroScrollAnimation() {
+    const hero = document.getElementById("home");
+    const logo = hero && hero.querySelector(".hero-logo");
+    const fragmentLayer = hero && hero.querySelector(".hero-logo-fragments");
+    if (!hero || !logo || !fragmentLayer || typeof window.requestAnimationFrame !== "function") return;
+    if (typeof window.matchMedia === "function" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const columns = 5;
+    const rows = 4;
+    const pieces = [];
+    const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+    const variation = (index, salt) => {
+      const value = Math.sin((index + 1) * 12.9898 + salt * 78.233) * 43758.5453;
+      return value - Math.floor(value);
+    };
+
+    const initializeFragments = () => {
+      if (!logo.naturalWidth || !logo.naturalHeight || hero.classList.contains("hero-logo-fragments-ready")) return;
+
+      for (let index = 0; index < columns * rows; index += 1) {
+        const column = index % columns;
+        const row = Math.floor(index / columns);
+        const fragment = document.createElement("span");
+        fragment.className = "hero-logo-fragment";
+        fragment.style.left = `${column * 20}%`;
+        fragment.style.top = `${row * 25}%`;
+        fragment.style.backgroundImage = `url("${logo.currentSrc || logo.src}")`;
+        fragment.style.backgroundSize = `${columns * 100}% ${rows * 100}%`;
+        fragment.style.backgroundPosition = `${column * 25}% ${row * (100 / (rows - 1))}%`;
+        fragmentLayer.appendChild(fragment);
+        pieces.push({
+          element: fragment,
+          offsetX: (variation(index, 1) - 0.5) * 138,
+          offsetY: (variation(index, 2) - 0.5) * 150,
+          rotation: (variation(index, 3) - 0.5) * 42,
+          scale: 0.78 + variation(index, 4) * 0.38,
+          opacity: 0.3 + variation(index, 5) * 0.48,
+        });
+      }
+
+      let frame = 0;
+      let heroTop = window.scrollY + hero.getBoundingClientRect().top;
+      let heroHeight = hero.offsetHeight;
+      const update = () => {
+        frame = 0;
+        const distance = Math.max(heroHeight * 0.78, 1);
+        const progress = clamp((window.scrollY - heroTop) / distance, 0, 1);
+        const assembly = clamp(progress / 0.82, 0, 1);
+        const scattered = 1 - assembly;
+
+        pieces.forEach((piece) => {
+          piece.element.style.transform = `translate3d(${piece.offsetX * scattered}px, ${piece.offsetY * scattered}px, 0) rotate(${piece.rotation * scattered}deg) scale(${1 + (piece.scale - 1) * scattered})`;
+          piece.element.style.opacity = (piece.opacity + (1 - piece.opacity) * assembly).toFixed(3);
+        });
+
+        const exit = clamp((progress - 0.82) / 0.18, 0, 1);
+        hero.style.setProperty("--hero-fragment-rise", `${-exit * heroHeight * 0.12}px`);
+        hero.style.setProperty("--hero-smoke-y", `${-progress * 52}px`);
+        hero.style.setProperty("--hero-smoke-back-opacity", (0.34 - progress * 0.16).toFixed(3));
+        hero.style.setProperty("--hero-smoke-front-opacity", (0.07 + progress * 0.06).toFixed(3));
+        hero.style.setProperty("--hero-cue-opacity", (1 - Math.min(progress * 5, 1)).toFixed(3));
+      };
+      const scheduleUpdate = () => {
+        if (frame) return;
+        frame = window.requestAnimationFrame(update);
+      };
+      const updateGeometry = () => {
+        heroTop = window.scrollY + hero.getBoundingClientRect().top;
+        heroHeight = hero.offsetHeight;
+        scheduleUpdate();
+      };
+
+      update();
+      hero.classList.add("hero-logo-fragments-ready");
+      window.addEventListener("scroll", scheduleUpdate, { passive: true });
+      window.addEventListener("resize", updateGeometry, { passive: true });
+    };
+
+    if (logo.complete) {
+      initializeFragments();
+    } else {
+      logo.addEventListener("load", initializeFragments, { once: true });
+    }
+  }
+
   /* --------------------------------------------------------------------
      INICIALIZAÇÃO
      -------------------------------------------------------------------- */
@@ -1001,6 +1086,7 @@
     setupMobileNav();
     setupActiveNavOnScroll();
     setupHeaderScrollState();
+    setupHeroScrollAnimation();
     setupCatalogControls();
     markStaticRevealTargets();
 
