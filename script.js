@@ -38,7 +38,6 @@
       puffs: "50.000 tragadas",
       flavors: [
         "Peach grape",
-        "Pineapple mango",
         "Strawberry kiwi",
         "Menthol",
         "Watermelon ice",
@@ -72,9 +71,8 @@
         "Miami mint",
         "Triple berry",
         "Menthol",
-        "Ice mint",
         "Strawberry ice",
-        "Fanta Strawberry"
+        "Fanta Strawberry",
       ],
       originalPrice: 150.0,
       promoPrice: 139.9,
@@ -154,10 +152,12 @@
       name: "THE BLACK SHEEP 40.000",
       puffs: "40.000 Puffs",
       flavors: [
-       
+        "Kiwi Grape Starfruit + Açai Straw Banana",
+        "Grape mango + Fresh mint",
+        "Strawberry Kiwi + Cola Lime",
         "Passion fruit + watermelon Strawberry ",
-        "Grape + passion fruit ",
-        "Grape + mentol 🍇🧊",
+        "Grape + passion fruit 🍇",
+        "Grape + mentol 🍇+🧊",
         "Passion Fruit + Watermelon strawberry",
       ],
       originalPrice: 169.9,
@@ -239,7 +239,6 @@
       name: "ELFBAR DUKE 35.000",
       puffs: "35.000 tragadas",
       flavors: [
-        "Strawberry Kiwi ice 🍓🥝❄️",
         "Grape ice 🍇❄️",
         "Watermelon ice 🍉❄️",
         "Coconut Strawberry ice 🥥🍓❄️",
@@ -289,7 +288,7 @@
         "Grape Ice",
         "Watermelon ice",
         "Strawberry kiwi",
-        "Menthol"
+        "Menthol",
       ],
       originalPrice: 129.9,
       promoPrice: 129.9,
@@ -310,9 +309,11 @@
       name: "ELFBAR TE 30.000",
       puffs: "30.000 tragadas",
       flavors: [
-        "Guava passion fruit kiwi",
-        "Blueberry ice",
-        "Strawmelon peach",
+        "Guava passion fruit kiwi 🥝🍓",
+        "Blueberry ice 🫐❄️",
+        "Strawmelon peach 🍓🍑",
+        "Watermelon ice 🍉❄️",
+        "Peach mango watermelon 🍑🥭🍉",
       ],
       originalPrice: 134.9,
       promoPrice: 134.9,
@@ -332,7 +333,6 @@
       puffs: "20.000 tragadas",
       flavors: [
         "Pineapple ice 🍍❄️",
-        "Ice mint 🌿❄️",
         "Peach mango watermelon 🍑🥭🍉",
         "Kiwi passion fruit 🥝🍓",
         "Strawberry ice 🍓❄️",
@@ -380,7 +380,6 @@
       name: "IGNITE FROZEN 20.000",
       puffs: "20.000 tragadas",
       flavors: [
-        "Grape ice 🍇❄️",
         "Blueberry 🫐",
       ],
       originalPrice: 129.9,
@@ -426,14 +425,10 @@
       puffs: "15.000 tragadas",
       flavors: [
         "Americano ice",
-        "Sakura grape",
         "Kiwi passion fruit guava",
-        "Mango magic",
-        "Miami mint",
         "Passion fruit orange guava",
-        "Strawberry kiwi",
         "Peach mango watermelon",
-        "Watermelon ice"
+        "Watermelon ice",
       ],
       originalPrice: 109.9,
       promoPrice: 109.9,
@@ -493,7 +488,7 @@
 
     /* ==========================================================================
        IGNITE V80 - Ultra slim 8.000
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "ignite-v80ultra-slim",
       name: "IGNITE V80 - Ultra slim",
@@ -509,7 +504,7 @@
       featured: false,
       image: "./img/ignite-v80ultraslim.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
-    },
+    },*/
 
     /* ==========================================================================
        IGNITE V80 - Normal 8.000
@@ -522,7 +517,6 @@
         "Cactus",
         "Grape ice",
         "Blueberry ice",
-        "Strawberry ice",
       ],
       originalPrice: 109.9,
       promoPrice: 99.9,
@@ -543,7 +537,6 @@
       puffs: "5.500 tragadas",
       flavors: [
         "Melon mix",
-        "Minty melon",
       ],
       originalPrice: 99.9,
       promoPrice: 99.9,
