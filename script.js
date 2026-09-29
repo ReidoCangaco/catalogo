@@ -153,7 +153,7 @@
       puffs: "40.000 Puffs",
       flavors: [
         "Kiwi Grape Starfruit + Açai Straw Banana",
-        "Grape mango + Fresh mint",
+        "Peach mango + Fresh mint",
         "Strawberry Kiwi + Cola Lime",
         "Passion fruit + watermelon Strawberry ",
         "Grape + passion fruit 🍇",
