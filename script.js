@@ -157,7 +157,6 @@
         "Strawberry Kiwi + Cola Lime",
         "Passion fruit + watermelon Strawberry ",
         "Grape + passion fruit 🍇",
-        "Grape + mentol 🍇+🧊",
         "Passion Fruit + Watermelon strawberry",
       ],
       originalPrice: 169.9,
@@ -239,9 +238,7 @@
       name: "ELFBAR DUKE 35.000",
       puffs: "35.000 tragadas",
       flavors: [
-        "Grape ice 🍇❄️",
         "Watermelon ice 🍉❄️",
-        "Coconut Strawberry ice 🥥🍓❄️",
         "Blueberry ice 🫐❄️",
         "Mango magic 🍍",
 
@@ -360,7 +357,6 @@
       puffs: "20.000 tragadas",
       flavors: [
         "Kiwi passion fruit guava 🥝🍓",
-        "Strawberry grape ice 🍓🍇❄️",
       ],
       originalPrice: 119.9,
       promoPrice: 119.9,
