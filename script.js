@@ -110,7 +110,6 @@
       name: "ELFBAR 40.000 Iceking",
       puffs: "40.000 Puffs",
       flavors: [
-        "Cherry fuse",
         "Strawberry ice",
       ],
       originalPrice: 159.9,
@@ -511,7 +510,6 @@
       puffs: "8.000 tragadas",
       flavors: [
         "Cactus",
-        "Grape ice",
         "Blueberry ice",
       ],
       originalPrice: 109.9,
