@@ -54,6 +54,9 @@
 
 
 
+    
+
+
 
     /* ==========================================================================
        RABBEATS 50K - 50.000
@@ -64,8 +67,10 @@
       puffs: "50.000 tragadas",
       flavors: [
         "Miami Mint",
-        "Watermelon ice 🍉❄️",
+        "Watermelon ice 🍉❄️", 
         "Kiwi passion fruit guava",
+        "Icy mint🧊",
+        "Sakura Grape",
         "Miami mint",
         "Triple berry",
         "Strawberry ice",
@@ -79,6 +84,52 @@
       image: "./img/rabbeats-50k.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
     },
+
+      /* ==========================================================================
+       Dinner Lady - 50.000
+       ========================================================================== */
+    {
+      id: "dinner-lady-50k",
+      name: "DINNER LADY - 50.000",
+      puffs: "50.000 Puffs",
+      flavors: [
+        "Grape ice + Mint ice",
+        "Watermelon ice  + strawberry ice",
+      
+      ],
+      originalPrice: 169.9,
+      promoPrice: 169.9,
+      badge: "Novidade",
+      accent: "Amarelo",
+      featured: false,
+      image: "./img/dinner-lady-50k.webp",
+      description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
+    }, 
+
+/* ==========================================================================
+       DOJO 40k VAPORESSO - 40.000
+       ========================================================================== */
+    {
+      id: "dojo-40k-vaporesso",
+      name: "DOJO 40k VAPORESSO - 40.000",
+      puffs: "40.000 tragadas",
+      flavors: [
+        "Grape mojo",
+        "Strawberry kiwi",
+        
+      ],
+      originalPrice: 119.9,
+      promoPrice: 119.9,
+      badge: "NOVIDADE",
+      accent: "Amarelo",
+      featured: false,
+      image: "./img/dojo-40k-vaporesso.webp",
+      description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
+    },
+
+
+
+
     /* ==========================================================================
        IGNITE MIX 40.000
        ========================================================================== 
@@ -108,6 +159,7 @@
       puffs: "40.000 Puffs",
       flavors: [
         "Strawberry ice",
+        "Grape ice",
       ],
       originalPrice: 159.9,
       promoPrice: 159.9,
@@ -148,6 +200,8 @@
       puffs: "40.000 Puffs",
       flavors: [
         "Kiwi Grape Starfruit + Açai Straw Banana",
+        "Watermelon Grape + energy drink",
+        "Fresh Mint + mango orange",
         "Strawberry Kiwi + Cola Lime",
         "Passion fruit + watermelon Strawberry ",
         "Grape mango + fresh Mint",
@@ -161,6 +215,28 @@
       image: "./img/the-black-sheep-40k.webp",
       description: "Novidade na JRS.",
     },
+
+
+    /* ==========================================================================
+       IGNITE ICE 40.000
+       ========================================================================== */
+    {
+      id: "ignite-ice-40k",
+      name: "IGNITE ICE 40.000",
+      puffs: "40.000 Puffs",
+      flavors: [
+        "Menthol",
+        "Grape",
+      ],
+      originalPrice: 164.9,
+      promoPrice: 164.9,
+      badge: "NOVIDADE",
+      accent: "Amarelo",
+      featured: false,
+      image: "./img/ignite-ice-40k.webp",
+      description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
+    }, 
+
 
 
     /* ==========================================================================
@@ -275,15 +351,17 @@
       name: "Hqd Glaze Plus - 30.000",
       puffs: "30.000 tragadas",
       flavors: [
-        "Grape Ice",
-        "Watermelon ice",
-        "Strawberry kiwi",
-        "Menthol",
+        "Menthol🧊",
+        "Grape Ice🍇",
+        "Watermelon ice🍉",
+        "Strawberry kiwi🍓",
+        "Strawberry watermelon🍓🍉"
+        
       ],
       originalPrice: 129.9,
       promoPrice: 129.9,
-      badge: "",
-      accent: "",
+      badge: "Sabores Novos",
+      accent: "Amarelo",
       featured: false,
       image: "./img/hqd-glaze-plus.webp",
       description: "Pequeno, portátil e discreto, ideal para quem quer experimentar sabores diferentes sem gastar muito.",
@@ -321,10 +399,8 @@
       puffs: "20.000 tragadas",
       flavors: [
 
-   
         "Kiwi passion fruit 🥝🍓",
         "Strawberry ice 🍓❄️",
-   
         "Watermelon ice 🍉❄️",
         "Mango ice 🍓❄️",
         "Menthol 🌿",
@@ -368,39 +444,68 @@
       puffs: "20.000 tragadas",
       flavors: [
         "Blueberry 🫐",
+        "Grape ice ",
+        "Watermelon ice ",
+        "Strawberry ice ",
+        "Icy Mint "
+
       ],
       originalPrice: 129.9,
       promoPrice: 129.9,
-      badge: "Últimas unidades",
-      accent: "Vermelho",
+      badge: "Reposição",
+      accent: "Verde",
       featured: false,
       image: "./img/ignite-frozen-20000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },
+
+
+    /* ==========================================================================
+       Addict S200 - 20.000
+       ========================================================================== */
+      {
+      id: "addict-s200",
+      name: "Addict S200 - 20.000",
+      puffs: "20.000 tragadas",
+      flavors: [
+        "Pineapple ice",
+        "Grape ice",
+        "Menthol"
+      ],
+      originalPrice: 129.9,
+      promoPrice: 129.9,
+      badge: "Novidade",
+      accent: "Amarelo",
+      featured: false,
+      image: "./img/addict-s200.webp",
+      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+    },
+
     
 
       /* ==========================================================================
        IGNITE V155 - 15.000
-       ========================================================================== 
+       ========================================================================== */
     {
       id: "ignite-v155",
       name: "IGNITE V155",
       puffs: "15.000 Puffs",
       flavors: [
-   
-        "Strawberry watermelon ice 🍓🍉❄️",
-        "Kiwi passion fruit guava 🥝🍓",
-        
+        "Menthol❄️",
+        "Grape ice",
+        "Watermelon ice🍉❄️",
+        "Strawberry ice🍓❄️",
+        "Strawberry kiwi🍓🥝",
         
       ],
       originalPrice: 119.9,
       promoPrice: 119.9,
-      badge: "Mais vendido",
+      badge: "Reposição",
       accent: "Verde",
       featured: false,
       image: "./img/v155.webp", 
       description: "O equilíbrio perfeito entre preço e variedade, com 9 sabores populares e entrega rápida.",
-    },*/
+    },
 
     
     /* ==========================================================================
@@ -411,14 +516,22 @@
       name: "ELFBAR BC 15.000",
       puffs: "15.000 tragadas",
       flavors: [
-        "Americano ice",
-        "Passion fruit orange guava",
-        "Peach mango watermelon",
+      "Icy Mint",
+      "Miami Mint",
+      "Tropical lemonade",
+      "Strawberry kiwi",
+      "Strawberry ice",
+      "Kiwi passion Fruit Guava",
+      "Mango magic",
+      "Americano ice",
+      "Passion fruit orange guava",
+      "Peach mango watermelon",
+
       ],
       originalPrice: 109.9,
       promoPrice: 109.9,
-      badge: "",
-      accent: "",
+      badge: "Reposição",
+      accent: "Amarelo",
       featured: false,
       image: "./img/elfbar-bc-15000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
@@ -471,6 +584,31 @@
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
     },*/
 
+      /* ==========================================================================
+       LOST MARY 10.000
+       ========================================================================== */
+      {
+      id: "lost-mary-10000",
+      name: "LOST MARY 10.000",
+      puffs: "10.000 tragadas",
+      flavors: [
+        "Double Apple",
+        "Triple mango",
+        "Mango orange Pineapple",
+        
+      ],
+      originalPrice: 0.0,
+      promoPrice: 0.0,
+      badge: "NOVIDADE",
+      accent: "Amarelo",
+      featured: false,
+      image: "./img/lost-mary-10000.webp",
+      description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
+    },
+
+
+
+
     /* ==========================================================================
        IGNITE V80 - Ultra slim 8.000
        ========================================================================== 
@@ -521,11 +659,17 @@
       puffs: "5.500 tragadas",
       flavors: [
         "Melon mix",
+        "Strawberry ice",
+        "Strawberry watermelon",
+        "Miami Mint",
+        "Aloe Grape",
+        "Minty Melon",
+
       ],
       originalPrice: 99.9,
       promoPrice: 99.9,
-      badge: "Últimas unidades",
-      accent: "Vermelho",
+      badge: "Reposição",
+      accent: "Amarelo",
       featured: false,
       image: "./img/ignite-v55.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
