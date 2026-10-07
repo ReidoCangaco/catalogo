@@ -39,7 +39,6 @@
       flavors: [
         "Peach grape",
         "Strawberry kiwi",
-        "Menthol",
         "Watermelon ice",
         "Cool Menthol",
         
@@ -65,12 +64,10 @@
       puffs: "50.000 tragadas",
       flavors: [
         "Miami Mint",
-        "Banana Ice 🍌❄️",
         "Watermelon ice 🍉❄️",
         "Kiwi passion fruit guava",
         "Miami mint",
         "Triple berry",
-        "Menthol",
         "Strawberry ice",
         "Fanta Strawberry",
       ],
@@ -84,13 +81,13 @@
     },
     /* ==========================================================================
        IGNITE MIX 40.000
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "ignite-mix-40k",
       name: "IGNITE MIX 40.000",
       puffs: "40.000 Puffs",
       flavors: [
-        "Grape ice + Watermelon ice",
+        
       
       ],
       originalPrice: 159.9,
@@ -100,7 +97,7 @@
       featured: false,
       image: "./img/ignite-mix-40k.webp",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
-    }, 
+    }, */
 
     /* ==========================================================================
        ELFBAR 40.000 Iceking
@@ -129,7 +126,6 @@
       name: "IGNITE Shisha - 40.000",
       puffs: "40.000 tragadas",
       flavors: [
-        "Triple Melon ice",
         "White Grape ice",
         "Double Apple",
         
@@ -152,10 +148,9 @@
       puffs: "40.000 Puffs",
       flavors: [
         "Kiwi Grape Starfruit + Açai Straw Banana",
-        "Peach mango + Fresh mint",
         "Strawberry Kiwi + Cola Lime",
         "Passion fruit + watermelon Strawberry ",
-        "Grape + passion fruit 🍇",
+        "Grape mango + fresh Mint",
         "Passion Fruit + Watermelon strawberry",
       ],
       originalPrice: 169.9,
@@ -237,7 +232,6 @@
       name: "ELFBAR DUKE 35.000",
       puffs: "35.000 tragadas",
       flavors: [
-        "Watermelon ice 🍉❄️",
         "Blueberry ice 🫐❄️",
         "Mango magic 🍍",
 
@@ -305,10 +299,8 @@
       name: "ELFBAR TE 30.000",
       puffs: "30.000 tragadas",
       flavors: [
-        "Guava passion fruit kiwi 🥝🍓",
         "Blueberry ice 🫐❄️",
         "Strawmelon peach 🍓🍑",
-        "Watermelon ice 🍉❄️",
         "Peach mango watermelon 🍑🥭🍉",
       ],
       originalPrice: 134.9,
@@ -328,11 +320,11 @@
       name: "DINNER LADY 20.000",
       puffs: "20.000 tragadas",
       flavors: [
-        "Pineapple ice 🍍❄️",
-        "Peach mango watermelon 🍑🥭🍉",
+
+   
         "Kiwi passion fruit 🥝🍓",
         "Strawberry ice 🍓❄️",
-        "Grape ice 🍇❄️",
+   
         "Watermelon ice 🍉❄️",
         "Mango ice 🍓❄️",
         "Menthol 🌿",
@@ -420,10 +412,8 @@
       puffs: "15.000 tragadas",
       flavors: [
         "Americano ice",
-        "Kiwi passion fruit guava",
         "Passion fruit orange guava",
         "Peach mango watermelon",
-        "Watermelon ice",
       ],
       originalPrice: 109.9,
       promoPrice: 109.9,
