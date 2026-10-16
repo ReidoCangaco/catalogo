@@ -308,7 +308,6 @@
       name: "ELFBAR DUKE 35.000",
       puffs: "35.000 tragadas",
       flavors: [
-        "Blueberry ice 🫐❄️",
         "Mango magic 🍍",
 
       ],
@@ -400,10 +399,7 @@
       flavors: [
 
         "Kiwi passion fruit 🥝🍓",
-        "Strawberry ice 🍓❄️",
-        "Watermelon ice 🍉❄️",
-        "Mango ice 🍓❄️",
-        "Menthol 🌿",
+       
 
       ],
       originalPrice: 130.0,
@@ -447,7 +443,6 @@
         "Grape ice ",
         "Watermelon ice ",
         "Strawberry ice ",
-        "Icy Mint "
 
       ],
       originalPrice: 129.9,
@@ -491,7 +486,7 @@
       name: "IGNITE V155",
       puffs: "15.000 Puffs",
       flavors: [
-        "Menthol❄️",
+       
         "Grape ice",
         "Watermelon ice🍉❄️",
         "Strawberry ice🍓❄️",
@@ -660,7 +655,6 @@
       flavors: [
         "Melon mix",
         "Strawberry ice",
-        "Strawberry watermelon",
         "Miami Mint",
         "Aloe Grape",
         "Minty Melon",
