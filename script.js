@@ -152,13 +152,13 @@
 
     /* ==========================================================================
        ELFBAR 40.000 Iceking
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "elfbar-40k-iceking",
       name: "ELFBAR 40.000 Iceking",
       puffs: "40.000 Puffs",
       flavors: [
-        "Strawberry ice",
+        
         "Grape ice",
       ],
       originalPrice: 159.9,
@@ -168,7 +168,7 @@
       featured: false,
       image: "./img/elfbar40k-iceking.webp",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
-    }, 
+    }, */
 
      /* ==========================================================================
        IGNITE Shisha 40K - 40.000
