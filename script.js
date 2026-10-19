@@ -37,10 +37,7 @@
       name: "IGNITE V500 - 50.000",
       puffs: "50.000 tragadas",
       flavors: [
-        "Peach grape",
         "Strawberry kiwi",
-        "Watermelon ice",
-        "Cool Menthol",
         
       ],
       originalPrice: 190.0,
@@ -225,7 +222,6 @@
       name: "IGNITE ICE 40.000",
       puffs: "40.000 Puffs",
       flavors: [
-        "Menthol",
         "Grape",
       ],
       originalPrice: 164.9,
@@ -391,7 +387,7 @@
 
     /* ==========================================================================
        DINNER LADY 20.000
-       ========================================================================== */
+       ========================================================================== 
       {
       id: "dinnerlady-20k",
       name: "DINNER LADY 20.000",
@@ -409,11 +405,11 @@
       featured: false,
       image: "./img/dinnerlady-20k.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
-    },
+    },*/
 
     /* ==========================================================================
        ELFBAR 20.000 Touch
-       ========================================================================== */
+       ========================================================================== 
       {
       id: "elfbar-20000-touch",
       name: "ELFBAR 20.000 Touch",
@@ -428,7 +424,7 @@
       featured: false,
       image: "./img/elfbar-20000-touch.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
-    },
+    },*/
 
 
       /* ==========================================================================
@@ -488,8 +484,6 @@
       flavors: [
        
         "Grape ice",
-        "Watermelon ice🍉❄️",
-        "Strawberry ice🍓❄️",
         "Strawberry kiwi🍓🥝",
         
       ],
@@ -588,7 +582,6 @@
       puffs: "10.000 tragadas",
       flavors: [
         "Double Apple",
-        "Triple mango",
         "Mango orange Pineapple",
         
       ],
