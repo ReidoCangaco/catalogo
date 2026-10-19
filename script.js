@@ -105,14 +105,14 @@
 
 /* ==========================================================================
        DOJO 40k VAPORESSO - 40.000
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "dojo-40k-vaporesso",
       name: "DOJO 40k VAPORESSO - 40.000",
       puffs: "40.000 tragadas",
       flavors: [
-        "Grape mojo",
-        "Strawberry kiwi",
+        "",
+        "",
         
       ],
       originalPrice: 119.9,
@@ -122,7 +122,7 @@
       featured: false,
       image: "./img/dojo-40k-vaporesso.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
-    },
+    },*/
 
 
 
