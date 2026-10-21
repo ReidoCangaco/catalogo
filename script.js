@@ -31,7 +31,7 @@
 
     /* ==========================================================================
        IGNITE V500 - 50.000
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "ignite-v500-50k",
       name: "IGNITE V500 - 50.000",
@@ -47,11 +47,7 @@
       featured: false,
       image: "./img/ignite-v500.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
-    },
-
-
-
-    
+    },*/
 
 
 
@@ -91,7 +87,7 @@
       puffs: "50.000 Puffs",
       flavors: [
         "Grape ice + Mint ice",
-        "Watermelon ice  + strawberry ice",
+        "Strawberry Kiwi + Cherry Ice",
       
       ],
       originalPrice: 169.9,
@@ -201,8 +197,6 @@
         "Fresh Mint + mango orange",
         "Strawberry Kiwi + Cola Lime",
         "Passion fruit + watermelon Strawberry ",
-        "Grape mango + fresh Mint",
-        "Passion Fruit + Watermelon strawberry",
       ],
       originalPrice: 169.9,
       promoPrice: 169.9,
@@ -298,7 +292,7 @@
 
     /* ==========================================================================
        ELFBAR DUKE 35.000
-       ==========================================================================*/
+       ==========================================================================
       {
       id: "elfbar-duke-35000",
       name: "ELFBAR DUKE 35.000",
@@ -314,7 +308,7 @@
       featured: false,
       image: "./img/elfbar-duke-35000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
-    },
+    },*/
     
 
     /* ==========================================================================
@@ -429,16 +423,14 @@
 
       /* ==========================================================================
        IGNITE FROZEN 20.000
-       ========================================================================== */
+       ========================================================================== 
       {
       id: "ignite-frozen-20000",
       name: "IGNITE FROZEN 20.000",
       puffs: "20.000 tragadas",
       flavors: [
         "Blueberry 🫐",
-        "Grape ice ",
-        "Watermelon ice ",
-        "Strawberry ice ",
+        
 
       ],
       originalPrice: 129.9,
@@ -448,7 +440,7 @@
       featured: false,
       image: "./img/ignite-frozen-20000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
-    },
+    },*/
 
 
     /* ==========================================================================
@@ -484,7 +476,6 @@
       flavors: [
        
         "Grape ice",
-        "Strawberry kiwi🍓🥝",
         
       ],
       originalPrice: 119.9,
@@ -582,7 +573,7 @@
       puffs: "10.000 tragadas",
       flavors: [
         "Double Apple",
-        "Mango orange Pineapple",
+        "Triple Mango",
         
       ],
       originalPrice: 94.9,
@@ -626,12 +617,11 @@
       puffs: "8.000 tragadas",
       flavors: [
         "Cactus",
-        "Blueberry ice",
       ],
       originalPrice: 109.9,
       promoPrice: 99.9,
-      badge: "",
-      accent: "",
+      badge: "Últimas unidades",
+      accent: "Vermelho",
       featured: false,
       image: "./img/ignite-v80normal.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
@@ -647,7 +637,6 @@
       puffs: "5.500 tragadas",
       flavors: [
         "Melon mix",
-        "Strawberry ice",
         "Miami Mint",
         "Aloe Grape",
         "Minty Melon",
