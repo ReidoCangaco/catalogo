@@ -500,7 +500,6 @@
       "Miami Mint",
       "Tropical lemonade",
       "Strawberry kiwi",
-      "Strawberry ice",
       "Kiwi passion Fruit Guava",
       "Mango magic",
       "Americano ice",
@@ -566,7 +565,7 @@
 
       /* ==========================================================================
        LOST MARY 10.000
-       ========================================================================== */
+       ========================================================================== 
       {
       id: "lost-mary-10000",
       name: "LOST MARY 10.000",
@@ -583,7 +582,7 @@
       featured: false,
       image: "./img/lost-mary-10000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
-    },
+    },*/
 
 
 
