@@ -62,7 +62,6 @@
         "Miami Mint",
         "Watermelon ice 🍉❄️", 
         "Kiwi passion fruit guava",
-        "Icy mint🧊",
         "Sakura Grape",
         "Miami mint",
         "Triple berry",
@@ -344,7 +343,6 @@
         "Grape Ice🍇",
         "Watermelon ice🍉",
         "Strawberry kiwi🍓",
-        "Strawberry watermelon🍓🍉"
         
       ],
       originalPrice: 129.9,
