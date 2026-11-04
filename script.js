@@ -340,7 +340,6 @@
       puffs: "30.000 tragadas",
       flavors: [
         "Menthol🧊",
-        "Grape Ice🍇",
         "Watermelon ice🍉",
         "Strawberry kiwi🍓",
         
@@ -627,7 +626,7 @@
 
     /* ==========================================================================
        IGNITE V55 - 5.500
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "ignite-v55",
       name: "IGNITE V55 - 5.500",
@@ -635,8 +634,6 @@
       flavors: [
         "Melon mix",
         "Miami Mint",
-        "Aloe Grape",
-        "Minty Melon",
 
       ],
       originalPrice: 99.9,
@@ -646,7 +643,7 @@
       featured: false,
       image: "./img/ignite-v55.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
-    },
+    },*/
     
 
     
