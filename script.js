@@ -59,14 +59,10 @@
       name: "RABBEATS - 50.000",
       puffs: "50.000 tragadas",
       flavors: [
-        "Miami Mint",
-        "Watermelon ice 🍉❄️", 
-        "Kiwi passion fruit guava",
+
         "Sakura Grape",
-        "Miami mint",
-        "Triple berry",
-        "Strawberry ice",
         "Fanta Strawberry",
+        
       ],
       originalPrice: 150.0,
       promoPrice: 139.9,
@@ -85,7 +81,6 @@
       name: "DINNER LADY - 50.000",
       puffs: "50.000 Puffs",
       flavors: [
-        "Grape ice + Mint ice",
         "Strawberry Kiwi + Cherry Ice",
       
       ],
@@ -164,7 +159,7 @@
 
      /* ==========================================================================
        IGNITE Shisha 40K - 40.000
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "ignite-shisha-40k",
       name: "IGNITE Shisha - 40.000",
@@ -181,7 +176,7 @@
       featured: false,
       image: "./img/ignite-shisha-40k.webp",
       description: "O Pod Ignite Shisha 40K reúne recursos pensados para tornar a utilização mais prática e versátil. A possibilidade de alternar entre MTL, Mouth to Lung, e DTL, Direct to Lung, permite variar a experiência de vaporização de acordo com a preferência do usuário.",
-    },
+    },*/
 
     /* ==========================================================================
        The black Sheep 40.000
@@ -209,7 +204,7 @@
 
     /* ==========================================================================
        IGNITE ICE 40.000
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "ignite-ice-40k",
       name: "IGNITE ICE 40.000",
@@ -224,7 +219,7 @@
       featured: false,
       image: "./img/ignite-ice-40k.webp",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
-    }, 
+    }, */
 
 
 
@@ -357,7 +352,7 @@
 
     /* ==========================================================================
        ELFBAR TE 30.000
-       ========================================================================== */
+       ========================================================================== 
       {
       id: "elfbar-te-30000",
       name: "ELFBAR TE 30.000",
@@ -374,7 +369,7 @@
       featured: false,
       image: "./img/elfbar-te-30000.webp",
       description: "",
-    },
+    },*/
 
     /* ==========================================================================
        DINNER LADY 20.000
@@ -494,14 +489,8 @@
       puffs: "15.000 tragadas",
       flavors: [
       "Icy Mint",
-      "Miami Mint",
-      "Tropical lemonade",
-      "Strawberry kiwi",
-      "Kiwi passion Fruit Guava",
       "Mango magic",
-      "Americano ice",
-      "Passion fruit orange guava",
-      "Peach mango watermelon",
+      "Tropical lemonade",
 
       ],
       originalPrice: 109.9,
@@ -606,7 +595,7 @@
 
     /* ==========================================================================
        IGNITE V80 - Normal 8.000
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "ignite-v80",
       name: "IGNITE V80 - 8.000",
@@ -621,7 +610,7 @@
       featured: false,
       image: "./img/ignite-v80normal.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
-    },
+    },*/
     
 
     /* ==========================================================================
