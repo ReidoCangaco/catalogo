@@ -60,7 +60,6 @@
       puffs: "50.000 tragadas",
       flavors: [
 
-        "Sakura Grape",
         "Fanta Strawberry",
         
       ],
@@ -75,7 +74,7 @@
 
       /* ==========================================================================
        Dinner Lady - 50.000
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "dinner-lady-50k",
       name: "DINNER LADY - 50.000",
@@ -91,7 +90,7 @@
       featured: false,
       image: "./img/dinner-lady-50k.webp",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
-    }, 
+    }, */
 
 /* ==========================================================================
        DOJO 40k VAPORESSO - 40.000
@@ -490,7 +489,6 @@
       flavors: [
       "Icy Mint",
       "Mango magic",
-      "Tropical lemonade",
 
       ],
       originalPrice: 109.9,
