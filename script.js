@@ -138,14 +138,15 @@
 
     /* ==========================================================================
        ELFBAR 40.000 Iceking
-       ========================================================================== 
+       ========================================================================== */
     {
       id: "elfbar-40k-iceking",
       name: "ELFBAR 40.000 Iceking",
       puffs: "40.000 Puffs",
       flavors: [
         
-        "Grape ice",
+        "Peach",
+        "Sour Apple ice",
       ],
       originalPrice: 159.9,
       promoPrice: 159.9,
@@ -154,7 +155,7 @@
       featured: false,
       image: "./img/elfbar40k-iceking.webp",
       description: "Descartável premium com sabor marcante, bateria prolongada e acabamento fosco elegante.",
-    }, */
+    }, 
 
      /* ==========================================================================
        IGNITE Shisha 40K - 40.000
@@ -459,15 +460,18 @@
 
       /* ==========================================================================
        IGNITE V155 - 15.000
-       ========================================================================== 
+       ========================================================================== */
     {
       id: "ignite-v155",
       name: "IGNITE V155",
       puffs: "15.000 Puffs",
       flavors: [
        
-        "Grape ice",
-        
+        "Strawberry Watermelon",
+        "Watermelon mix",
+        "Kiwi Passion fruit guava",
+        "Green apple",
+        "Menthol",
       ],
       originalPrice: 119.9,
       promoPrice: 119.9,
@@ -476,7 +480,7 @@
       featured: false,
       image: "./img/v155.webp", 
       description: "O equilíbrio perfeito entre preço e variedade, com 9 sabores populares e entrega rápida.",
-    },*/
+    },
 
     
     /* ==========================================================================
@@ -504,18 +508,17 @@
 
     /* ==========================================================================
        NIKBAR 10.000
-       ========================================================================== 
+       ========================================================================== */
       {
       id: "nikbar-10000",
       name: "NIKBAR 10.000",
       puffs: "10.000 tragadas",
       flavors: [
         
-        "Watermelon bubble gum",
-        "Passion Sour kiwi",
-        "Cherry watermelon ice",
+        "Sakura Grape",
         "Menthol",
-        "Grape ice",
+        "Grape Strawberry ice",
+        
       ],
       originalPrice: 115.0,
       promoPrice: 99.9,
@@ -524,7 +527,7 @@
       featured: false,
       image: "./img/nikbar-10000.webp",
       description: "Ótima opção para quem busca design, sabor intenso e preço em promoção.",
-    },*/
+    },
 
     /* ==========================================================================
        LOST VAPE 10.000
