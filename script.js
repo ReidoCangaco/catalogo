@@ -485,7 +485,7 @@
     
     /* ==========================================================================
        ELFBAR BC 15.000
-       ========================================================================== */
+       ========================================================================== 
       {
       id: "elfbar-bc-15000",
       name: "ELFBAR BC 15.000",
@@ -502,7 +502,7 @@
       featured: false,
       image: "./img/elfbar-bc-15000.webp",
       description: "O queridinho dos vapers, com design elegante, bateria duradoura e sabores irresistíveis.",
-    },
+    },*/
 
     
 
