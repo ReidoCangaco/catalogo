@@ -53,7 +53,7 @@
 
     /* ==========================================================================
        RABBEATS 50K - 50.000
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "rabbeats-50k",
       name: "RABBEATS - 50.000",
@@ -70,7 +70,7 @@
       featured: true,
       image: "./img/rabbeats-50k.webp",
       description: "Ótima opção para quem busca design compacto, sabor intenso e preço em promoção.",
-    },
+    },*/
 
       /* ==========================================================================
        Dinner Lady - 50.000
@@ -180,17 +180,14 @@
 
     /* ==========================================================================
        The black Sheep 40.000
-       ========================================================================== */
+       ========================================================================== 
     {
       id: "the-black-sheep-40k",
       name: "THE BLACK SHEEP 40.000",
       puffs: "40.000 Puffs",
       flavors: [
         "Kiwi Grape Starfruit + Açai Straw Banana",
-        "Watermelon Grape + energy drink",
-        "Fresh Mint + mango orange",
-        "Strawberry Kiwi + Cola Lime",
-        "Passion fruit + watermelon Strawberry ",
+      
       ],
       originalPrice: 169.9,
       promoPrice: 169.9,
@@ -199,7 +196,7 @@
       featured: false,
       image: "./img/the-black-sheep-40k.webp",
       description: "Novidade na JRS.",
-    },
+    },*/
 
 
     /* ==========================================================================
@@ -334,8 +331,6 @@
       name: "Hqd Glaze Plus - 30.000",
       puffs: "30.000 tragadas",
       flavors: [
-        "Menthol🧊",
-        "Watermelon ice🍉",
         "Strawberry kiwi🍓",
         
       ],
@@ -471,7 +466,7 @@
         "Watermelon mix",
         "Kiwi Passion fruit guava",
         "Green apple",
-        "Menthol",
+        
       ],
       originalPrice: 119.9,
       promoPrice: 119.9,
